@@ -3,7 +3,6 @@ name: Prettier codes
 on:
   pull_request:
     branches:
-      - dev
       - main
 
 env:
