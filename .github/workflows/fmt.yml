@@ -11,22 +11,12 @@ env:
   workdir: front
 
 jobs:
-  run-prettier:
+  run-formatter:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ${{ env.workdir }}
     steps:
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - uses: actions/cache@v3
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
