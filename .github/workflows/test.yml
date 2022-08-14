@@ -8,13 +8,14 @@ on:
       - 'front/**'
 
 env:
-  workdir: ./front
+  workdir: front
 
 jobs:
   run-build:
     runs-on: ubuntu-latest
-    default:
-      working-directory: ${{ env.workdir }}
+    defaults:
+      run:
+        working-directory: ${{ env.workdir }}
     steps:
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
