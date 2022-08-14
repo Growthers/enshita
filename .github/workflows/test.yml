@@ -7,9 +7,14 @@ on:
     paths:
       - 'front/**'
 
+env:
+  workdir: ./front
+
 jobs:
   run-build:
     runs-on: ubuntu-latest
+    default:
+      working-directory: ${{ env.workdir }}
     steps:
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -23,7 +28,7 @@ jobs:
             ${{ runner.os }}-yarn-
       - uses: actions/checkout@v2
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --imutable
       - name: Build the project
         run: yarn run build
 #  run-unit-test:
@@ -41,7 +46,7 @@ jobs:
 #            ${{ runner.os }}-yarn-
 #      - uses: actions/checkout@v2
 #      - name: Install Dependencies
-#        run: yarn install --frozen-lockfile
+#        run: yarn install --imutable
 #      - name: Unit test
 #        run: yarn run test
 #  run-build-storybook:
@@ -59,6 +64,6 @@ jobs:
 #            ${{ runner.os }}-yarn-
 #      - uses: actions/checkout@v2
 #      - name: Install Dependencies
-#        run: yarn install --frozen-lockfile
+#        run: yarn install --imutable
 #      - name: Build Storybook
 #        run: yarn run build-storybook
