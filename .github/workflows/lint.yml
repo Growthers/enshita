@@ -4,15 +4,13 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - 'front/**'
 
-env:
-  workdir: ./front
 
 jobs:
   run-eslint:
     runs-on: ubuntu-latest
-    default:
-      working-directory: ${{ env.workdir }}
     steps:
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path

@@ -4,15 +4,12 @@ on:
   pull_request:
     branches:
       - main
-
-env:
-  workdir: ./front
+    paths:
+      - 'front/**'
 
 jobs:
   run-build:
     runs-on: ubuntu-latest
-    default:
-      working-directory: ${{ env.workdir }}
     steps:
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
