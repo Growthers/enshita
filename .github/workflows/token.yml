@@ -3,7 +3,7 @@ name: auto generate design tokens from data.json
 on:
   push:
     paths:
-      - front/**
+      - front/tokens/data.json
 
 env:
   workdir: front
@@ -11,7 +11,6 @@ env:
 jobs:
   run-style-dictionary:
     runs-on: ubuntu-latest
-    if: contains(github.head_ref, 'auto/design-tokens')
     defaults:
       run:
         working-directory: ${{ env.workdir }}
