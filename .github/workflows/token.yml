@@ -1,9 +1,9 @@
 name: auto generate design tokens from data.json
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - auto/design-tokens
     paths:
       - 'front/**'
 
@@ -16,7 +16,6 @@ jobs:
     defaults:
       run:
         working-directory: ${{ env.workdir }}
-    if: contains(github.head_ref, 'auto/design-tokens')
     steps:
       - name: Checkout
         uses: actions/checkout@v2
