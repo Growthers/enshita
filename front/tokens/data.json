@@ -69,6 +69,16 @@
       "value": "#f6f8fb",
       "type": "color",
       "description": "white color"
+    },
+    "red": {
+      "value": "#e9675b",
+      "type": "color",
+      "description": "red color for logout button"
+    },
+    "green": {
+      "value": "#6ce95b",
+      "type": "color",
+      "description": "Green color"
     }
   },
   "$themes": [],
