@@ -18,17 +18,17 @@
     "gray": {
       "value": "#acb2be",
       "type": "color",
-      "description": "gray(primary) color"
+      "description": "primary gray color"
     },
     "light-gray": {
       "value": "#ced2d9",
       "type": "color",
-      "description": "light gray(primary) color"
+      "description": "primary light gray color"
     },
     "deep-gray": {
       "value": "#7e879a",
       "type": "color",
-      "description": "deep gray(primary) color"
+      "description": "primary deep gray color"
     },
     "secondary": {
       "value": "#e9bc5b",
@@ -43,22 +43,22 @@
     "gray-2": {
       "value": "#beb8ac",
       "type": "color",
-      "description": "gray(secondary) color"
+      "description": "secondary gray color"
     },
     "light-gray-2": {
       "value": "#d9d6ce",
       "type": "color",
-      "description": "light gray(secondary) color"
+      "description": "secondary light gray color"
     },
     "deep-gray-2": {
       "value": "#9a917e",
       "type": "color",
-      "description": "deep gray(secondary) color"
+      "description": "secondary deep gray color"
     },
     "deep-deep-gray-2": {
       "value": "#7e7563",
       "type": "color",
-      "description": "deep deep gray(secondary) color"
+      "description": "secondary deep deep gray color"
     },
     "black": {
       "value": "#110e07",
