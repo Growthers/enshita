@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter","NotoSansJp"
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../..//public/fonts/Inter.ttf") format("truetypr"),
+       url("../../public/fonts/Inter.woff") format("woff"),
+       url("../../public/fonts/Inter.woff2") format("woff2"),
+       url("../../public/fonts/Inter.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "NotoSansJp";
+  src: url("../..//public/fonts/NotoSansJp.ttf") format("truetypr"),
+       url("../../public/fonts/NotoSansJp.woff") format("woff"),
+       url("../../public/fonts/NotoSansJp.woff2") format("woff2"),
+       url("../../public/fonts/NotoSansJp.eot") format("embedded-opentype");
+}
