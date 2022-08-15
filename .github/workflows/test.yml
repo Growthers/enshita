@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Dependencies
-        run: yarn install --imutable
+        run: yarn install --immutable
       - name: Build the project
         run: yarn run build
 #  run-unit-test:
@@ -27,7 +27,7 @@ jobs:
 #    steps:
 #      - uses: actions/checkout@v2
 #      - name: Install Dependencies
-#        run: yarn install --imutable
+#        run: yarn install --immutable
 #      - name: Unit test
 #        run: yarn run test
 #  run-build-storybook:
@@ -35,6 +35,6 @@ jobs:
 #    steps:
 #      - uses: actions/checkout@v2
 #      - name: Install Dependencies
-#        run: yarn install --imutable
+#        run: yarn install --immutable
 #      - name: Build Storybook
 #        run: yarn run build-storybook
