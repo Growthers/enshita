@@ -78,7 +78,7 @@
     "green": {
       "value": "#6ce95b",
       "type": "color",
-      "description": "Green color"
+      "description": "Green color for success"
     }
   },
   "$themes": [],
