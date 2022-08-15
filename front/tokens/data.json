@@ -1,0 +1,80 @@
+{
+  "global": {
+    "primary": {
+      "value": "#5775b7",
+      "type": "color",
+      "description": "primary color"
+    },
+    "primary-pale": {
+      "value": "#b9c6e1",
+      "type": "color",
+      "description": "prrimary pale color"
+    },
+    "primary-deep": {
+      "value": "#293d69",
+      "type": "color",
+      "description": "primary deep color"
+    },
+    "gray": {
+      "value": "#acb2be",
+      "type": "color",
+      "description": "gray color"
+    },
+    "light-gray": {
+      "value": "#ced2d9",
+      "type": "color",
+      "description": "light gray color"
+    },
+    "deep-gray": {
+      "value": "#7e879a",
+      "type": "color",
+      "description": "deep gray color"
+    },
+    "secondary": {
+      "value": "#e9bc5b",
+      "type": "color",
+      "description": "secondary color"
+    },
+    "secondary-pale": {
+      "value": "#f2d79d",
+      "type": "color",
+      "description": "secondary pale color"
+    },
+    "gray-2": {
+      "value": "#beb8ac",
+      "type": "color",
+      "description": "gray(secondary) color"
+    },
+    "light-gray-2": {
+      "value": "#d9d6ce",
+      "type": "color",
+      "description": "light gray(secondary) color"
+    },
+    "deep-gray-2": {
+      "value": "#9a917e",
+      "type": "color",
+      "description": "deep gray(secondary) color"
+    },
+    "deep-deep-gray-2": {
+      "value": "#7e7563",
+      "type": "color",
+      "description": "deep deep gray(secondary) color"
+    },
+    "black": {
+      "value": "#110e07",
+      "type": "color",
+      "description": "black color"
+    },
+    "white": {
+      "value": "#f6f8fb",
+      "type": "color",
+      "description": "white color"
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global"
+    ]
+  }
+}
