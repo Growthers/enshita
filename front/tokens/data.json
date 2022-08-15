@@ -18,17 +18,17 @@
     "gray": {
       "value": "#acb2be",
       "type": "color",
-      "description": "gray color"
+      "description": "gray(primary) color"
     },
     "light-gray": {
       "value": "#ced2d9",
       "type": "color",
-      "description": "light gray color"
+      "description": "light gray(primary) color"
     },
     "deep-gray": {
       "value": "#7e879a",
       "type": "color",
-      "description": "deep gray color"
+      "description": "deep gray(primary) color"
     },
     "secondary": {
       "value": "#e9bc5b",
