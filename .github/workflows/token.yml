@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - auto/design-tokens
-    paths:
-      - 'front/**'
 
 env:
   workdir: front
