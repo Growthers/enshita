@@ -23,7 +23,7 @@ jobs:
       - name: Add style-dictionary
         run: yarn add -D style-dictionary
       - name: run style-dictionary
-        run: yarn style-dictionary build --config ./tokens/data.json
+        run: yarn style-dictionary build
       - name: add and commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
