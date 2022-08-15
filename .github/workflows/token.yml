@@ -2,8 +2,10 @@ name: auto generate design tokens from data.json
 
 on:
   push:
+    branches:
+      - auto/design-tokens
     paths:
-      - front/tokens/data.json
+      - 'front/**'
 
 env:
   workdir: front
