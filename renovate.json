@@ -2,13 +2,13 @@
   "extends": ["config:base", ":timezone(Asia/Tokyo)"],
   "labels": ["dependencies", "renovate"],
   "pin": {
-    "automerge": true
+    "automerge": false
   },
   "packageRules": [
     {
       "groupName": "types",
       "packagePatterns": ["^@types/"],
-      "automerge": true,
+      "automerge": false,
       "major": {
         "automerge": false
       }
@@ -17,7 +17,7 @@
       "groupName": "linters",
       "extends": ["packages:linters"],
       "packagePatterns": ["^@typescript-eslint/"],
-      "automerge": true,
+      "automerge": false,
       "major": {
         "automerge": false
       }
@@ -25,7 +25,7 @@
     {
       "groupName": "storybook",
       "packagePatterns": ["^@storybook/"],
-      "automerge": true,
+      "automerge": false,
       "major": {
         "automerge": false
       }
