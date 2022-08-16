@@ -27,4 +27,4 @@ jobs:
       - name: add and commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "feat(front): Update design tokens"
+          commit_message: "feat(front): update design tokens"
