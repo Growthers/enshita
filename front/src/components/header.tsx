@@ -6,8 +6,8 @@ const Header: React.FC = () => (
     className={`${styles["enshita-header"]} ${styles["enshita-header-pc"]}`}
     role="banner"
   >
-    <div className={styles["enshita-header-logo"]}>enshita</div>
-    <div className={styles["enshita-header-hidden"]}>button</div>
+    <p className={styles["enshita-header-logo"]}>enshita</p>
+    <p className={styles["enshita-header-hidden"]}>button</p>
   </header>
 );
 
