@@ -12,7 +12,7 @@ const Footer: React.FC = () => (
         </div>
         <div className={styles["enshita-footer-menu"]}>
           <p className={styles["enshita-footer-about"]}>About Growthers</p>
-          <ul className={styles["enshita-footer-list"]} role="navigation">
+          <ul className={styles["enshita-footer-list"]} role="menu">
             <li className={styles["enshita-footer-homepage"]}>
               <a
                 href="https://growthers.dev/"

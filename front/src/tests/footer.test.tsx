@@ -18,7 +18,7 @@ describe("(components) footer", () => {
   });
   test("to be [role=navigation]", () => {
     const { getByRole } = render(<Default />);
-    expect(getByRole("navigation", navigationOptions)).toBeInTheDocument();
+    expect(getByRole("menu", navigationOptions)).toBeInTheDocument();
   });
   test("to be [role=link]", () => {
     const { getByRole } = render(<Default />);
