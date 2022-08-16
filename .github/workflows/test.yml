@@ -22,19 +22,19 @@ jobs:
         run: yarn install --immutable
       - name: Build the project
         run: yarn run build
-#  run-unit-test:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v2
-#      - name: Install Dependencies
-#        run: yarn install --immutable
-#      - name: Unit test
-#        run: yarn run test
-#  run-build-storybook:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v2
-#      - name: Install Dependencies
-#        run: yarn install --immutable
-#      - name: Build Storybook
-#        run: yarn run build-storybook
+  run-unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: yarn install --immutable
+      - name: Unit test
+        run: yarn run test
+  run-build-storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: yarn install --immutable
+      - name: Build Storybook
+        run: yarn run build-storybook
