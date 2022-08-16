@@ -24,6 +24,9 @@ jobs:
         run: yarn run build
   run-unit-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.workdir }}
     steps:
       - uses: actions/checkout@v2
       - name: Install Dependencies
@@ -32,6 +35,9 @@ jobs:
         run: yarn run test
   run-build-storybook:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.workdir }}
     steps:
       - uses: actions/checkout@v2
       - name: Install Dependencies
