@@ -1,10 +1,14 @@
 import React from "react";
+import Layout from "~/components/layout";
 import Router from "./routes";
-import "~/styles/global.scss"
+import "~/styles/global.scss";
+import "normalize.css";
 
 const App = () => (
   <React.StrictMode>
-    <Router />
+    <Layout>
+      <Router />
+    </Layout>
   </React.StrictMode>
 );
 
