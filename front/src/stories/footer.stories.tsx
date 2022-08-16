@@ -12,4 +12,4 @@ export default {
   component: Footer,
 } as ComponentMeta<T>;
 
-export const Default: Story = () => <Footer />;
+export const Default: Story = {};

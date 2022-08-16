@@ -12,4 +12,4 @@ export default {
   component: Header,
 } as ComponentMeta<T>;
 
-export const Default: Story = () => <Header />;
+export const Default: Story = {};

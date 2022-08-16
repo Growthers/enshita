@@ -8,12 +8,8 @@ type Story = ComponentStory<T>;
 
 export default {
   title: "Layout",
-
+  args: { children: <div>hogehoge</div> },
   component: Layout,
 } as ComponentMeta<T>;
 
-export const Default: Story = () => (
-  <Layout>
-    <div>hogehoge</div>
-  </Layout>
-);
+export const Default: Story = {};
