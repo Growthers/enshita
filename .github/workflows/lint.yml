@@ -23,5 +23,5 @@ jobs:
         run: yarn install --immutable
       - name: eslint
         run: yarn run lint
-#      - name: style lint
-#        run: yarn run lint:style
+      - name: style lint
+        run: yarn run lint:style
