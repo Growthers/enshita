@@ -1,20 +1,20 @@
 import React from "react";
-import Header from "~/components/header"
-import Footer from "~/components/footer"
-import style from "~/styles/layout.module.scss"
+import Header from "~/components/header";
+import Footer from "~/components/footer";
+import style from "~/styles/layout.module.scss";
 
 type Props = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-const Layout: React.FC<Props> = ({children}) => (
+const Layout: React.FC<Props> = ({ children }) => (
   <div>
-    <Header/>
-    <div className={style["enshita-layout-body"]}>
+    <Header />
+    <main role="main" className={style["enshita-layout-body"]}>
       {children}
-    </div>
-    <Footer/>
+    </main>
+    <Footer />
   </div>
-)
+);
 
-export default Layout
+export default Layout;
