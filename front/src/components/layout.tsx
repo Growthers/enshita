@@ -8,13 +8,13 @@ type Props = {
 };
 
 const Layout: React.FC<Props> = ({ children }) => (
-  <div>
+  <React.Fragment key="enshita-layout">
     <Header />
     <main role="main" className={style["enshita-layout-body"]}>
       {children}
     </main>
     <Footer />
-  </div>
+  </React.Fragment>
 );
 
 export default Layout;
