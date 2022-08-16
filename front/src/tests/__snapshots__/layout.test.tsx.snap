@@ -2,102 +2,100 @@
 
 exports[`(components) header > test Snap Shot 1`] = `
 <div>
-  <div>
-    <header
-      class="_enshita-header_1kfzr_1 _enshita-header-pc_1kfzr_14"
-      role="banner"
+  <header
+    class="_enshita-header_1kfzr_1 _enshita-header-pc_1kfzr_14"
+    role="banner"
+  >
+    <div
+      class="_enshita-header-logo_1kfzr_7"
+    >
+      enshita
+    </div>
+    <div
+      class="_enshita-header-hidden_1kfzr_22"
+    >
+      button
+    </div>
+  </header>
+  <main
+    class="_enshita-layout-body_q1qg5_1"
+    role="main"
+  >
+    <div>
+      hogehoge
+    </div>
+  </main>
+  <footer>
+    <div
+      class="_enshita-footer_tdctu_1"
     >
       <div
-        class="_enshita-header-logo_1kfzr_7"
-      >
-        enshita
-      </div>
-      <div
-        class="_enshita-header-hidden_1kfzr_22"
-      >
-        button
-      </div>
-    </header>
-    <main
-      class="_enshita-layout-body_q1qg5_1"
-      role="main"
-    >
-      <div>
-        hogehoge
-      </div>
-    </main>
-    <footer>
-      <div
-        class="_enshita-footer_1mxu4_1"
+        class="_enshita-footer-content_tdctu_26"
       >
         <div
-          class="_enshita-footer-content_1mxu4_25"
+          class="_enshita-footer-logo_tdctu_11 _enshita-footer-hidden_tdctu_67"
         >
-          <div
-            class="_enshita-footer-logo_1mxu4_10 _enshita-footer-hidden_1mxu4_66"
-          >
-            enshita
-          </div>
-          <div
-            class="_enshita-footer-menu_1mxu4_32"
-          >
-            <p
-              class="_enshita-footer-about_1mxu4_43"
-            >
-              About Growthers
-            </p>
-            <ul
-              class="_enshita-footer-list_1mxu4_51"
-              role="navigation"
-            >
-              <li
-                class="_enshita-footer-homepage_1mxu4_93"
-              >
-                <a
-                  class="_enshita-footer-link_1mxu4_57"
-                  href="https://growthers.dev/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Home Page
-                </a>
-              </li>
-              <li
-                class="_enshita-footer-twitter_1mxu4_90"
-              >
-                <a
-                  class="_enshita-footer-link_1mxu4_57"
-                  href="https://twitter.com/UdcGrowthers/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li
-                class="_enshita-footer-github_1mxu4_96"
-              >
-                <a
-                  class="_enshita-footer-link_1mxu4_57"
-                  href="https://github.com/Growthers/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
-              </li>
-            </ul>
-          </div>
+          enshita
         </div>
-        <p
-          class="_enshita-footer-copyright_1mxu4_18"
+        <div
+          class="_enshita-footer-menu_tdctu_33"
         >
-          <small>
-            Copyright © 2022 Growthers
-          </small>
-        </p>
+          <p
+            class="_enshita-footer-about_tdctu_44"
+          >
+            About Growthers
+          </p>
+          <ul
+            class="_enshita-footer-list_tdctu_52"
+            role="menu"
+          >
+            <li
+              class="_enshita-footer-homepage_tdctu_94"
+            >
+              <a
+                class="_enshita-footer-link_tdctu_58"
+                href="https://growthers.dev/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Home Page
+              </a>
+            </li>
+            <li
+              class="_enshita-footer-twitter_tdctu_91"
+            >
+              <a
+                class="_enshita-footer-link_tdctu_58"
+                href="https://twitter.com/UdcGrowthers/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Twitter
+              </a>
+            </li>
+            <li
+              class="_enshita-footer-github_tdctu_97"
+            >
+              <a
+                class="_enshita-footer-link_tdctu_58"
+                href="https://github.com/Growthers/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </footer>
-  </div>
+      <p
+        class="_enshita-footer-copyright_tdctu_19"
+      >
+        <small>
+          Copyright © 2022 Growthers
+        </small>
+      </p>
+    </div>
+  </footer>
 </div>
 `;
