@@ -1,7 +1,7 @@
 name: Prettier codes
 
 on:
-  pull_request:
+  push:
     branches:
       - main
     paths:
@@ -21,11 +21,11 @@ jobs:
         uses: actions/checkout@v2
       - name: Install Dependencies
         run: yarn install --immutable
-#      - name: Format style codes
-#        run: yarn run lint:style-fix
+      - name: Format style codes
+        run: yarn run lint:style-fix
       - name: Format the code
         run: yarn run fmt
       - name: Auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "fix(front): Auto-fixable format by github-actions"
+          commit_message: "fix(front): auto-fixable format by github-actions"
