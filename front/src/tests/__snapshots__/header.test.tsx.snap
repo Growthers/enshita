@@ -6,16 +6,16 @@ exports[`(components) header > test Snap Shot 1`] = `
     class="_enshita-header_1kfzr_1 _enshita-header-pc_1kfzr_14"
     role="banner"
   >
-    <div
+    <p
       class="_enshita-header-logo_1kfzr_7"
     >
       enshita
-    </div>
-    <div
+    </p>
+    <p
       class="_enshita-header-hidden_1kfzr_22"
     >
       button
-    </div>
+    </p>
   </header>
 </div>
 `;
