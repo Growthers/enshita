@@ -25,6 +25,7 @@
     "type": "tsc --noEmit",
     "test": "vitest",
     "test:ui": "vitest --ui",
+    "test:update": "vitest -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

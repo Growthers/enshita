@@ -22,6 +22,6 @@ jobs:
       - name: Install Dependencies
         run: yarn install --immutable
       - name: eslint
-        run: yarn run lint
+        run: yarn run lint --max-warnings=0
       - name: style lint
         run: yarn run lint:style
