@@ -1,0 +1,78 @@
+// Vitest Snapshot v1
+
+exports[`(components) footer > test Snap Shot 1`] = `
+<div>
+  <footer>
+    <div
+      class="_enshita-footer_1mxu4_1"
+    >
+      <div
+        class="_enshita-footer-content_1mxu4_25"
+      >
+        <div
+          class="_enshita-footer-logo_1mxu4_10 _enshita-footer-hidden_1mxu4_66"
+        >
+          enshita
+        </div>
+        <div
+          class="_enshita-footer-menu_1mxu4_32"
+        >
+          <p
+            class="_enshita-footer-about_1mxu4_43"
+          >
+            About Growthers
+          </p>
+          <ul
+            class="_enshita-footer-list_1mxu4_51"
+            role="navigation"
+          >
+            <li
+              class="_enshita-footer-homepage_1mxu4_93"
+            >
+              <a
+                class="_enshita-footer-link_1mxu4_57"
+                href="https://growthers.dev/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Home Page
+              </a>
+            </li>
+            <li
+              class="_enshita-footer-twitter_1mxu4_90"
+            >
+              <a
+                class="_enshita-footer-link_1mxu4_57"
+                href="https://twitter.com/UdcGrowthers/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Twitter
+              </a>
+            </li>
+            <li
+              class="_enshita-footer-github_1mxu4_96"
+            >
+              <a
+                class="_enshita-footer-link_1mxu4_57"
+                href="https://github.com/Growthers/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p
+        class="_enshita-footer-copyright_1mxu4_18"
+      >
+        <small>
+          Copyright © 2022 Growthers
+        </small>
+      </p>
+    </div>
+  </footer>
+</div>
+`;
