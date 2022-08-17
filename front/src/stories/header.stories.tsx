@@ -1,10 +1,10 @@
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import Header from "~/components/header";
 
 type T = typeof Header;
-type Story = ComponentStory<T>;
+type Story = ComponentStoryObj<T>;
 
 export default {
   title: "Header",
