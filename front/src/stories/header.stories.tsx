@@ -1,4 +1,3 @@
-import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import Header from "~/components/header";
