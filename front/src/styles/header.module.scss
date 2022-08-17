@@ -1,31 +1,31 @@
-@import "_variables.scss";
+@use "variables" as var;
 
 .enshita-header {
-  background-color: $global-primary;
   display: flex;
   align-items: center;
+  background-color: var.$global-primary;
 }
 
 .enshita-header-logo {
-  color: $global-white;
   padding-top: 1vh;
   font-size: 2.5rem;
   font-weight: 900;
+  color: var.$global-white;
 }
 
 .enshita-header-pc {
-  height: 10vh;
-  padding-left: 1.5rem;
-  padding-right: 2rem;
   justify-content: space-between;
+  height: 10vh;
+  padding-right: 2rem;
+  padding-left: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
-  .enshita-header-hidden{
+  .enshita-header-hidden {
     display: none;
   }
+
   .enshita-header-pc {
-    height: 15vh;
     justify-content: center;
   }
 }
