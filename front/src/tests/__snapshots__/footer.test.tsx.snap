@@ -9,11 +9,11 @@ exports[`(components) footer > test Snap Shot 1`] = `
       <div
         class="_enshita-footer-content_tdctu_26"
       >
-        <div
+        <p
           class="_enshita-footer-logo_tdctu_11 _enshita-footer-hidden_tdctu_67"
         >
           enshita
-        </div>
+        </p>
         <div
           class="_enshita-footer-menu_tdctu_33"
         >
