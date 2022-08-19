@@ -5,6 +5,7 @@ import Header from "~/components/header";
 type T = typeof Header;
 type Story = ComponentStoryObj<T>;
 
+
 export default {
   title: "Header",
 
@@ -12,3 +13,4 @@ export default {
 } as ComponentMeta<T>;
 
 export const Default: Story = {};
+
