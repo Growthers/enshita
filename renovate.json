@@ -2,7 +2,7 @@
   "extends": ["config:base", ":timezone(Asia/Tokyo)"],
   "labels": ["dependencies", "renovate"],
   "pin": {
-    "automerge": false
+    "automerge": true
   },
   "packageRules": [
     {
