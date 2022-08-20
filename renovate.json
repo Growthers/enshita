@@ -8,7 +8,7 @@
     {
       "groupName": "types",
       "packagePatterns": ["^@types/"],
-      "automerge": false,
+      "automerge": true,
       "major": {
         "automerge": false
       }
@@ -17,7 +17,7 @@
       "groupName": "linters",
       "extends": ["packages:linters"],
       "packagePatterns": ["^@typescript-eslint/"],
-      "automerge": false,
+      "automerge": true,
       "major": {
         "automerge": false
       }
@@ -25,7 +25,7 @@
     {
       "groupName": "storybook",
       "packagePatterns": ["^@storybook/"],
-      "automerge": false,
+      "automerge": true,
       "major": {
         "automerge": false
       }
