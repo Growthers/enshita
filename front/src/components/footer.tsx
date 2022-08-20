@@ -5,11 +5,11 @@ const Footer: React.FC = () => (
   <footer>
     <div className={styles["enshita-footer"]}>
       <div className={styles["enshita-footer-content"]}>
-        <div
+        <p
           className={`${styles["enshita-footer-logo"]} ${styles["enshita-footer-hidden"]}`}
         >
           enshita
-        </div>
+        </p>
         <div className={styles["enshita-footer-menu"]}>
           <p className={styles["enshita-footer-about"]}>About Growthers</p>
           <ul className={styles["enshita-footer-list"]} role="navigation">
