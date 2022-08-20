@@ -8,7 +8,7 @@
         "patch"
       ],
       "automerge": true
-    }
+    },
     {
       "groupName": "types",
       "packagePatterns": ["^@types/"],
