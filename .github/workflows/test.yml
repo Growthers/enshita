@@ -8,7 +8,7 @@ on:
       - 'front/**'
 
 env:
-  workdir: front
+  workdir: client
 
 jobs:
   run-build:
