@@ -1,0 +1,20 @@
+@use "variables" as var;
+
+.enshita-button-bg-secondary {
+  background-color: var.$global-secondary;
+}
+
+.enshita-button-color-brack {
+  color: var.$global-black;
+}
+
+.enshita-button-normal {
+  width: 5rem;
+  height: 2rem;
+  margin: auto;
+  font-weight: 900;
+  text-align: center;
+  border: solid 2px;
+  border-color: var.$global-black;
+  border-radius: 0.8rem;
+}

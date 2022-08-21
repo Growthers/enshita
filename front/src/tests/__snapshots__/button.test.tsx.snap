@@ -1,0 +1,18 @@
+// Vitest Snapshot v1
+
+exports[`(components) footer > test Snap Shot 1`] = `
+<div>
+  <button
+    class="
+      _enshita-button-color-brack_1mkh6_5
+      _enshita-button-bg-secondary_1mkh6_1
+      _enshita-button-normal_1mkh6_9
+      "
+    type="button"
+  >
+    <div>
+      hogehoge
+    </div>
+  </button>
+</div>
+`;
