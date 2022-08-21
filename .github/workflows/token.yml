@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  workdir: front
+  workdir: client
 
 jobs:
   run-style-dictionary:
