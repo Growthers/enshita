@@ -4,33 +4,33 @@ exports[`(components) footer > test Snap Shot 1`] = `
 <div>
   <footer>
     <div
-      class="_enshita-footer_1mxu4_1"
+      class="_enshita-footer_tdctu_1"
     >
       <div
-        class="_enshita-footer-content_1mxu4_25"
+        class="_enshita-footer-content_tdctu_26"
       >
-        <div
-          class="_enshita-footer-logo_1mxu4_10 _enshita-footer-hidden_1mxu4_66"
+        <p
+          class="_enshita-footer-logo_tdctu_11 _enshita-footer-hidden_tdctu_67"
         >
           enshita
-        </div>
+        </p>
         <div
-          class="_enshita-footer-menu_1mxu4_32"
+          class="_enshita-footer-menu_tdctu_33"
         >
           <p
-            class="_enshita-footer-about_1mxu4_43"
+            class="_enshita-footer-about_tdctu_44"
           >
             About Growthers
           </p>
           <ul
-            class="_enshita-footer-list_1mxu4_51"
+            class="_enshita-footer-list_tdctu_52"
             role="navigation"
           >
             <li
-              class="_enshita-footer-homepage_1mxu4_93"
+              class="_enshita-footer-homepage_tdctu_94"
             >
               <a
-                class="_enshita-footer-link_1mxu4_57"
+                class="_enshita-footer-link_tdctu_58"
                 href="https://growthers.dev/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -39,10 +39,10 @@ exports[`(components) footer > test Snap Shot 1`] = `
               </a>
             </li>
             <li
-              class="_enshita-footer-twitter_1mxu4_90"
+              class="_enshita-footer-twitter_tdctu_91"
             >
               <a
-                class="_enshita-footer-link_1mxu4_57"
+                class="_enshita-footer-link_tdctu_58"
                 href="https://twitter.com/UdcGrowthers/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -51,10 +51,10 @@ exports[`(components) footer > test Snap Shot 1`] = `
               </a>
             </li>
             <li
-              class="_enshita-footer-github_1mxu4_96"
+              class="_enshita-footer-github_tdctu_97"
             >
               <a
-                class="_enshita-footer-link_1mxu4_57"
+                class="_enshita-footer-link_tdctu_58"
                 href="https://github.com/Growthers/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -66,7 +66,7 @@ exports[`(components) footer > test Snap Shot 1`] = `
         </div>
       </div>
       <p
-        class="_enshita-footer-copyright_1mxu4_18"
+        class="_enshita-footer-copyright_tdctu_19"
       >
         <small>
           Copyright © 2022 Growthers
