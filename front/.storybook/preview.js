@@ -1,3 +1,6 @@
+import "~/styles/global.scss";
+import "destyle.css";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
