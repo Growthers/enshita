@@ -11,16 +11,16 @@
     },
     {
       "groupName": "types",
-      "packagePatterns": ["^@types/"],
+      "packagePatterns": ["^@types/"]
     },
     {
       "groupName": "linters",
       "extends": ["packages:linters"],
-      "packagePatterns": ["^@typescript-eslint/"],
+      "packagePatterns": ["^@typescript-eslint/"]
     },
     {
       "groupName": "storybook",
-      "packagePatterns": ["^@storybook/"],
+      "packagePatterns": ["^@storybook/"]
     }
   ]
 }
