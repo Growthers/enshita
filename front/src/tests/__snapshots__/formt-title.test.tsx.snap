@@ -1,0 +1,29 @@
+// Vitest Snapshot v1
+
+exports[`(components) molecules/twitter > take snap shot 1`] = `
+<div>
+  <div
+    class="_enshita-form-title-box_ziaka_1"
+  >
+    <div
+      class="_enshita-form-title-wrapper_ziaka_5"
+    >
+      <h1
+        class="_enshita-form-title_ziaka_1"
+      >
+        共同開発鯖LT #4
+      </h1>
+      <h1
+        class="_enshita-form-title_ziaka_1"
+      >
+        申し込みフォーム
+      </h1>
+    </div>
+    <h2
+      class="_enshita-form-subtitle_ziaka_32"
+    >
+      気軽に申し込みしてください！
+    </h2>
+  </div>
+</div>
+`;
