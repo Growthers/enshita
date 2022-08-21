@@ -1,0 +1,56 @@
+name: Prettier codes
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  workdir: client
+  node-version: latest
+
+jobs:
+  run-formatter:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.workdir }}
+    permissions:
+      contents: 'read'
+      pull-requests: 'read'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Check for file changes
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          token: ${{ github.token }}
+          filters: .github/filters.yml
+      - name: Setup Node.js environment
+        if: steps.changes.outputs.client == 'true'
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node-version }}
+      - name: Install Dependencies
+        if: steps.changes.outputs.client == 'true'
+        run: yarn install --immutable
+      - name: Format style codes
+        if: steps.changes.outputs.client == 'true'
+        run: yarn run lint:style-fix
+      - name: Format the code
+        if: steps.changes.outputs.client == 'true'
+        run: yarn run fmt
+      - name: Auto commit
+        if: steps.changes.outputs.client == 'true'
+        run: |
+          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          if (git diff --shortstat | grep '[0-9]'); then \
+            git add .; \
+            git commit -m "fix(front): auto-fixable format by github-actions"; \
+            git push origin HEAD:${GITHUB_REF}; \
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,93 @@
+name: Test codes
+
+on:
+  pull_request:
+    branches:
+      - main
+
+env:
+  workdir: client
+  node-version: latest
+
+jobs:
+  run-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.workdir }}
+    permissions:
+      contents: 'read'
+      pull-requests: 'read'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check for file changes
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          token: ${{ github.token }}
+          filters: .github/filters.yml
+      - name: Setup Node.js environment
+        if: steps.changes.outputs.client == 'true'
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node-version }}
+      - name: Install Dependencies
+        if: steps.changes.outputs.client == 'true'
+        run: yarn install --immutable
+      - name: Build the project
+        if: steps.changes.outputs.client == 'true'
+        run: yarn run build
+  run-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.workdir }}
+    permissions:
+      contents: 'read'
+      pull-requests: 'read'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check for file changes
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          token: ${{ github.token }}
+          filters: .github/filters.yml
+      - name: Setup Node.js environment
+        if: steps.changes.outputs.client == 'true'
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node-version }}
+      - name: Install Dependencies
+        if: steps.changes.outputs.client == 'true'
+        run: yarn install --immutable
+      - name: Run test
+        if: steps.changes.outputs.client == 'true'
+        run: yarn run test
+  run-build-storybook:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.workdir }}
+    permissions:
+      contents: 'read'
+      pull-requests: 'read'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check for file changes
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          token: ${{ github.token }}
+          filters: .github/filters.yml
+      - name: Setup Node.js environment
+        if: steps.changes.outputs.client == 'true'
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node-version }}
+      - name: Install Dependencies
+        if: steps.changes.outputs.client == 'true'
+        run: yarn install --immutable
+      - name: Build Storybook
+        if: steps.changes.outputs.client == 'true'
+        run: yarn run build-storybook
