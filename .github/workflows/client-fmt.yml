@@ -53,3 +53,9 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  run-formatter-check:
+    if: ${{ ! failure() }}
+    needs: run-formatter
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Formatter is successfully executed. "

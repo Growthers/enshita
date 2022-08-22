@@ -39,3 +39,9 @@ jobs:
         run: yarn install --immutable
       - name: Build the project
         run: yarn run build
+  run-build-check:
+    if: ${{ ! failure() }}
+    needs: run-build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build is successfully executed. "

@@ -41,3 +41,9 @@ jobs:
         run: yarn run lint --max-warnings=0
       - name: style lint
         run: yarn run lint:style
+  run-linter-check:
+    if: ${{ ! failure() }}
+    needs: run-linter
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Linter is successfully executed. "

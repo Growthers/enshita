@@ -39,3 +39,9 @@ jobs:
         run: yarn install --immutable
       - name: Run test
         run: yarn run test
+  run-test-check:
+    if: ${{ ! failure() }}
+    needs: run-test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Test is successfully executed. "

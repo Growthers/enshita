@@ -39,3 +39,9 @@ jobs:
         run: yarn install --immutable
       - name: Build Storybook
         run: yarn run build-storybook
+  run-build-storybook-check:
+    if: ${{ ! failure() }}
+    needs: run-build-storybook
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build Storybook is successfully executed. "
