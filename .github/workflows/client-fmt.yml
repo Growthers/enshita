@@ -10,39 +10,38 @@ env:
   node-version: lts/*
 
 jobs:
-  run-formatter:
+  front-filter:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ${{ env.workdir }}
     permissions:
       contents: 'read'
       pull-requests: 'read'
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Check for file changes
         uses: dorny/paths-filter@v2
         id: changes
         with:
           token: ${{ github.token }}
           filters: .github/filters.yml
+  run-formatter:
+    runs-on: ubuntu-latest
+    needs: front-filter
+    defaults:
+      run:
+        working-directory: ${{ env.workdir }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Setup Node.js environment
-        if: steps.changes.outputs.client == 'true'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.node-version }}
       - name: Install Dependencies
-        if: steps.changes.outputs.client == 'true'
         run: yarn install --immutable
       - name: Format style codes
-        if: steps.changes.outputs.client == 'true'
         run: yarn run lint:style-fix
       - name: Format the code
-        if: steps.changes.outputs.client == 'true'
         run: yarn run fmt
       - name: Auto commit
-        if: steps.changes.outputs.client == 'true'
         run: |
           git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
           git config --global user.name "${GITHUB_ACTOR}"
