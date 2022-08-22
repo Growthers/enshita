@@ -1,4 +1,4 @@
-name: Test codes
+name: Test Storybook
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ env:
   node-version: lts/*
 
 jobs:
-  run-test:
+  run-build-storybook:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -34,6 +34,6 @@ jobs:
       - name: Install Dependencies
         if: steps.changes.outputs.client == 'true'
         run: yarn install --immutable
-      - name: Run test
+      - name: Build Storybook
         if: steps.changes.outputs.client == 'true'
-        run: yarn run test
+        run: yarn run build-storybook
