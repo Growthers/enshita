@@ -37,7 +37,7 @@
     "wouter": "2.8.0-alpha.2"
   },
   "devDependencies": {
-    "@babel/core": "7.18.5",
+    "@babel/core": "7.18.13",
     "@storybook/addon-actions": "6.5.8",
     "@storybook/addon-essentials": "6.5.8",
     "@storybook/addon-interactions": "6.5.8",
