@@ -1,0 +1,13 @@
+backend_ci: &backend_ci
+  - '.github/workflows/server*.yml'
+
+server:
+  - *backend_ci
+  - 'server/**'
+
+frontend_ci: &frontend_ci
+  - '.github/workflows/client*.yml'
+
+client:
+  - *frontend_ci
+  - 'client/**'
