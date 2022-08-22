@@ -16,6 +16,8 @@ jobs:
       contents: 'read'
       pull-requests: 'read'
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Check for file changes
         uses: dorny/paths-filter@v2
         id: changes
