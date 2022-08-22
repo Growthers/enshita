@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import styles from "~/styles/loginForm.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { AiOutlineUser } from "react-icons/ai";
+import { AiOutlineUser, AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { HiLockClosed } from "react-icons/hi";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -25,6 +25,7 @@ const LoginForm: FC = () => {
   } = useForm<FormDataProps>({ resolver: zodResolver(schema) });
 
   const [IsNorFound, setNotFound] = useState(false);
+  const [IsShow, setShow] = useState(false);
 
   const onSubmit: SubmitHandler<FormDataProps> = data => {
     client
@@ -74,10 +75,21 @@ const LoginForm: FC = () => {
                   <HiLockClosed size={20} />
                 </div>
                 <input
+                  type={IsShow ? "password" : "text"}
                   className={styles["enshita-loginform-input"]}
                   /* eslint-disable-next-line react/jsx-props-no-spreading */
                   {...register("password", { required: true })}
                 />
+                <button
+                  type="button"
+                  className={styles["enshita-loginform-icon"]}
+                  onClick={() => {
+                    setShow(!IsShow);
+                  }}
+                >
+                  {IsShow && <AiFillEye size={20} />}
+                  {!IsShow && <AiFillEyeInvisible size={20} />}
+                </button>
               </div>
               <div className={styles["enshita-loginform-error"]}>
                 {errors.password && (
