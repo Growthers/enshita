@@ -74,7 +74,7 @@
     "postcss": "8.4.14",
     "prettier": "2.7.1",
     "react-test-renderer": "18.1.0",
-    "rollup": "2.75.6",
+    "rollup": "2.78.1",
     "sass": "1.52.3",
     "style-dictionary": "3.7.1",
     "stylelint": "14.9.1",
