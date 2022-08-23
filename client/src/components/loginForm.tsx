@@ -13,8 +13,8 @@ type FormDataProps = {
 };
 
 type ResponseProps = {
-  token:string;
-}
+  token: string;
+};
 
 const schema = z.object({
   emailOrName: z.string().min(1),
@@ -31,13 +31,13 @@ const LoginForm: FC = () => {
   const [IsNorFound, setNotFound] = useState(false);
   const [IsShow, setShow] = useState(false);
 
-  const onSubmit: SubmitHandler<FormDataProps> = data => {
+  const onSubmit: SubmitHandler<FormDataProps> = formData => {
     client
-      .post("/login", {
-        mail: data.emailOrName,
-        password: data.password,
+      .post<ResponseProps>("/login", {
+        mail: formData.emailOrName,
+        password: formData.password,
       })
-      .then(() => {})
+      .then((/** {data} */) => {})
       .catch(() => {
         setNotFound(true);
       });
@@ -60,7 +60,7 @@ const LoginForm: FC = () => {
                   <AiOutlineUser size={15} />
                 </div>
                 <input
-                  className={styles["enshita-loginform-input"]}
+                  className={styles["enshita-loginform-input-i1"]}
                   /* eslint-disable-next-line react/jsx-props-no-spreading */
                   {...register("emailOrName", { required: true })}
                 />
@@ -80,7 +80,7 @@ const LoginForm: FC = () => {
                 </div>
                 <input
                   type={IsShow ? "password" : "text"}
-                  className={styles["enshita-loginform-input"]}
+                  className={styles["enshita-loginform-input-i2"]}
                   /* eslint-disable-next-line react/jsx-props-no-spreading */
                   {...register("password", { required: true })}
                 />

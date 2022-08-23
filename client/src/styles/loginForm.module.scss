@@ -56,11 +56,17 @@
     height: 25px;
   }
 
-  .enshita-loginform-input {
-    width: 100%;
+  .enshita-loginform-input-i1 {
+    width: calc(100% - 25px);
     background-color: var.$global-white;
     border: none;
     outline: none;
+  }
+
+  .enshita-loginform-input-i2 {
+    @extend %enshita-loginform-input-i1;
+
+    width: calc(100% - 50px);
   }
 }
 
