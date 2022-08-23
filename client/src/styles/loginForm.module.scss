@@ -64,7 +64,7 @@
   }
 
   .enshita-loginform-input-i2 {
-    @extend %enshita-loginform-input-i1;
+    @extend %enshita-loginform-input-i1 !optional;
 
     width: calc(100% - 50px);
   }
