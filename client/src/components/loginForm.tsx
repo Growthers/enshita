@@ -12,6 +12,10 @@ type FormDataProps = {
   password: string;
 };
 
+type ResponseProps = {
+  token:string;
+}
+
 const schema = z.object({
   emailOrName: z.string().min(1),
   password: z.string().min(1),
@@ -29,7 +33,7 @@ const LoginForm: FC = () => {
 
   const onSubmit: SubmitHandler<FormDataProps> = data => {
     client
-      .post("", {
+      .post("/login", {
         mail: data.emailOrName,
         password: data.password,
       })
@@ -53,7 +57,7 @@ const LoginForm: FC = () => {
               <small>Email Address / Username</small>
               <div className={styles["enshita-loginform-textarea"]}>
                 <div className={styles["enshita-loginform-icon"]}>
-                  <AiOutlineUser size={20} />
+                  <AiOutlineUser size={15} />
                 </div>
                 <input
                   className={styles["enshita-loginform-input"]}
@@ -72,7 +76,7 @@ const LoginForm: FC = () => {
               <small>Password</small>
               <div className={styles["enshita-loginform-textarea"]}>
                 <div className={styles["enshita-loginform-icon"]}>
-                  <HiLockClosed size={20} />
+                  <HiLockClosed size={15} />
                 </div>
                 <input
                   type={IsShow ? "password" : "text"}
@@ -87,8 +91,8 @@ const LoginForm: FC = () => {
                     setShow(!IsShow);
                   }}
                 >
-                  {IsShow && <AiFillEye size={20} />}
-                  {!IsShow && <AiFillEyeInvisible size={20} />}
+                  {IsShow && <AiFillEye size={15} />}
+                  {!IsShow && <AiFillEyeInvisible size={15} />}
                 </button>
               </div>
               <div className={styles["enshita-loginform-error"]}>
