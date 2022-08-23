@@ -54,7 +54,9 @@ const LoginForm: FC = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={styles["enshita-loginform-form-body"]}>
             <label htmlFor="email/name">
-              <small>Email Address / Username</small>
+              <p>
+                <small>Email Address / Username</small>
+              </p>
               <div className={styles["enshita-loginform-textarea"]}>
                 <div className={styles["enshita-loginform-icon"]}>
                   <AiOutlineUser size={15} />
@@ -73,7 +75,9 @@ const LoginForm: FC = () => {
 
           <div className={styles["enshita-loginform-form-body"]}>
             <label htmlFor="password">
-              <small>Password</small>
+              <p>
+                <small>Password</small>
+              </p>
               <div className={styles["enshita-loginform-textarea"]}>
                 <div className={styles["enshita-loginform-icon"]}>
                   <HiLockClosed size={15} />
@@ -103,7 +107,7 @@ const LoginForm: FC = () => {
                 )}
                 {IsNorFound && !errors.password && !errors.emailOrName && (
                   <p>
-                    <small>not found account</small>
+                    <small>account not found</small>
                   </p>
                 )}
               </div>
