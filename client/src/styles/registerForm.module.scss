@@ -1,0 +1,105 @@
+@use "variables" as var;
+
+.enshita-registerform-body {
+  width: 40rem;
+  height: 26rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px 0 var.$global-gray;
+  background-color: var.$global-white;
+}
+
+.enshita-registerform-head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: var.$global-primary;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  .enshita-registerform-sentence {
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var.$global-white;
+  }
+}
+
+.enshita-registerform-main {
+  box-sizing: border-box;
+  width: 100%;
+  height: 16rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  background-color: var.$global-white;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.enshita-registerform-dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 3rem;
+}
+
+.enshita-registerform-textarea {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding: 2px;
+  border: solid 1.5px;
+  border-color: var.$global-gray;
+  border-radius: 0.5rem;
+
+  &:focus-within {
+    border-color: var.$global-secondary;
+  }
+
+  .enshita-registerform-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+  }
+
+  .enshita-registerform-input-i1 {
+    width: calc(100% - 25px);
+    background-color: var.$global-white;
+    border: none;
+    outline: none;
+  }
+
+  .enshita-registerform-input-i2 {
+    @extend .enshita-registerform-input-i1;
+    width: calc(100% - 50px);
+  }
+}
+
+.enshita-registerform-error {
+  width: 100%;
+  height: 1rem;
+  text-align: end;
+
+  small {
+    color: var.$global-red;
+  }
+}
+
+.enshita-registerform-form-body {
+  height: 4rem;
+  margin-bottom: 0.25rem;
+}
+
+.enshita-registerform-button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 3.5rem;
+}
