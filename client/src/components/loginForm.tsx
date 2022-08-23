@@ -29,7 +29,7 @@ const LoginForm: FC = () => {
   } = useForm<FormDataProps>({ resolver: zodResolver(schema) });
 
   const [IsNorFound, setNotFound] = useState(false);
-  const [IsShow, setShow] = useState(false);
+  const [IsShow, setShow] = useState(true);
 
   const onSubmit: SubmitHandler<FormDataProps> = formData => {
     client
