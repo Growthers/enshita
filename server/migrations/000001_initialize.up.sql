@@ -25,7 +25,6 @@ CREATE TABLE IF NOT EXISTS events (
                       5=finish
                       */
     hashTag varchar(128) NOT NULL ,
-    maximumNumberOfSpeakers integer NOT NULL
     );
 
 -- 登壇者
@@ -35,7 +34,10 @@ CREATE TABLE IF NOT EXISTS speakers (
     name varchar(128) NOT NULL , -- 登壇者の名前
     email varchar(128) NOT NULL ,
     duration integer NOT NULL , -- 発表時間(分)
+    order integer NOT NULL, -- 発表順
     eventId uuid NOT NULL ,
+    speakerQuotaTypeId uuid NOT NULL,
+    FOREIGN KEY (speakerQuotaType) REFERENCES speakerQuotaTypes (id)
     FOREIGN KEY (eventId) REFERENCES events (id)
     );
 
@@ -54,12 +56,20 @@ CREATE TABLE IF NOT EXISTS layouts (
     FOREIGN KEY (eventId) REFERENCES events (id)
     );
 
--- 登壇申込み(登壇枠)
+-- 登壇申込み(フォームの質問)
 CREATE TABLE IF NOT EXISTS applications (
     id uuid PRIMARY KEY,
     deadLine date NOT NULL,
     status integer NOT NULL ,
-    maximumNumberOfSpeakers integer NOT NULL,
+    eventId uuid NOT NULL ,
+    FOREIGN KEY (eventId) REFERENCES events (id)
+    );
+
+-- 登壇枠
+CREATE TABLE IF NOT EXISTS speakerquotatypes (
+    id uuid PRIMARY KEY,
+    name varchar(128) NOT NULL ,
+    speakingDuration integer NOT NULL,
     eventId uuid NOT NULL ,
     FOREIGN KEY (eventId) REFERENCES events (id)
     );
