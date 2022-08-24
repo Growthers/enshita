@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  workdir: front
+  workdir: client
 
 jobs:
   run-style-dictionary:
@@ -24,7 +24,23 @@ jobs:
         run: yarn add -D style-dictionary
       - name: run style-dictionary
         run: yarn style-dictionary build
+<<<<<<< HEAD
       - name: add and commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "feat(front): update design tokens"
+=======
+      - name: Auto commit
+        if: steps.changes.outputs.client == 'true'
+        run: |
+          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          if (git diff --shortstat | grep '[0-9]'); then \
+            git add .; \
+            git commit -m "feat(front): update design tokens"; \
+            git push origin HEAD:${GITHUB_REF}; \
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+>>>>>>> fbd97ef1d3c30dcea128090c2c655cac8be592dd
