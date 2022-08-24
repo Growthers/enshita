@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS events (
     date date NOT NULL , -- 開催日時
     venue varchar(256) NOT NULL , -- 開催場所
     description text NOT NULL , -- イベント詳細
-    ogp varchar(128) NOT NULL ,
+    ogp varchar(256) NOT NULL ,
     status integer NOT NULL , /*
                       ステータス.
                       0=preparing
