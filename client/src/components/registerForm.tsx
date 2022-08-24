@@ -34,7 +34,7 @@ const RegisterForm: FC<Props> = ({ mail, type }) => {
   } = useForm<FormDataProps>({ resolver: zodResolver(schema) });
 
   const [IsNorFound, setNotFound] = useState(false);
-  const [IsShow, setShow] = useState(false);
+  const [IsShow, setShow] = useState(true);
 
   const onSubmit: SubmitHandler<FormDataProps> = data => {
     client
@@ -47,8 +47,6 @@ const RegisterForm: FC<Props> = ({ mail, type }) => {
         setNotFound(true);
       });
   };
-
-  console.log(errors.email);
 
   return (
     <div className={styles["enshita-registerform-body"]}>
