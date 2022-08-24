@@ -3,4 +3,3 @@ DROP TABLE IF EXISTS events;
 DROP TABLE IF EXISTS speakers;
 DROP TABLE IF EXISTS layouts;
 DROP TABLE IF EXISTS applications;
-
