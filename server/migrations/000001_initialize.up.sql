@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS events (
     id uuid PRIMARY KEY NOT NULL,
     title varchar(128) NOT NULL, -- イベントのタイトル
     date date NOT NULL , -- 開催日時
-    venue varchar(128) NOT NULL , -- 開催場所
+    venue varchar(256) NOT NULL , -- 開催場所
     description text NOT NULL , -- イベント詳細
     ogp varchar(128) NOT NULL ,
     status integer NOT NULL , /*
