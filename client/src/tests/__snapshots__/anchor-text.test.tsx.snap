@@ -3,19 +3,19 @@
 exports[`(components) anchor button > (icon) test Snap Shot 1`] = `
 <div>
   <a
-    class="_enshita-button-box_1fccx_17 undefined"
+    class="_enshita-button-box_8w723_17 undefined"
     href="#"
     rel="noopener noreferrer"
     role="button"
     target="_blank"
   >
     <div
-      class="undefined undefined"
+      class="_enshita-button-icon-box_8w723_1 undefined"
     >
       <span />
     </div>
     <p
-      class="_enshita-button-text_1fccx_36 undefined"
+      class="_enshita-button-text_8w723_36 undefined"
     >
       This is test
     </p>
@@ -26,14 +26,14 @@ exports[`(components) anchor button > (icon) test Snap Shot 1`] = `
 exports[`(components) anchor button > (normal) test Snap Shot 1`] = `
 <div>
   <a
-    class="_enshita-button-box_1fccx_17 undefined"
+    class="_enshita-button-box_8w723_17 undefined"
     href="#"
     rel="noopener noreferrer"
     role="button"
     target="_blank"
   >
     <p
-      class="_enshita-button-text_1fccx_36 undefined"
+      class="_enshita-button-text_8w723_36 undefined"
     >
       This is test
     </p>

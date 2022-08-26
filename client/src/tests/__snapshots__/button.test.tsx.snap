@@ -3,13 +3,13 @@
 exports[`(components) button > (disable) test Snap Shot 1`] = `
 <div>
   <button
-    class="_enshita-button-box_1dygj_17 undefined"
+    class="_enshita-button-box_1gcpx_17 undefined"
     disabled=""
     tabindex="0"
     type="button"
   >
     <p
-      class="_enshita-button-text_1dygj_36 undefined"
+      class="_enshita-button-text_1gcpx_36 undefined"
     >
       This is test
     </p>
@@ -20,17 +20,17 @@ exports[`(components) button > (disable) test Snap Shot 1`] = `
 exports[`(components) button > (icon) test Snap Shot 1`] = `
 <div>
   <button
-    class="_enshita-button-box_1dygj_17 undefined"
+    class="_enshita-button-box_1gcpx_17 undefined"
     tabindex="0"
     type="button"
   >
     <div
-      class="undefined undefined"
+      class="_enshita-button-icon-box_1gcpx_1 undefined"
     >
       <span />
     </div>
     <p
-      class="_enshita-button-text_1dygj_36 undefined"
+      class="_enshita-button-text_1gcpx_36 undefined"
     >
       This is test
     </p>
@@ -41,12 +41,12 @@ exports[`(components) button > (icon) test Snap Shot 1`] = `
 exports[`(components) button > (normal) test Snap Shot 1`] = `
 <div>
   <button
-    class="_enshita-button-box_1dygj_17 undefined"
+    class="_enshita-button-box_1gcpx_17 undefined"
     tabindex="0"
     type="button"
   >
     <p
-      class="_enshita-button-text_1dygj_36 undefined"
+      class="_enshita-button-text_1gcpx_36 undefined"
     >
       This is test
     </p>
