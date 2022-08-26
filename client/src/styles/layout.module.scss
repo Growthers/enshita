@@ -1,5 +1,9 @@
+@use "variables" as var;
+
 .enshita-layout-body {
   min-height: 70vh;
+  width: 100vw;
+  background-color: var.$global-white;
 }
 
 @media screen and (max-width: 768px) {

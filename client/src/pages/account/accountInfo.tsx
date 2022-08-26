@@ -1,6 +1,8 @@
 import { AxiosError } from "axios";
 import { FC, useState, useEffect } from "react";
 import AccountInfoForm from "~/components/accountInfoForm";
+import Layout from "~/components/layout";
+import styles from "~/styles/AccountInfo.module.scss";
 import { client } from "~/libs/apiClient";
 
 type TokenCheckProps = {
@@ -56,9 +58,11 @@ const AccountInfo: FC = () => {
   }
 
   return (
-    <div>
-      <AccountInfoForm mail="example@example.com" userName="" />
-    </div>
+    <Layout>
+      <div className={styles["enshita-body"]}>
+        <AccountInfoForm mail="example@example.com" userName="" />
+      </div>
+    </Layout>
   );
 };
 
