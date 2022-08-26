@@ -1,0 +1,55 @@
+// Vitest Snapshot v1
+
+exports[`(components) button > (disable) test Snap Shot 1`] = `
+<div>
+  <button
+    class="_enshita-button-box_1dygj_17 undefined"
+    disabled=""
+    tabindex="0"
+    type="button"
+  >
+    <p
+      class="_enshita-button-text_1dygj_36 undefined"
+    >
+      This is test
+    </p>
+  </button>
+</div>
+`;
+
+exports[`(components) button > (icon) test Snap Shot 1`] = `
+<div>
+  <button
+    class="_enshita-button-box_1dygj_17 undefined"
+    tabindex="0"
+    type="button"
+  >
+    <div
+      class="undefined undefined"
+    >
+      <span />
+    </div>
+    <p
+      class="_enshita-button-text_1dygj_36 undefined"
+    >
+      This is test
+    </p>
+  </button>
+</div>
+`;
+
+exports[`(components) button > (normal) test Snap Shot 1`] = `
+<div>
+  <button
+    class="_enshita-button-box_1dygj_17 undefined"
+    tabindex="0"
+    type="button"
+  >
+    <p
+      class="_enshita-button-text_1dygj_36 undefined"
+    >
+      This is test
+    </p>
+  </button>
+</div>
+`;

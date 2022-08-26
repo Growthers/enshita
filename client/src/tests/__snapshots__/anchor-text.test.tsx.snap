@@ -1,0 +1,42 @@
+// Vitest Snapshot v1
+
+exports[`(components) anchor button > (icon) test Snap Shot 1`] = `
+<div>
+  <a
+    class="_enshita-button-box_1fccx_17 undefined"
+    href="#"
+    rel="noopener noreferrer"
+    role="button"
+    target="_blank"
+  >
+    <div
+      class="undefined undefined"
+    >
+      <span />
+    </div>
+    <p
+      class="_enshita-button-text_1fccx_36 undefined"
+    >
+      This is test
+    </p>
+  </a>
+</div>
+`;
+
+exports[`(components) anchor button > (normal) test Snap Shot 1`] = `
+<div>
+  <a
+    class="_enshita-button-box_1fccx_17 undefined"
+    href="#"
+    rel="noopener noreferrer"
+    role="button"
+    target="_blank"
+  >
+    <p
+      class="_enshita-button-text_1fccx_36 undefined"
+    >
+      This is test
+    </p>
+  </a>
+</div>
+`;
