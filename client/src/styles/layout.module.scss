@@ -1,0 +1,9 @@
+.enshita-layout-body {
+  min-height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+  .enshita-layout-body {
+    min-height: 75vh;
+  }
+}
