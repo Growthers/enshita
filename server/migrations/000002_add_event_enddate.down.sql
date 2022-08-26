@@ -1,0 +1,3 @@
+ALTER TABLE events DROP COLUMN endDate CASCADE;
+
+ALTER TABLE events RENAME COLUMN startDate TO date;
