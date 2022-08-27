@@ -2,10 +2,10 @@
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
-  src: url("../..//public/fonts/Inter.ttf") format("truetypr"),
-    url("../../public/fonts/Inter.woff") format("woff"),
-    url("../../public/fonts/Inter.woff2") format("woff2"),
-    url("../../public/fonts/Inter.eot") format("embedded-opentype");
+  src: url("/fonts/Inter.ttf") format("truetype"),
+    url("/fonts/Inter.woff") format("woff"),
+    url("/fonts/Inter.woff2") format("woff2"),
+    url("/fonts/Inter.eot") format("embedded-opentype");
   font-display: fallback;
 }
 
@@ -13,10 +13,10 @@
   font-family: NotoSansJp;
   font-style: normal;
   font-weight: 400;
-  src: url("../..//public/fonts/NotoSansJp.ttf") format("truetypr"),
-    url("../../public/fonts/NotoSansJp.woff") format("woff"),
-    url("../../public/fonts/NotoSansJp.woff2") format("woff2"),
-    url("../../public/fonts/NotoSansJp.eot") format("embedded-opentype");
+  src: url("/fonts/NotoSansJp.ttf") format("truetype"),
+    url("/fonts/NotoSansJp.woff") format("woff"),
+    url("/fonts/NotoSansJp.woff2") format("woff2"),
+    url("/fonts/NotoSansJp.eot") format("embedded-opentype");
   font-display: fallback;
 }
 
