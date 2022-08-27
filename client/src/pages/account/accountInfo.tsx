@@ -27,8 +27,8 @@ const AccountInfo: FC = () => {
   });
 
   useEffect(() => {
-    const check = async () => {
-      await client
+    const check = () => {
+      client
         .post<TokenCheckProps>("", {
           token,
         })
