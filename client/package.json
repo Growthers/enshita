@@ -30,6 +30,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@iconify/react": "^3.2.2",
     "axios": "0.27.2",
     "destyle.css": "3.0.2",
     "react": "18.1.0",

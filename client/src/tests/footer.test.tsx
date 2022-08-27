@@ -4,6 +4,7 @@ import { render } from "@testing-library/react";
 import * as stories from "~/stories/footer.stories";
 
 const { Default } = composeStories(stories);
+
 const navigationOptions = {
   name: "",
 };
