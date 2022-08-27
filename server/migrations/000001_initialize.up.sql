@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS events (
     hashTag varchar(128) NOT NULL
     );
 
--- 登壇者
+-- 登壇申込み(フォームの質問)
 CREATE TABLE IF NOT EXISTS speakerquotatypes (
     id uuid PRIMARY KEY,
     name varchar(128) NOT NULL ,
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS speakerquotatypes (
     FOREIGN KEY (eventId) REFERENCES events (id)
     );
 
--- レイアウト
+-- 登壇者
 CREATE TABLE IF NOT EXISTS speakers (
     id uuid PRIMARY KEY,
     title varchar(128) NOT NULL , -- 発表スライドのタイトル
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS speakers (
     FOREIGN KEY (eventId) REFERENCES events (id)
     );
 
--- 登壇申込み(フォームの質問)
+-- レイアウト
 CREATE TABLE IF NOT EXISTS layouts (
     id uuid PRIMARY KEY,
     imageType integer NOT NULL , /*
