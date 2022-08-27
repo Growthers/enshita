@@ -4,6 +4,7 @@ import { render } from "@testing-library/react";
 import * as stories from "~/stories/layout.stories";
 
 const { Default } = composeStories(stories);
+
 const options = {
   name: "",
 };

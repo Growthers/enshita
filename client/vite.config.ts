@@ -52,6 +52,7 @@ export default defineConfig({
   },
   root,
   envDir: process.cwd(),
+  publicDir: `${process.cwd()}/public`,
   server: {
     port: 3000,
   },
