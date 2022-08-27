@@ -1,9 +1,7 @@
 import { FC, useState } from "react";
 import styles from "~/styles/accountInfoForm.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { AiOutlineUser, AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import { HiLockClosed } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
+import { Icon } from '@iconify/react';
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { client } from "~/libs/apiClient";
@@ -86,7 +84,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
             <small>mail Address</small>
             <div className={styles["enshita-accountinfoform-textarea"]}>
               <div className={styles["enshita-accountinfoform-icon"]}>
-                <FiMail size={15} />
+                <Icon icon="ci:mail" width="15" height="15"/>
               </div>
               <input
                 className={styles["enshita-accountinfoform-input-i1"]}
@@ -104,7 +102,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
             <small>Username</small>
             <div className={styles["enshita-accountinfoform-textarea"]}>
               <div className={styles["enshita-accountinfoform-icon"]}>
-                <AiOutlineUser size={15} />
+              <Icon icon="ant-design:user-outlined" width="15" height="15"/>
               </div>
               <input
                 className={styles["enshita-accountinfoform-input-i1"]}
@@ -136,7 +134,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
             <small>New Password</small>
             <div className={styles["enshita-accountinfoform-textarea"]}>
               <div className={styles["enshita-accountinfoform-icon"]}>
-                <HiLockClosed size={15} />
+                <Icon icon="bxs:lock-alt" width="15" height="15"/>
               </div>
               <input
                 type={IsShow ? "password" : "text"}
@@ -150,8 +148,8 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
                   setShow(!IsShow);
                 }}
               >
-                {IsShow && <AiFillEye size={15} />}
-                {!IsShow && <AiFillEyeInvisible size={15} />}
+                {IsShow && <Icon icon="ant-design:eye-filled" width="15" height="15"/>}
+                {!IsShow && <Icon icon="ant-design:eye-invisible-filled" width="15" height="15"/>}
               </button>
             </div>
             <div className={styles["enshita-accountinfoform-error"]}>
@@ -173,7 +171,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
             <small>Current Password</small>
             <div className={styles["enshita-accountinfoform-textarea"]}>
               <div className={styles["enshita-accountinfoform-icon"]}>
-                <HiLockClosed size={15} />
+                <Icon icon="bxs:lock-alt" width="15" height="15"/>
               </div>
               <input
                 type={IsShow ? "password" : "text"}
@@ -187,8 +185,8 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
                   setShow(!IsShow);
                 }}
               >
-                {IsShow && <AiFillEye size={15} />}
-                {!IsShow && <AiFillEyeInvisible size={15} />}
+                {IsShow && <Icon icon="ant-design:eye-filled" width="15" height="15"/>}
+                {!IsShow && <Icon icon="ant-design:eye-invisible-filled" width="15" height="15"/>}
               </button>
             </div>
             <div className={styles["enshita-accountinfoform-error"]}>
