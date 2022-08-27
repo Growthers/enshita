@@ -1,2 +1,2 @@
---  speakers.mail -> speakers.email に変更
-ALTER TABLE speakers RENAME COLUMN mail TO email;
+--  users.mail -> users.email に変更
+ALTER TABLE users RENAME COLUMN mail TO email;
