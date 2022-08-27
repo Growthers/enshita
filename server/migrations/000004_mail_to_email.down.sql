@@ -1,2 +1,2 @@
 
-ALTER TABLE speakers RENAME COLUMN email TO mail;
+ALTER TABLE users RENAME COLUMN email TO mail;
