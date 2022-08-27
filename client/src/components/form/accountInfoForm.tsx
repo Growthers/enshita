@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { client } from "~/libs/apiClient";
+import { Button } from "../button/button";
 
 type FormDataProps = {
   mail: string;
@@ -211,9 +212,16 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
           </label>
         </div>
         <div className={styles["enshita-accountinfoform-button"]}>
-          <button type="submit" onClick={() => setNotUpdate(false)}>
+          <Button
+            type="submit"
+            disabled={false}
+            variant="normal"
+            boxStyles="enshita-button-update-box"
+            textStyles="enshita-button-update-text"
+            onClick={() => setNotUpdate(false)}
+          >
             update
-          </button>
+          </Button>
         </div>
       </form>
     </div>

@@ -43,3 +43,19 @@
   color: var.$global-black;
   white-space: nowrap;
 }
+
+.enshita-button-update-box {
+  height: 2rem;
+  background-color: var.$global-primary-deep;
+  border-radius: 0.75rem;
+
+  p {
+    color: var.$global-white;
+  }
+
+  &:hover {
+    p {
+      color: var.$global-black;
+    }
+  }
+}

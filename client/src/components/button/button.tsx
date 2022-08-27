@@ -26,7 +26,7 @@ const Button: FC<ButtonProperties> = ({
   ...rest
 }) => (
   <button
-    className={`${styles["enshita-button-box"]} ${boxStyles}`}
+    className={`${styles["enshita-button-box"]} ${styles[boxStyles??""]}`}
     disabled={disabled}
     tabIndex={0}
     type={type}
@@ -34,7 +34,7 @@ const Button: FC<ButtonProperties> = ({
   >
     {variant === "icon" && <ButtonIcon icon={icon} css={iconStyles} />}
     {children && (
-      <p className={`${styles["enshita-button-text"]} ${textStyles}`}>
+      <p className={`${styles["enshita-button-text"]} ${styles[textStyles??""]}`}>
         {children}
       </p>
     )}
