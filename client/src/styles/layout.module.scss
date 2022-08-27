@@ -1,8 +1,8 @@
 @use "variables" as var;
 
 .enshita-layout-body {
-  min-height: 70vh;
   width: 100vw;
+  min-height: 70vh;
   background-color: var.$global-white;
 }
 
