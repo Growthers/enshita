@@ -1,7 +1,7 @@
 import { composeStories } from "@storybook/testing-react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import * as stories from "~/stories/header.stories";
+import * as stories from "~/stories/layout/layout.stories";
 
 const { Default } = composeStories(stories);
 
@@ -13,8 +13,8 @@ describe("(components) header", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });
-  test("to be [role=banner]", () => {
+  test("to be [role=main]", () => {
     const { getByRole } = render(<Default />);
-    expect(getByRole("banner", options)).toBeInTheDocument();
+    expect(getByRole("main", options)).toBeInTheDocument();
   });
 });

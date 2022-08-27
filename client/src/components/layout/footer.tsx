@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "~/styles/footer.module.scss";
+import styles from "~/styles/components/layout/footer.module.scss";
 
 const Footer: React.FC = () => (
   <footer>
@@ -15,7 +15,7 @@ const Footer: React.FC = () => (
           <ul className={styles["enshita-footer-list"]} role="navigation">
             <li className={styles["enshita-footer-homepage"]}>
               <a
-                href="https://growthers.dev/"
+                href="~/components/layout/footer"
                 className={`${styles["enshita-footer-link"]}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -25,7 +25,7 @@ const Footer: React.FC = () => (
             </li>
             <li className={styles["enshita-footer-twitter"]}>
               <a
-                href="https://twitter.com/UdcGrowthers/"
+                href="~/components/layout/footer"
                 className={`${styles["enshita-footer-link"]}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const Footer: React.FC = () => (
             </li>
             <li className={styles["enshita-footer-github"]}>
               <a
-                href="https://github.com/Growthers/"
+                href="~/components/layout/footer"
                 className={`${styles["enshita-footer-link"]}`}
                 target="_blank"
                 rel="noopener noreferrer"
