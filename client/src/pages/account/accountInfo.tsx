@@ -2,8 +2,8 @@ import { AxiosError } from "axios";
 import { FC, useState, useEffect } from "react";
 import AccountInfoForm from "~/components/form/accountInfoForm";
 import Layout from "~/components/layout/layout";
-import styles from "~/styles/AccountInfo.module.scss";
 import { client } from "~/libs/apiClient";
+import styles from "~/styles/AccountInfo.module.scss";
 
 type TokenCheckProps = {
   token: string;
