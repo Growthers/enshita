@@ -1,7 +1,7 @@
 import React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import Header from "~/components/header";
+import Header from "~/components/layout/header";
 
 type T = typeof Header;
 type Story = ComponentStory<T>;
