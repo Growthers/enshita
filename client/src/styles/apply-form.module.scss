@@ -5,10 +5,10 @@ $text-16: calc(10vw / 12);
 $text-20: calc(12.5vw / 12);
 $text-mb-20: calc(100vw / 18);
 
-.enshita-form-title-box {
+.enshita-apply-form-title-box {
   text-align: center;
   color: var.$global-black;
-  .enshita-form-title-wrapper {
+  .enshita-apply-form-title-wrapper {
     display: flex;
     white-space: pre-wrap;
     justify-content: center;
@@ -16,7 +16,7 @@ $text-mb-20: calc(100vw / 18);
       display: block;
       white-space: normal;
     }
-    .enshita-form-title {
+    .enshita-apply-form-title {
       font-size: calc(100vw / 60);
       @media (max-width: 768px) {
         font-size: $text-mb-20;
@@ -31,7 +31,7 @@ $text-mb-20: calc(100vw / 18);
       }
     }
   }
-  .enshita-form-subtitle {
+  .enshita-apply-form-subtitle {
     font-size: $text-16;
     @media (max-width: 768px) {
       font-size: $text-mb-12;

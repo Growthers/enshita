@@ -1,5 +1,5 @@
 import type { ComponentStoryObj, ComponentMeta } from "@storybook/react";
-import { Title } from "~/components/form/title";
+import { Title } from "~/components/apply-form/title";
 
 type T = typeof Title;
 type Story = ComponentStoryObj<T>;
