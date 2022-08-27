@@ -1,30 +1,7 @@
 // Vitest Snapshot v1
 
-exports[`(components) header > test Snap Shot 1`] = `
+exports[`(components) footer > test Snap Shot 1`] = `
 <div>
-  <header
-    class="_enshita-header_1kfzr_1 _enshita-header-pc_1kfzr_14"
-    role="banner"
-  >
-    <div
-      class="_enshita-header-logo_1kfzr_7"
-    >
-      enshita
-    </div>
-    <div
-      class="_enshita-header-hidden_1kfzr_22"
-    >
-      button
-    </div>
-  </header>
-  <main
-    class="_enshita-layout-body_q1qg5_1"
-    role="main"
-  >
-    <div>
-      hogehoge
-    </div>
-  </main>
   <footer>
     <div
       class="_enshita-footer_tdctu_1"
@@ -54,7 +31,7 @@ exports[`(components) header > test Snap Shot 1`] = `
             >
               <a
                 class="_enshita-footer-link_tdctu_58"
-                href="https://growthers.dev/"
+                href="~/components/layout/footer"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -66,7 +43,7 @@ exports[`(components) header > test Snap Shot 1`] = `
             >
               <a
                 class="_enshita-footer-link_tdctu_58"
-                href="https://twitter.com/UdcGrowthers/"
+                href="~/components/layout/footer"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -78,7 +55,7 @@ exports[`(components) header > test Snap Shot 1`] = `
             >
               <a
                 class="_enshita-footer-link_tdctu_58"
-                href="https://github.com/Growthers/"
+                href="~/components/layout/footer"
                 rel="noopener noreferrer"
                 target="_blank"
               >

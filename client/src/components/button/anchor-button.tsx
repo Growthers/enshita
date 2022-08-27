@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { InlineIcon } from "@iconify/react";
-import styles from "~/styles/anchor-button.module.scss";
+import styles from "~/styles/components/button/anchor-button.module.scss";
 import type {
   ButtonIconProperties,
   AnchorButtonProperties,
