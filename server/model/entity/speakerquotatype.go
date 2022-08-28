@@ -5,7 +5,7 @@ type SpeakerQuotaType struct {
 	Name             string `gorm:"column:name;type:varchar(128);not null"`
 	SpeakingDuration int    `gorm:"column:speakingDuration;type:int;not null"`
 
-	Speakers []Speaker `gorm:"foreignKey:SpeakerQuotaTypeId"`
+	Speakers []Speaker `gorm:"foreignKey:SpeakerQuotaTypeID"`
 
-	EventId string `gorm:"column:eventId;not null"`
+	EventID string `gorm:"column:eventId;not null"`
 }
