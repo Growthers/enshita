@@ -5,7 +5,7 @@ import "time"
 type GetFormResponse struct {
 	ID        string    `json:"id"`
 	Title     string    `json:"title"`
-	Deadline  time.Time `json:"deadline"`
+	DeadLine  time.Time `json:"deadLine"`
 	Enable    bool      `json:"enable"`
 	Questions struct {
 		Name             string `json:"name"`
