@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import styles from "~/styles/accountInfoForm.module.scss";
+import styles from "~/styles/components/form/accountInfoForm.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Icon } from '@iconify/react';
 import { zodResolver } from "@hookform/resolvers/zod";
