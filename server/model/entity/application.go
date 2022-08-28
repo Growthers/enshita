@@ -9,5 +9,5 @@ type Application struct {
 	DeadLine time.Time `gorm:"column:deadLine;type:date;not null"`
 	Status   int       `gorm:"column:status;type:int;not null"`
 
-	EventId string `gorm:"column:eventId;not null"`
+	EventID string `gorm:"column:eventId;not null"`
 }
