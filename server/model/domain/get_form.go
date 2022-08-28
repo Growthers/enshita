@@ -18,6 +18,6 @@ type GetFormResponse struct {
 			Time         time.Time `json:"time"`
 			CurrentCount int       `json:"currentCount"`
 			Total        int       `json:"total"`
-		} `json:"speaker_quota_type"`
+		} `json:"speakerQuotaType"`
 	}
 }
