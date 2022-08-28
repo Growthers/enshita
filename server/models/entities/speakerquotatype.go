@@ -1,4 +1,4 @@
-package models
+package entities
 
 type SpeakerQuotaType struct {
 	ID               string  `gorm:"column:id;primaryKey;not null"`
