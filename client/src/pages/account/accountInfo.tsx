@@ -3,7 +3,7 @@ import { FC, useState, useEffect } from "react";
 import AccountInfoForm from "~/components/form/accountInfoForm";
 import Layout from "~/components/layout/layout";
 import { client } from "~/libs/apiClient";
-import styles from "~/styles/AccountInfo.module.scss";
+import styles from "~/styles/pages/accountInfo.module.scss";
 
 type TokenCheckProps = {
   token: string;
