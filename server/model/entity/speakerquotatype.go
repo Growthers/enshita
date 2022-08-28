@@ -1,8 +1,11 @@
 package entity
 
 type SpeakerQuotaType struct {
-	ID               string  `gorm:"column:id;primaryKey;not null"`
-	Name             string  `gorm:"column:name;type:varchar(128);not null"`
-	SpeakingDuration int     `gorm:"column:speakingDuration;type:int;not null"`
-	Event            []Event `gorm:"column:eventId;foreignKey:ID;not null"`
+	ID               string `gorm:"column:id;primaryKey;not null"`
+	Name             string `gorm:"column:name;type:varchar(128);not null"`
+	SpeakingDuration int    `gorm:"column:speakingDuration;type:int;not null"`
+
+	Speakers []Speaker `gorm:"foreignKey:SpeakerQuotaTypeId"`
+
+	EventId string `gorm:"column:eventId;not null"`
 }
