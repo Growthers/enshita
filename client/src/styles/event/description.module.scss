@@ -1,0 +1,22 @@
+@use "../variables" as var;
+
+.enshita-event-description-content {
+  width: 100%;
+  padding: 1rem;
+  color: var.$global-black;
+  white-space: pre-wrap;
+  border: 1px solid;
+  border-color: var.$global-black;
+  border-radius: 0.5rem;
+
+  .enshita-event-description-link {
+    color: #0066cb;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .enshita-event-description-content {
+    font-size: 0.75rem;
+  }
+}
