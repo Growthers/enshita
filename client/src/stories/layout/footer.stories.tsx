@@ -6,8 +6,6 @@ type T = typeof Footer;
 type Story = ComponentStoryObj<T>;
 
 export default {
-  title: "Footer",
-
   component: Footer,
 } as ComponentMeta<T>;
 
