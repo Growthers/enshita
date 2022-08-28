@@ -1,4 +1,4 @@
-package models
+package entity
 
 import "time"
 
@@ -12,4 +12,8 @@ type Event struct {
 	OGP         string    `gorm:"column:ogp;type:varchar(256);not null"`
 	Status      int       `gorm:"column:status;type:int(1);not null"`
 	HashTag     string    `gorm:"column:hashTag;type:varchar(128);not null"`
+
+	Speakers          []Speaker          `gorm:"foreignKey:EventID"`
+	Applications      []Application      `gorm:"foreignKey:EventID"`
+	SpeakerQuotaTypes []SpeakerQuotaType `gorm:"foreignKey:EventID"`
 }

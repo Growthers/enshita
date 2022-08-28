@@ -1,4 +1,4 @@
-name: Test codes
+name: Test codes(Server)
 
 on:
   pull_request:
@@ -6,20 +6,20 @@ on:
       - main
 
 env:
-  workdir: client
-  node-version: lts/*
+  workdir: server
+  go-version: ">=1.17.0"
 
 jobs:
-  front-filter:
+  server-filter:
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
       pull-requests: 'read'
     outputs:
-      client: ${{ steps.changes.outputs.client }}
+      server: ${{ steps.changes.outputs.server }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: Check for file changes
         uses: dorny/paths-filter@v2
         id: changes
@@ -28,22 +28,22 @@ jobs:
           filters: .github/filters.yml
   run-test:
     runs-on: ubuntu-latest
-    needs: front-filter
-    if: needs.front-filter.outputs.client == 'true'
+    needs: server-filter
+    if: needs.server-filter.outputs.server == 'true'
     defaults:
       run:
         working-directory: ${{ env.workdir }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3
+        uses: actions/checkout@v2
+      - name: Setup Go environment
+        uses: actions/setup-go@v3
         with:
-          node-version: ${{ env.node-version }}
-      - name: Install Dependencies
-        run: yarn install --immutable
+          go-version: ${{ env.go-version }}
+      - name: Install dependencies
+        run: go install
       - name: Run test
-        run: yarn run test
+        run: go test ./...
   run-test-check:
     if: ${{ ! failure() }}
     needs: run-test
