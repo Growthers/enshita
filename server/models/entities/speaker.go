@@ -1,4 +1,4 @@
-package models
+package entities
 
 type Speaker struct {
 	ID               string             `gorm:"column:id;primaryKey;not null"`
