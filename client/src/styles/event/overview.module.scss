@@ -1,0 +1,90 @@
+@use "../variables" as var;
+
+.enshita-event-overview {
+  width: 100%;
+  padding: 1rem;
+  color: var.$global-black;
+  border: 1px solid;
+  border-color: var.$global-black;
+  border-radius: 0.5rem;
+}
+
+.enshita-event-venue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.enshita-event-apply {
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.enshita-event-apply-box {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.enshita-event-deadline {
+  text-align: center;
+
+  time {
+    font-size: 1rem;
+  }
+
+  p {
+    padding-top: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+.enshita-event-speaker-quota-type-list {
+  padding-top: 1rem;
+}
+
+.enshita-event-speaker-quota-type {
+  display: grid;
+  grid-template-columns: 20% 40% 20% 20%;
+  padding: 0.25rem;
+  font-size: 1.25rem;
+
+  .enshita-event-speaker-quota-type-name {
+    grid-column: 2/3;
+    text-align: left;
+  }
+
+  .enshita-event-speaker-quota-type-currently {
+    grid-column: 3/4;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .enshita-event-venue {
+    font-size: 1rem;
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
+
+  .enshita-event-deadline {
+    time {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+  }
+
+  .enshita-event-speaker-quota-type {
+    font-size: 14px;
+  }
+}
