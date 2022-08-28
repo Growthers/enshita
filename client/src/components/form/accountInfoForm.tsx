@@ -1,10 +1,11 @@
 import { FC, useState } from "react";
 import styles from "~/styles/components/form/accountInfoForm.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { client } from "~/libs/apiClient";
+import { Button } from "../button/button";
 
 type FormDataProps = {
   mail: string;
@@ -84,7 +85,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
             <small>mail Address</small>
             <div className={styles["enshita-accountinfoform-textarea"]}>
               <div className={styles["enshita-accountinfoform-icon"]}>
-                <Icon icon="ci:mail" width="15" height="15"/>
+                <Icon icon="ci:mail" width="15" height="15" />
               </div>
               <input
                 className={styles["enshita-accountinfoform-input-i1"]}
@@ -102,7 +103,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
             <small>Username</small>
             <div className={styles["enshita-accountinfoform-textarea"]}>
               <div className={styles["enshita-accountinfoform-icon"]}>
-              <Icon icon="ant-design:user-outlined" width="15" height="15"/>
+                <Icon icon="ant-design:user-outlined" width="15" height="15" />
               </div>
               <input
                 className={styles["enshita-accountinfoform-input-i1"]}
@@ -134,7 +135,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
             <small>New Password</small>
             <div className={styles["enshita-accountinfoform-textarea"]}>
               <div className={styles["enshita-accountinfoform-icon"]}>
-                <Icon icon="bxs:lock-alt" width="15" height="15"/>
+                <Icon icon="bxs:lock-alt" width="15" height="15" />
               </div>
               <input
                 type={IsShow ? "password" : "text"}
@@ -148,8 +149,16 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
                   setShow(!IsShow);
                 }}
               >
-                {IsShow && <Icon icon="ant-design:eye-filled" width="15" height="15"/>}
-                {!IsShow && <Icon icon="ant-design:eye-invisible-filled" width="15" height="15"/>}
+                {IsShow && (
+                  <Icon icon="ant-design:eye-filled" width="15" height="15" />
+                )}
+                {!IsShow && (
+                  <Icon
+                    icon="ant-design:eye-invisible-filled"
+                    width="15"
+                    height="15"
+                  />
+                )}
               </button>
             </div>
             <div className={styles["enshita-accountinfoform-error"]}>
@@ -171,7 +180,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
             <small>Current Password</small>
             <div className={styles["enshita-accountinfoform-textarea"]}>
               <div className={styles["enshita-accountinfoform-icon"]}>
-                <Icon icon="bxs:lock-alt" width="15" height="15"/>
+                <Icon icon="bxs:lock-alt" width="15" height="15" />
               </div>
               <input
                 type={IsShow ? "password" : "text"}
@@ -185,8 +194,16 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
                   setShow(!IsShow);
                 }}
               >
-                {IsShow && <Icon icon="ant-design:eye-filled" width="15" height="15"/>}
-                {!IsShow && <Icon icon="ant-design:eye-invisible-filled" width="15" height="15"/>}
+                {IsShow && (
+                  <Icon icon="ant-design:eye-filled" width="15" height="15" />
+                )}
+                {!IsShow && (
+                  <Icon
+                    icon="ant-design:eye-invisible-filled"
+                    width="15"
+                    height="15"
+                  />
+                )}
               </button>
             </div>
             <div className={styles["enshita-accountinfoform-error"]}>
@@ -211,9 +228,16 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
           </label>
         </div>
         <div className={styles["enshita-accountinfoform-button"]}>
-          <button type="submit" onClick={() => setNotUpdate(false)}>
+          <Button
+            type="submit"
+            disabled={false}
+            variant="normal"
+            boxStyles={styles["enshita-button-update-box"]}
+            textStyles={styles["enshita-button-update-text"]}
+            onClick={() => setNotUpdate(false)}
+          >
             update
-          </button>
+          </Button>
         </div>
       </form>
     </div>
