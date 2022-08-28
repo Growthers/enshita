@@ -1,4 +1,4 @@
-package models
+package entities
 
 type User struct {
 	ID       string `gorm:"column:id;primaryKey;not null"`
