@@ -2,14 +2,14 @@ package domain
 
 import "time"
 
-type GetForm struct {
+type GetFormResponse struct {
 	ID        string    `json:"id"`
 	Title     string    `json:"title"`
 	Deadline  time.Time `json:"deadline"`
 	Enable    bool      `json:"enable"`
 	Questions struct {
 		Name             string `json:"name"`
-		Mail             string `json:"mail"`
+		EMail            string `json:"email"`
 		Title            string `json:"title"`
 		Paragraph        string `json:"paragraph"`
 		SpeakerQuotaType []struct {
