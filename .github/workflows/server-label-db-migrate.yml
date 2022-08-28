@@ -1,0 +1,16 @@
+name: Auto Labeler
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  auto-label:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
