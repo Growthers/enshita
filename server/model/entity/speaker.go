@@ -8,6 +8,6 @@ type Speaker struct {
 	Duration      int    `gorm:"column:duration;type:int;not null"`
 	SpeakingOrder int    `gorm:"column:speakingOrder;type:int;not null"`
 
-	SpeakerQuotaTypeId string `gorm:"column:speakerQuotaTypeId;not null"`
-	EventId            string `gorm:"column:eventId;not null"`
+	SpeakerQuotaTypeID string `gorm:"column:speakerQuotaTypeId;not null"`
+	EventID            string `gorm:"column:eventId;not null"`
 }
