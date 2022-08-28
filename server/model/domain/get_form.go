@@ -9,7 +9,7 @@ type GetFormResponse struct {
 	Enable    bool      `json:"enable"`
 	Questions struct {
 		Name             string `json:"name"`
-		EMail            string `json:"email"`
+		Email            string `json:"email"`
 		Title            string `json:"title"`
 		Paragraph        string `json:"paragraph"`
 		SpeakerQuotaType []struct {
