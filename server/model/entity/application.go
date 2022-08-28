@@ -1,6 +1,8 @@
-package models
+package entity
 
-import "time"
+import (
+	"time"
+)
 
 type Application struct {
 	ID       string    `gorm:"column:id;primaryKey;not null"`
