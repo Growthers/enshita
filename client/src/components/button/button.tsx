@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { InlineIcon } from "@iconify/react";
-import styles from "~/styles/button.module.scss";
+import styles from "~/styles/components/button/button.module.scss";
 import type { ButtonIconProperties, ButtonProperties } from "./type/model";
 
 const ButtonIcon: FC<ButtonIconProperties> = ({ icon, css, ...rest }) => (
