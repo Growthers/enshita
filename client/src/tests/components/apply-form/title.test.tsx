@@ -6,10 +6,10 @@ import * as stories from "../../../stories/apply-form-title.stories";
 const { Default } = composeStories(stories);
 
 const options = {
-  name: "共同開発鯖LT #4"
-}
+  name: "共同開発鯖LT #4",
+};
 
-describe("(components) form-title", () => {
+describe("(components) apply-form title", () => {
   test("to be [role=heading]", () => {
     const { getByRole } = render(<Default />);
     expect(getByRole("heading", options));
