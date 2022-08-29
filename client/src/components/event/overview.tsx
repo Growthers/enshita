@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 import type { SpeakerQuotaType } from "~/pages/event";
 import EventDate from "~/components/event/date";
 import { AnchorButton } from "~/components/button/anchor-button";
-import { str2DateInfo } from "~/utils/date";
+import { str2Date, getDateInfo } from "~/utils/date";
 import styles from "~/styles/event/overview.module.scss";
 
 type Props = {
@@ -33,7 +33,8 @@ const EventOverview: React.FC<Props> = props => {
     speakerQuotaTypeList,
     venue,
   } = props;
-  const deadlineInfo = str2DateInfo(deadline);
+  const deadlineDate = str2Date(deadline);
+  const deadlineInfo = deadlineDate ? getDateInfo(deadlineDate) : null;
   const [buttonText, setButtonText] = useState("");
   const [buttonLink, setButtonLink] = useState<string | undefined>(undefined);
 

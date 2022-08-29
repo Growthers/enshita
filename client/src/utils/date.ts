@@ -83,8 +83,3 @@ export const getDateDiff = (date1: Date, date2: Date) => {
 
   return data;
 };
-
-export const str2DateInfo = (str: string) => {
-  const date = str2Date(str);
-  return date ? getDateInfo(date) : null;
-};
