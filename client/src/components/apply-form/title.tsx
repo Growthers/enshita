@@ -1,8 +1,8 @@
-import React from "react";
+import type { FC } from "react";
 import styles from "~/styles/components/apply-form/title.module.scss";
 import type { TitleProperties } from "./type/model";
 
-const Title: React.FC<TitleProperties> = ({ title }) => (
+const Title: FC<TitleProperties> = ({ title }) => (
   <div className={styles["enshita-apply-form-title-box"]}>
     <div className={styles["enshita-apply-form-title-wrapper"]}>
       <h1 className={styles["enshita-apply-form-title"]}>{title}</h1>
