@@ -12,7 +12,7 @@ type UpdateEventResponse struct {
 	OGP                  string    `json:"ogp"`
 	Status               string    `json:"status"`
 	HashTag              string    `json:"hashTag"`
-	DeadLine             string    `json:"deadLine"`
+	Deadline             string    `json:"deadline"`
 	SpeakerQuotaTypeList []struct {
 		ID           string `json:"id"`
 		Name         string `json:"name"`
