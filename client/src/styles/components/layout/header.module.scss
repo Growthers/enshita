@@ -10,7 +10,6 @@
   padding-top: 0.5rem;
   font-size: 2.5rem;
   font-weight: 900;
-  color: var.$global-white;
 }
 
 .enshita-header-pc {
@@ -18,6 +17,10 @@
   height: 6rem;
   padding-right: 2rem;
   padding-left: 1.5rem;
+}
+
+.enshita-header-svg {
+  fill: var.$global-white;
 }
 
 @media screen and (max-width: 768px) {
