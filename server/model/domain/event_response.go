@@ -2,7 +2,7 @@ package domain
 
 import "time"
 
-type Event struct {
+type EventResponse struct {
 	EventID              string    `json:"eventId"`
 	Title                string    `json:"title"`
 	Description          string    `json:"description"`
