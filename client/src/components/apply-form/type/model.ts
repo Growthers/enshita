@@ -1,3 +1,3 @@
 export type TitleProperties = {
-  title: string
-}
+  title: string;
+};

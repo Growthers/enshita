@@ -8,6 +8,9 @@ const data = {
   title: "共同開発鯖LT #4",
 };
 
-export default { args: { title: data.title }, component: Title } as ComponentMeta<T>;
+export default {
+  args: { title: data.title },
+  component: Title,
+} as ComponentMeta<T>;
 
 export const Default: Story = {};
