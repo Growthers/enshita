@@ -1,4 +1,4 @@
-package entities
+package entity
 
 type Layout struct {
 	ID        string `gorm:"column:id;primaryKey;not null"`
