@@ -25,7 +25,7 @@ type Comments struct {
 	Content  string `json:"content"`
 }
 type SpeakerChange struct {
-	SlotID string `json:"slotid"`
+	SlotID string `json:"slotID"`
 }
 
 type MemoUpdate struct {
