@@ -6,7 +6,7 @@ type T = typeof Form;
 type Story = ComponentStoryObj<T>;
 
 export default {
-  title: "Account Information Form",
+  title: "account-information-form",
   args: {
     mail: "abc@example.com",
     userName: "hoge",
