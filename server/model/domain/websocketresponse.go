@@ -11,7 +11,7 @@ type SceneChange struct {
 }
 
 type ChangeVolume struct {
-	Volume int
+	Volume int `json:"volume"`
 }
 
 type MessageUpdate struct {
@@ -19,15 +19,15 @@ type MessageUpdate struct {
 }
 
 type Comments struct {
-	Platform string
-	Name     string
-	IconURL  string
-	Content  string
+	Platform string `json:"platform"`
+	Name     string `json:"Name"`
+	IconURL  string `json:"iconURL"`
+	Content  string `json:"content"`
 }
 type SpeakerChange struct {
-	SlotID string
+	SlotID string `json:"slotid"`
 }
 
 type MemoUpdate struct {
-	Contents string
+	Contents string `json:"contents"`
 }
