@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Redirect } from "wouter";
 import { About, Home, Event } from "./pages";
 
 const Router: React.FC = () => (
@@ -7,8 +7,10 @@ const Router: React.FC = () => (
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
 
-    {/* event idがないときはindexを表示する */}
-    <Route path="/event" component={Home} />
+    {/* event idがないときはindexへ飛ばす */}
+    <Route path="/event">
+      <Redirect to="/" />
+    </Route>
     <Route path="/event/:id">{params => <Event eventId={params.id} />}</Route>
   </Switch>
 );
