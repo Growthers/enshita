@@ -1,3 +1,3 @@
 package domain
 
-type CreateEventResponse Event
+type CreateEventResponse EventResponse
