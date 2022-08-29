@@ -30,5 +30,5 @@ export type AnchorButtonProperties = ComponentPropsWithoutRef<"a"> &
     children?: string;
     boxStyles?: string;
     textStyles?: string;
-    isSamePage?: boolean;
+    isSameOrigin?: boolean;
   };

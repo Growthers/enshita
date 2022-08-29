@@ -23,14 +23,14 @@ const AnchorButton: FC<AnchorButtonProperties> = ({
   iconStyles,
   boxStyles,
   textStyles,
-  isSamePage,
+  isSameOrigin,
   href,
   ...rest
 }) => (
   <a
     className={`${styles["enshita-button-box"]} ${boxStyles}`}
     href={href}
-    target={isSamePage ? "" : "_blank"}
+    target={isSameOrigin ? "" : "_blank"}
     rel="noopener noreferrer"
     role="button"
     {...rest}

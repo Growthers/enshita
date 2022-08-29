@@ -84,7 +84,7 @@ const EventOverview: React.FC<Props> = props => {
           variant="normal"
           href={buttonLink}
           boxStyles={styles["enshita-event-apply-box"]}
-          isSamePage
+          isSameOrigin
         >
           {buttonText}
         </AnchorButton>
