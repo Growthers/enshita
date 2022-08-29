@@ -30,12 +30,15 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.7",
     "@iconify/react": "^3.2.2",
     "axios": "0.27.2",
     "destyle.css": "3.0.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "wouter": "2.8.0-alpha.2"
+    "react-hook-form": "^7.34.2",
+    "wouter": "2.8.0-alpha.2",
+    "zod": "^3.18.0"
   },
   "devDependencies": {
     "@babel/core": "7.18.13",
