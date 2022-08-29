@@ -3,22 +3,53 @@
 exports[`(components) header > test Snap Shot 1`] = `
 <div>
   <header
-    class="_enshita-header_1kfzr_1 _enshita-header-pc_1kfzr_14"
+    class="_enshita-header_1c9jq_1 _enshita-header-pc_1c9jq_13"
     role="banner"
   >
     <div
-      class="_enshita-header-logo_1kfzr_7"
+      class="_enshita-header-logo_1c9jq_7"
     >
-      enshita
+      <a
+        href="./"
+        rel="noopener noreferrer"
+      >
+        <svg
+          height="50"
+          viewBox="0 0 140 50"
+          width="140"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text
+            class="_enshita-header-svg_1c9jq_20"
+            font-size="40"
+            x="0"
+            y="40"
+          >
+            enshita
+          </text>
+        </svg>
+      </a>
     </div>
     <div
-      class="_enshita-header-hidden_1kfzr_22"
+      class="_enshita-header-hidden_1c9jq_30"
     >
-      button
+      <a
+        class="_enshita-button-box_8w723_17 _enshita-header-button_1c9jq_24"
+        href="./login"
+        rel="noopener noreferrer"
+        role="button"
+        target="_blank"
+      >
+        <p
+          class="_enshita-button-text_8w723_36 undefined"
+        >
+          login
+        </p>
+      </a>
     </div>
   </header>
   <main
-    class="_enshita-layout-body_q1qg5_1"
+    class="_enshita-layout-body_1hr2h_1"
     role="main"
   >
     <div>
@@ -27,33 +58,47 @@ exports[`(components) header > test Snap Shot 1`] = `
   </main>
   <footer>
     <div
-      class="_enshita-footer_tdctu_1"
+      class="_enshita-footer_1qyaz_1"
     >
       <div
-        class="_enshita-footer-content_tdctu_26"
+        class="_enshita-footer-content_1qyaz_26"
       >
-        <p
-          class="_enshita-footer-logo_tdctu_11 _enshita-footer-hidden_tdctu_67"
-        >
-          enshita
-        </p>
         <div
-          class="_enshita-footer-menu_tdctu_33"
+          class="_enshita-footer-logo_1qyaz_11 _enshita-footer-hidden_1qyaz_68"
+        >
+          <svg
+            height="50"
+            viewBox="0 0 140 50"
+            width="140"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <text
+              class="_enshita-footer-svg_1qyaz_44"
+              font-size="40"
+              x="0"
+              y="40"
+            >
+              enshita
+            </text>
+          </svg>
+        </div>
+        <div
+          class="_enshita-footer-menu_1qyaz_33"
         >
           <p
-            class="_enshita-footer-about_tdctu_44"
+            class="_enshita-footer-about_1qyaz_48"
           >
             About Growthers
           </p>
           <ul
-            class="_enshita-footer-list_tdctu_52"
+            class="_enshita-footer-list_1qyaz_56"
             role="navigation"
           >
             <li
-              class="_enshita-footer-homepage_tdctu_94"
+              class="_enshita-footer-homepage_1qyaz_95"
             >
               <a
-                class="_enshita-footer-link_tdctu_58"
+                class="_enshita-footer-link_1qyaz_62"
                 href="~/components/layout/footer"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -62,10 +107,10 @@ exports[`(components) header > test Snap Shot 1`] = `
               </a>
             </li>
             <li
-              class="_enshita-footer-twitter_tdctu_91"
+              class="_enshita-footer-twitter_1qyaz_92"
             >
               <a
-                class="_enshita-footer-link_tdctu_58"
+                class="_enshita-footer-link_1qyaz_62"
                 href="~/components/layout/footer"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -74,10 +119,10 @@ exports[`(components) header > test Snap Shot 1`] = `
               </a>
             </li>
             <li
-              class="_enshita-footer-github_tdctu_97"
+              class="_enshita-footer-github_1qyaz_98"
             >
               <a
-                class="_enshita-footer-link_tdctu_58"
+                class="_enshita-footer-link_1qyaz_62"
                 href="~/components/layout/footer"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -89,7 +134,7 @@ exports[`(components) header > test Snap Shot 1`] = `
         </div>
       </div>
       <p
-        class="_enshita-footer-copyright_tdctu_19"
+        class="_enshita-footer-copyright_1qyaz_19"
       >
         <small>
           Copyright © 2022 Growthers
