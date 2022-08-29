@@ -1,14 +1,13 @@
-package models
+package domain
 
-type WebSocketResponse[T any]struct {
+type WebSocketResponse[T any] struct {
 	Type    string
 	Payload T
-
 }
 
 type SceneChange struct {
-	SceneType string
-	Volume    int
+	SceneType string `json:"screenType"`
+	Volume    int    `json:"volume"`
 }
 
 type ChangeVolume struct {
