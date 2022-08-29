@@ -23,6 +23,11 @@
   fill: var.$global-white;
 }
 
+.enshita-header-button {
+  height: 2rem;
+  width: 5rem;
+}
+
 @media screen and (max-width: 768px) {
   .enshita-header-hidden {
     display: none;
