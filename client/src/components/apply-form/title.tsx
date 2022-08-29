@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "~/styles/apply-form.module.scss"
+import styles from "~/styles/components/apply-form/title.module.scss"
 import type { TitleProperties } from "./type/model";
 
 const Title: React.FC<TitleProperties> = ({ title }) => (
