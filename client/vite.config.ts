@@ -1,6 +1,6 @@
 import react from "@vitejs/plugin-react";
 import * as path from "node:path";
-import { defineConfig } from "vitest/config";
+import { defineConfig } from "vite";
 
 const PRODUCTION = "production";
 const DEVELOPMENT = "development";
@@ -55,10 +55,6 @@ export default defineConfig({
   publicDir: `${process.cwd()}/public`,
   server: {
     port: 3000,
-  },
-  test: {
-    globals: true,
-    environment: "happy-dom",
   },
   css: {
     postcss: {
