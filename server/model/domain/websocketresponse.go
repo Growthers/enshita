@@ -1,8 +1,9 @@
 package models
 
-type WebSocketResponse[T any] struct {
+type WebSocketResponse[T any]struct {
 	Type    string
 	Payload T
+
 }
 
 type SceneChange struct {
@@ -21,7 +22,7 @@ type MessageUpdate struct {
 type Comments struct {
 	Platform string
 	Name     string
-	IconUrl  string
+	IconURL  string
 	Content  string
 }
 type SpeakerChange struct {
