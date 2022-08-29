@@ -1,5 +1,28 @@
 // Vitest Snapshot v1
 
+exports[`(component) TweetButton > Snap Shot - Contain Hashtags 1`] = `
+<div>
+  <a
+    class="_enshita-button-box_8w723_17 _enshita-event-tweet-box_1hg6k_5"
+    href="https://twitter.com/intent/tweet?text=Test%20Tweet%20Content&url=&hashtags=共同開発鯖"
+    rel="noopener noreferrer"
+    role="button"
+    target="_blank"
+  >
+    <div
+      class="_enshita-button-icon-box_8w723_1 _enshita-event-tweet-icon_1hg6k_1"
+    >
+      <span />
+    </div>
+    <p
+      class="_enshita-button-text_8w723_36 _enshita-event-tweet-text_1hg6k_13"
+    >
+      Tweet
+    </p>
+  </a>
+</div>
+`;
+
 exports[`(component) TweetButton > Snap Shot - Contain Hashtags and URL 1`] = `
 <div>
   <a
@@ -50,7 +73,7 @@ exports[`(component) TweetButton > Snap Shot - Only Text 1`] = `
 <div>
   <a
     class="_enshita-button-box_8w723_17 _enshita-event-tweet-box_1hg6k_5"
-    href="https://twitter.com/intent/tweet?text=Test%20Tweet%20Content&hashtags="
+    href="https://twitter.com/intent/tweet?text=Test%20Tweet%20Content&url=&hashtags="
     rel="noopener noreferrer"
     role="button"
     target="_blank"

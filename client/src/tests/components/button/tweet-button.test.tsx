@@ -15,6 +15,13 @@ describe("(component) TweetButton", () => {
     expect(container).toMatchSnapshot();
   });
 
+  test("Snap Shot - Contain Hashtags", () => {
+    const { container } = render(
+      <TweetButton text="Test Tweet Content" hashtags={["共同開発鯖"]} />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
   test("Snap Shot - Contain Hashtags and URL", () => {
     const { container } = render(
       <TweetButton

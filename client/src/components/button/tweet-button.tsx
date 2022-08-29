@@ -10,22 +10,18 @@ type Props = {
 
 const TweetButton: React.FC<Props> = props => {
   const { text, url, hashtags } = props;
-  const tweetLink = () => {
-    const parts = ["https://twitter.com/intent/tweet"];
-    parts.push(`?text=${text.replace(/ /g, "%20")}`);
-    if (url) parts.push(`&url=${url}`);
-    // # を除去して , 区切りの文字列にする
-    if (hashtags)
-      parts.push(
-        `&hashtags=${hashtags.map(v => v.replace("#", "")).join(",")}`,
-      );
-    return parts.join("");
-  };
+  // URL, hashtagsがないときはパラメータの値がなにもないが、問題なく指定した項目のみでTweet可能
+  const tweetLink = `https://twitter.com/intent/tweet?text=${text.replace(
+    / /g,
+    "%20",
+  )}&url=${url}&hashtags=${
+    hashtags ? hashtags.map(v => v.replace("#", "")).join(",") : ""
+  }`;
 
   return (
     <AnchorButton
       variant="icon"
-      href={tweetLink()}
+      href={tweetLink}
       icon="akar-icons:twitter-fill"
       iconStyles={styles["enshita-event-tweet-icon"]}
       boxStyles={styles["enshita-event-tweet-box"]}
