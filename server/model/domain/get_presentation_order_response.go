@@ -1,6 +1,5 @@
 package domain
 
-import "time"
 
 type GetPresentationOrderResponse struct {
 	ID       string    `json:"id"`
