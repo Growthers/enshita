@@ -3,9 +3,9 @@ package domain
 import "time"
 
 type CreateFormRequest struct {
-	Title       string `json:"title"`
-	Description string `json:"description"`
-	Deadline    string `json:"deadline"`
+	Title       string    `json:"title"`
+	Description string    `json:"description"`
+	Deadline    time.Time `json:"deadline"`
 	Questions   struct {
 		Name                 string `json:"name"`
 		Email                string `json:"email"`
