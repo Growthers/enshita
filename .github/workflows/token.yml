@@ -1,7 +1,7 @@
 name: auto generate design tokens from data.json
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - main
 
