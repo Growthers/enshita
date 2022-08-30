@@ -9,7 +9,7 @@ const data = {
   eventId: "123456789",
   startDate: "2022-08-27T19:30:00+09:00",
   endDate: "2022-08-27T23:00:00+09:00",
-  venue: "Discord",
+  venue: "",
   status: "open",
   deadline: "2022-08-27T00:00:00+09:00",
   speakerQuotaTypeList: [
@@ -33,6 +33,52 @@ const data = {
 export default {
   component: EventOverview,
   args: data,
+  argTypes: {
+    eventId: {
+      description: "イベントID",
+      control: {
+        type: "text",
+      },
+    },
+    startDate: {
+      description: "イベント開始日時 (ISO8601)",
+      control: {
+        type: "text",
+      },
+    },
+    endDate: {
+      description: "イベント終了日時 (ISO8601)",
+      control: {
+        type: "text",
+      },
+    },
+    venue: {
+      description: "開催場所",
+      control: {
+        type: "text",
+      },
+    },
+    status: {
+      description: "イベントステータス",
+      control: {
+        type: "select",
+        options: [
+          "preparing",
+          "open",
+          "close",
+          "suddenOpen",
+          "suddenClose",
+          "finish",
+        ],
+      },
+    },
+  },
 } as ComponentMeta<T>;
 
 export const Default: Story = {};
+
+export const Venue: Story = {
+  args: {
+    venue: "Discord",
+  },
+};

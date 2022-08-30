@@ -13,6 +13,14 @@ const data = {
 export default {
   component: EventDescription,
   args: { description: data.description },
+  argTypes: {
+    description: {
+      description: "イベント説明",
+      control: {
+        type: "text",
+      },
+    },
+  },
 } as ComponentMeta<T>;
 
 export const Default: Story = {};

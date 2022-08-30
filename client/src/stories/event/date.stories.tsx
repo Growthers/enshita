@@ -13,6 +13,20 @@ const data = {
 export default {
   component: EventDate,
   args: { startStrDate: data.startStrDate, endStrDate: data.endStrDate },
+  argTypes: {
+    startStrDate: {
+      description: "イベント開始日時 (ISO8601)",
+      control: {
+        type: "text",
+      },
+    },
+    endStrDate: {
+      description: "イベント終了日時 (ISO8601)",
+      control: {
+        type: "text",
+      },
+    },
+  },
 } as ComponentMeta<T>;
 
 export const Default: Story = {};
