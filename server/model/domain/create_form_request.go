@@ -10,11 +10,11 @@ type CreateFormRequest struct {
 		Name                 string `json:"name"`
 		Email                string `json:"email"`
 		SpeakerQuotaTypeList []struct {
-			ID           string    `json:"id"`
-			Name         string    `json:"name"`
-			Time         int `json:"time"`
-			CurrentCount int       `json:"currentCount"`
-			Total        int       `json:"total"`
+			ID           string `json:"id"`
+			Name         string `json:"name"`
+			Time         int    `json:"time"`
+			CurrentCount int    `json:"currentCount"`
+			Total        int    `json:"total"`
 		} `json:"speakerQuotaTypeList"`
 		Title     string `json:"title"`
 		Paragraph string `json:"paragraph"`
