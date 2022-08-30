@@ -45,7 +45,7 @@ exports[`(components) footer > test Snap Shot 1`] = `
             >
               <a
                 class="_enshita-footer-link_1qyaz_62"
-                href="~/components/layout/footer"
+                href="https://growthers.dev/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -57,7 +57,7 @@ exports[`(components) footer > test Snap Shot 1`] = `
             >
               <a
                 class="_enshita-footer-link_1qyaz_62"
-                href="~/components/layout/footer"
+                href="https://twitter.com/UdcGrowthers/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -69,7 +69,7 @@ exports[`(components) footer > test Snap Shot 1`] = `
             >
               <a
                 class="_enshita-footer-link_1qyaz_62"
-                href="~/components/layout/footer"
+                href="https://github.com/Growthers/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
