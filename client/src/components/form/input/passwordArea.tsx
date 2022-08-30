@@ -9,7 +9,7 @@ const Password = <T extends string>({
   register,
   itsError,
 }: PasswordProps<T>): JSX.Element => {
-  const [IsShow, setShow] = useState(true);
+  const [isShow, setShow] = useState(true);
 
   return (
     <div className={styles["enshita-textarea-form-body"]}>
@@ -22,7 +22,7 @@ const Password = <T extends string>({
             <Icon icon="bxs:lock-alt" width="15" height="15" />
           </div>
           <input
-            type={IsShow ? "password" : "text"}
+            type={isShow ? "password" : "text"}
             className={styles["enshita-textarea-input-password"]}
             {...register}
           />
@@ -30,13 +30,13 @@ const Password = <T extends string>({
             type="button"
             className={styles["enshita-textarea-icon"]}
             onClick={() => {
-              setShow(!IsShow);
+              setShow(!isShow);
             }}
           >
-            {IsShow && (
+            {isShow && (
               <Icon icon="ant-design:eye-filled" width="15" height="15" />
             )}
-            {!IsShow && (
+            {!isShow && (
               <Icon
                 icon="ant-design:eye-invisible-filled"
                 width="15"

@@ -43,8 +43,8 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
     },
   });
 
-  const [IsNotUpDate, setNotUpdate] = useState(false);
-  const [IsMatch, setMatch] = useState(false);
+  const [isNotUpDate, setNotUpdate] = useState(false);
+  const [isMatch, setMatch] = useState(false);
 
   const onSubmit: SubmitHandler<FormDataProps> = data => {
     if (data.newPassword !== data.reNewPassword) {
@@ -115,10 +115,10 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
 
         <div className={styles["enshita-accountinfoform-error"]}>
           <small>
-            {IsMatch && Object.keys(errors).length === 0 && (
+            {isMatch && Object.keys(errors).length === 0 && (
               <p>new password is not match</p>
             )}
-            {IsNotUpDate && Object.keys(errors).length === 0 && (
+            {isNotUpDate && Object.keys(errors).length === 0 && (
               <p>unable to update</p>
             )}
           </small>
