@@ -5,6 +5,7 @@ go 1.19
 require (
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/ory/dockertest/v3 v3.9.1
+	gorm.io/gorm v1.21.4
 )
 
 require (
@@ -22,6 +23,8 @@ require (
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/imdario/mergo v0.3.13 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.1 // indirect
 	github.com/lib/pq v1.10.2 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/moby/term v0.0.0-20220808134915-39b0c02b01ae // indirect
