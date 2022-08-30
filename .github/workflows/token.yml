@@ -11,10 +11,12 @@ env:
 jobs:
   run-style-dictionary:
     runs-on: ubuntu-latest
+    if: contains(github.head_ref, 'auto/design-tokens')
+    permissions:
+      contents: 'write'
     defaults:
       run:
         working-directory: ${{ env.workdir }}
-    if: contains(github.head_ref, 'auto/design-tokens')
     steps:
       - name: Checkout
         uses: actions/checkout@v3

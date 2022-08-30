@@ -30,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: front-filter
     if: needs.front-filter.outputs.client == 'true'
+    permissions:
+      contents: 'write'
     defaults:
       run:
         working-directory: ${{ env.workdir }}
