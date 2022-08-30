@@ -5,7 +5,7 @@ import type { SpeakerQuotaType } from "~/pages/event";
 import EventDate from "~/components/event/date";
 import { AnchorButton } from "~/components/button/anchor-button";
 import { str2Date, getDateInfo } from "~/utils/date";
-import styles from "~/styles/event/overview.module.scss";
+import styles from "~/styles/components/event/overview.module.scss";
 
 type Props = {
   eventId: string;

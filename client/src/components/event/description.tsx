@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "~/styles/event/description.module.scss";
+import styles from "~/styles/components/event/description.module.scss";
 
 type Props = {
   description: string;

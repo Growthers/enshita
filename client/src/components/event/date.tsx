@@ -1,7 +1,7 @@
 import React from "react";
 
 import { str2Date, getDateInfo, getDateDiff, fillzero } from "~/utils/date";
-import styles from "~/styles/event/date.module.scss";
+import styles from "~/styles/components/event/date.module.scss";
 
 type Props = {
   startStrDate: string;
