@@ -1,7 +1,7 @@
 package domain
 
 type WebSocketResponse[T any] struct {
-	Type    string
+	Type    string `json:"type"`
 	Payload T
 }
 
@@ -15,7 +15,7 @@ type ChangeVolume struct {
 }
 
 type MessageUpdate struct {
-	Message []string
+	Message []string `json:"message"`
 }
 
 type Comments struct {
