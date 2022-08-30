@@ -2,7 +2,7 @@ package domain
 
 type WebSocketResponse[T any] struct {
 	Type    string `json:"type"`
-	Payload T
+	Payload T `json:"payload"`
 }
 
 type SceneChange struct {
