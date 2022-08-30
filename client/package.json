@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Growthers/enshita"
+    "url": "git+https://github.com/Growthers/enshita.git"
   },
   "bugs": {
     "url": "https://github.com/Growthers/enshita/issues"
@@ -27,7 +27,8 @@
     "test:ui": "vitest --ui",
     "test:update": "vitest -u",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
     "@iconify/react": "^3.2.2",
@@ -51,7 +52,7 @@
     "@testing-library/react": "13.3.0",
     "@testing-library/user-event": "14.4.3",
     "@types/node": "17.0.42",
-    "@types/react": "18.0.17",
+    "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "@types/react-test-renderer": "18.0.0",
     "@typescript-eslint/eslint-plugin": "5.35.1",
@@ -60,6 +61,7 @@
     "@vitest/ui": "0.22.1",
     "autoprefixer": "10.4.8",
     "babel-loader": "8.2.5",
+    "chromatic": "^6.8.0",
     "eslint": "8.23.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "17.0.0",
