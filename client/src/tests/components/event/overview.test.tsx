@@ -1,11 +1,14 @@
+import { composeStories } from "@storybook/testing-react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import EventOverview from "~/components/event/overview";
+import * as stories from "~/stories/event/overview.stories";
+
+const { Default } = composeStories(stories);
 
 describe("(component) EventOverview", () => {
   test("Snap Shot - preparing", () => {
     const { container } = render(
-      <EventOverview
+      <Default
         eventId="123456789"
         startDate="2022-08-27T19:30:00+09:00"
         endDate="2022-08-27T23:00:00+09:00"
@@ -34,7 +37,7 @@ describe("(component) EventOverview", () => {
 
   test("Snap Shot - open", () => {
     const { container } = render(
-      <EventOverview
+      <Default
         eventId="123456789"
         startDate="2022-08-27T19:30:00+09:00"
         endDate="2022-08-27T23:00:00+09:00"
@@ -64,7 +67,7 @@ describe("(component) EventOverview", () => {
 
   test("Snap Shot - close", () => {
     const { container } = render(
-      <EventOverview
+      <Default
         eventId="123456789"
         startDate="2022-08-27T19:30:00+09:00"
         endDate="2022-08-27T23:00:00+09:00"
@@ -94,7 +97,7 @@ describe("(component) EventOverview", () => {
 
   test("Snap Shot - suddenOpen", () => {
     const { container } = render(
-      <EventOverview
+      <Default
         eventId="123456789"
         startDate="2022-08-27T19:30:00+09:00"
         endDate="2022-08-27T23:00:00+09:00"
@@ -124,7 +127,7 @@ describe("(component) EventOverview", () => {
 
   test("Snap Shot - suddenClose", () => {
     const { container } = render(
-      <EventOverview
+      <Default
         eventId="123456789"
         startDate="2022-08-27T19:30:00+09:00"
         endDate="2022-08-27T23:00:00+09:00"
@@ -154,7 +157,7 @@ describe("(component) EventOverview", () => {
 
   test("Snap Shot - finish", () => {
     const { container } = render(
-      <EventOverview
+      <Default
         eventId="123456789"
         startDate="2022-08-27T19:30:00+09:00"
         endDate="2022-08-27T23:00:00+09:00"
