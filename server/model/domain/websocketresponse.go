@@ -6,7 +6,7 @@ type WebSocketResponse[T any] struct {
 }
 
 type SceneChange struct {
-	SceneType string `json:"screenType"`
+	SceneType string `json:"sceneType"`
 	Volume    int    `json:"volume"`
 }
 
