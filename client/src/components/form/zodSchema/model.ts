@@ -6,7 +6,7 @@ const userNameModel = z
   .string()
   .min(3)
   .max(128)
-  .regex(/^[\w_]+?$/, {
+  .regex(/^\w+?$/, {
     message: "Contains invalid characters(able to use [a-z],[A-Z],[0-9],[_])",
   });
 
@@ -14,7 +14,7 @@ const passwordModel = z
   .string()
   .min(3)
   .max(128)
-  .regex(/^[\w_-]+?$/, {
+  .regex(/^[\w-]+?$/, {
     message: "Contains invalid characters(able to use [a-z],[A-Z],[0-9],[_-])",
   });
 
