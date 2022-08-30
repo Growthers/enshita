@@ -1,7 +1,7 @@
 name: auto generate design tokens from data.json
 
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - main
 
@@ -29,7 +29,6 @@ jobs:
       - name: Auto commit
         if: steps.changes.outputs.client == 'true'
         run: |
-          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           if (git diff --shortstat | grep '[0-9]'); then \
@@ -37,5 +36,3 @@ jobs:
             git commit -m "feat(front): update design tokens"; \
             git push origin HEAD:${GITHUB_REF}; \
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
