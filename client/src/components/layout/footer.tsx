@@ -29,7 +29,7 @@ const Footer: React.FC = () => (
           <ul className={styles["enshita-footer-list"]} role="navigation">
             <li className={styles["enshita-footer-homepage"]}>
               <a
-                href="~/components/layout/footer"
+                href="https://growthers.dev/"
                 className={`${styles["enshita-footer-link"]}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -39,7 +39,7 @@ const Footer: React.FC = () => (
             </li>
             <li className={styles["enshita-footer-twitter"]}>
               <a
-                href="~/components/layout/footer"
+                href="https://twitter.com/UdcGrowthers/"
                 className={`${styles["enshita-footer-link"]}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,7 +49,7 @@ const Footer: React.FC = () => (
             </li>
             <li className={styles["enshita-footer-github"]}>
               <a
-                href="~/components/layout/footer"
+                href="https://github.com/Growthers/"
                 className={`${styles["enshita-footer-link"]}`}
                 target="_blank"
                 rel="noopener noreferrer"
