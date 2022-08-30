@@ -7,6 +7,7 @@ type Speaker struct {
 	Email         string `gorm:"column:email;type:varchar(128);not null"`
 	Duration      int    `gorm:"column:duration;type:int;not null"`
 	SpeakingOrder int    `gorm:"column:speakingOrder;type:int;not null"`
+	Paragraph     string `gorm:"column:paragraph;type:text;not null"`
 
 	SpeakerQuotaTypeID string `gorm:"column:speakerQuotaTypeId;not null"`
 	EventID            string `gorm:"column:eventId;not null"`

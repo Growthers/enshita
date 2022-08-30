@@ -15,13 +15,10 @@ module.exports = {
   features: {
     storyStoreV7: true,
   },
-  async viteFinal(config, { configType }) {
-    const { config: userConfig } = await loadConfigFromFile(
-      path.resolve(process.cwd(), "../vite.config.ts"),
-    );
-    return mergeConfig(config, {
-      ...userConfig,
-      plugins: [],
-    });
-  },
+  async viteFinal(config) {
+    const {
+      config: { resolve },
+    } = await loadConfigFromFile(path.resolve(__dirname, '../vite.config.ts'));
+    return mergeConfig(config, { resolve });
+  }
 };

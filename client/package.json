@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Growthers/enshita"
+    "url": "git+https://github.com/Growthers/enshita.git"
   },
   "bugs": {
     "url": "https://github.com/Growthers/enshita/issues"
@@ -27,7 +27,8 @@
     "test:ui": "vitest --ui",
     "test:update": "vitest -u",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
     "@iconify/react": "^3.2.2",
@@ -60,7 +61,8 @@
     "@vitest/ui": "0.22.1",
     "autoprefixer": "10.4.8",
     "babel-loader": "8.2.5",
-    "eslint": "8.22.0",
+    "chromatic": "^6.8.0",
+    "eslint": "8.23.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "17.0.0",
     "eslint-config-prettier": "8.5.0",
@@ -70,7 +72,7 @@
     "eslint-plugin-react": "7.31.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-storybook": "0.6.4",
-    "happy-dom": "^6.0.4",
+    "jsdom": "^20.0.0",
     "postcss": "8.4.16",
     "prettier": "2.7.1",
     "react-test-renderer": "18.1.0",
@@ -87,6 +89,6 @@
     "vitest": "0.22.1"
   },
   "engines": {
-    "node": "16.16.0"
+    "node": "16.17.0"
   }
 }
