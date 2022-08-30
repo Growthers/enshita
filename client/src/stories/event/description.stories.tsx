@@ -1,26 +1,18 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import EventDescription from "~/components/event/description";
 
 type T = typeof EventDescription;
+type Story = ComponentStoryObj<T>;
 
-export default {
-  component: EventDescription,
-  argTypes: {
-    description: {
-      description: "イベント説明",
-      control: {
-        type: "text",
-      },
-    },
-  },
-} as ComponentMeta<T>;
-
-// eslint-disable-next-line react/jsx-props-no-spreading
-const Template: ComponentStory<T> = args => <EventDescription {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
+const data = {
   description:
     "イベントの説明です\n\nhttps://twitter.com\nこのようにURLがあるときはリンクに変換されます",
 };
+
+export default {
+  component: EventDescription,
+  args: { description: data.description },
+} as ComponentMeta<T>;
+
+export const Default: Story = {};
