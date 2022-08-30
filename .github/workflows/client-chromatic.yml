@@ -58,4 +58,4 @@ jobs:
     needs: chromatic-deployment
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Linter is successfully executed. "
+      - run: echo "Publish Storybook is successfully executed. "
