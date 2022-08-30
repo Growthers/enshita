@@ -6,7 +6,7 @@ import {
   getDateDiff,
 } from "~/utils/date";
 
-describe("fillzero", () => {
+describe("(utils) fillzero", () => {
   test("5: number -> 05: string", () => {
     const result = fillzero(5, 2);
     expect(result).toBe("05");
@@ -18,7 +18,7 @@ describe("fillzero", () => {
   });
 });
 
-describe("str2Date", () => {
+describe("(utils) str2Date", () => {
   test("19700101T090000+0900", () => {
     const result = str2Date("19700101T090000+0900");
     expect(result).toEqual(new Date("1970-01-01T09:00:00+09:00"));
@@ -40,7 +40,7 @@ describe("str2Date", () => {
   });
 });
 
-describe("getDateInfo", () => {
+describe("(utils) getDateInfo", () => {
   test("1970-01-01T09:00:00+09:00", () => {
     const result = getDateInfo(new Date("1970-01-01T09:00:00+09:00"));
     expect(result).toEqual({
@@ -80,7 +80,7 @@ describe("getDateInfo", () => {
   });
 });
 
-describe("getUNIXTime", () => {
+describe("(utils) getUNIXTime", () => {
   test("1970-01-01T09:00:00+09:00", () => {
     const result = getUNIXTime(new Date("1970-01-01T09:00:00+09:00"));
     expect(result).toBe(0);
@@ -92,7 +92,7 @@ describe("getUNIXTime", () => {
   });
 });
 
-describe("getDateDiff", () => {
+describe("(utils) getDateDiff", () => {
   test("2022-04-01T12:30:00Z - 1970-01-01T09:00:00+09:00", () => {
     const result = getDateDiff(
       new Date("1970-01-01T09:00:00+09:00"),
