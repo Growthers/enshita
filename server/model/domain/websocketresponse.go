@@ -20,7 +20,7 @@ type MessageUpdate struct {
 
 type Comments struct {
 	Platform string `json:"platform"`
-	Name     string `json:"Name"`
+	Name     string `json:"name"`
 	IconURL  string `json:"iconURL"`
 	Content  string `json:"content"`
 }
