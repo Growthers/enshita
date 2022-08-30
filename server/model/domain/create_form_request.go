@@ -12,7 +12,7 @@ type CreateFormRequest struct {
 		SpeakerQuotaTypeList []struct {
 			ID           string    `json:"id"`
 			Name         string    `json:"name"`
-			Time         time.Time `json:"time"`
+			Time         int `json:"time"`
 			CurrentCount int       `json:"currentCount"`
 			Total        int       `json:"total"`
 		} `json:"speakerQuotaTypeList"`
