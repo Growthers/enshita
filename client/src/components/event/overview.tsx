@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 
-import type { SpeakerQuotaType } from "~/pages/event";
+import type { SpeakerQuotaType } from "~/components/event/types/speaker-quota";
 import EventDate from "~/components/event/date";
 import { AnchorButton } from "~/components/button/anchor-button";
 import { str2Date, getDateInfo } from "~/utils/date";

@@ -1,21 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Redirect } from "wouter";
 
+import type { SpeakerQuotaType } from "~/components/event/types/speaker-quota";
 import Layout from "~/components/layout/layout";
 import EventOverview from "~/components/event/overview";
 import EventDescription from "~/components/event/description";
 import TweetButton from "~/components/button/tweet-button";
 import { client } from "~/libs/apiClient";
 import styles from "~/styles/pages/event.module.scss";
-
-// 登壇枠の型
-export type SpeakerQuotaType = {
-  id: string;
-  name: string;
-  time: number;
-  currentCount: number;
-  total: number;
-};
 
 type Data = {
   eventId: string;
