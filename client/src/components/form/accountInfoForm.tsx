@@ -5,7 +5,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { client } from "~/libs/apiClient";
 import Normal from "~/components/form/input/textArea";
-import {mailModel, passwordModel, userNameModel} from "~/components/form/zodSchema/model"
+import {
+  mailModel,
+  passwordModel,
+  userNameModel,
+} from "~/components/form/zodSchema/model";
 import Password from "~/components/form/input/passwordArea";
 import { Button } from "../button/button";
 
