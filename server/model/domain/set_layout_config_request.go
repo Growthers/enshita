@@ -1,6 +1,6 @@
 package domain
 
-type ConfigDeliveryLayoutRequest struct {
+type SetLayoutConfigRequest struct {
 	Images []struct {
 		Type string `json:"type"`
 		URL  string `json:"url"`
