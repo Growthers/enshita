@@ -1,0 +1,25 @@
+// Vitest Snapshot v1
+
+exports[`(components) text area input > (error) test Snap Shot 1`] = `
+<div>
+  <textarea
+    aria-label="test"
+    id="test"
+  />
+  <p
+    aria-label="error message"
+    class="_enshita-input-error_k8dqh_1"
+  >
+    1000字以内で入力してください
+  </p>
+</div>
+`;
+
+exports[`(components) text area input > (normal) test Snap Shot 1`] = `
+<div>
+  <textarea
+    aria-label="test"
+    id="test"
+  />
+</div>
+`;
