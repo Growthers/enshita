@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import styles from "~/styles/components/input/input.module.scss";
+import styles from "~/styles/components/form-input/input.module.scss";
 import type { TextInputProperties } from "./type/model";
 
 // eslint-disable-next-line react/display-name

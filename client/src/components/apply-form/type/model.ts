@@ -5,7 +5,7 @@ import type {
 } from "react-hook-form";
 import type { ComponentProps, ReactNode } from "react";
 import type { FieldByType } from "~/libs/rhf";
-import { TextInput } from "~/components/input/text-input";
+import { TextInput } from "~/components/form-input/text-input";
 
 export type TitleProperties = {
   title: string;
