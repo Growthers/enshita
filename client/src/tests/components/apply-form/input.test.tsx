@@ -14,9 +14,9 @@ describe("(components) text input with using react-hook-form", () => {
     const { getByPlaceholderText } = render(<Default />);
     expect(getByPlaceholderText("名前")).toBeInTheDocument();
   });
-  test("(valid) input is correctly entered", async() => {
-    const { container, getByLabelText } = render(<Valid />)
-    await Valid.play({ canvasElement: container})
+  test("(valid) input is correctly entered", async () => {
+    const { container, getByLabelText } = render(<Valid />);
+    await Valid.play({ canvasElement: container });
     const input = getByLabelText("名前") as HTMLInputElement;
     expect(input.value).toEqual("Rintaro Itokawa");
   });

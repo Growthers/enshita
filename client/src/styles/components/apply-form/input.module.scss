@@ -2,11 +2,12 @@
 @use "font-size" as font;
 
 .enshita-apply-form-input-box {
-  padding: 1.25rem;
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  padding: 1.25rem;
   background-color: var.$global-white;
+  border-radius: 1rem;
+
   & > :not([hidden]) ~ :not([hidden]) {
     margin-top: 1rem;
   }
@@ -14,17 +15,20 @@
     padding: 0.75rem;
     border-radius: 0.5rem;
   }
+
   .enshita-apply-form-input-label {
     font-size: font.$text-20;
     color: var.$global-black;
-    &:after {
-      content: " *";
+
+    &::after {
       color: var.$global-red;
+      content: " *";
     }
     @media (max-width: 768px) {
       font-size: font.$text-mb-16;
     }
   }
+
   .enshita-apply-form-description {
     font-size: font.$text-16;
     color: var.$global-black;
@@ -32,12 +36,13 @@
       font-size: font.$text-mb-12;
     }
   }
+
   .enshita-apply-form-input {
     font-size: font.$text-16;
     color: var.$global-black;
     border: none;
-    outline: none;
     border-bottom: 1px solid var.$global-black;
+    outline: none;
     @media (max-width: 768px) {
       font-size: font.$text-mb-12;
     }

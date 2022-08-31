@@ -1,8 +1,7 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import type { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import { TextInput } from "~/components/input/text-input";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { userEvent, within } from "@storybook/testing-library";
-/* eslint-enable import/no-extraneous-dependencies */
 
 type T = typeof TextInput;
 type Story = ComponentStoryObj<T>;
