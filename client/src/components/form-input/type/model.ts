@@ -5,3 +5,8 @@ export type TextInputProperties = ComponentProps<"input"> & {
   inputStyles?: string;
   error?: FieldError;
 };
+
+export type AreaInputProperties = ComponentProps<"textarea"> & {
+  inputStyles?: string;
+  error?: FieldError;
+};
