@@ -1,0 +1,35 @@
+import { composeStories } from "@storybook/testing-react";
+import "@testing-library/jest-dom";
+import { render } from "@testing-library/react";
+import * as stories from "~/stories/input/text-input.stories";
+
+const { Default, Error, InputFieldFilled } = composeStories(stories);
+
+describe("(components) text input", () => {
+  test("label should be test", () => {
+    const { getByLabelText } = render(<Default />);
+    expect(getByLabelText("test")).toBeInTheDocument();
+  });
+  test("placeholder should be test", () => {
+    const { getByPlaceholderText } = render(<Default />);
+    expect(getByPlaceholderText("test")).toBeInTheDocument();
+  });
+  test("input is correctly entered", async () => {
+    const { container, getByLabelText } = render(<InputFieldFilled />);
+    await InputFieldFilled.play({ canvasElement: container });
+    const input = getByLabelText("test") as HTMLInputElement;
+    expect(input.value).toEqual("This is test.");
+  });
+  test("error message is exist", () => {
+    const { getByLabelText } = render(<Error />);
+    expect(getByLabelText("error message")).toBeInTheDocument();
+  });
+  test("(normal) test Snap Shot", () => {
+    const { container } = render(<Default />);
+    expect(container).toMatchSnapshot();
+  });
+  test("(error) test Snap Shot", () => {
+    const { container } = render(<Error />);
+    expect(container).toMatchSnapshot();
+  });
+});
