@@ -1,7 +1,7 @@
 import { composeStories } from "@storybook/testing-react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import * as stories from "../../../stories/apply-form/input.stories";
+import * as stories from "~/stories/apply-form/input.stories";
 
 const { Default, Valid } = composeStories(stories);
 
@@ -20,7 +20,7 @@ describe("(components) text input with using react-hook-form", () => {
     const input = getByLabelText("名前") as HTMLInputElement;
     expect(input.value).toEqual("Rintaro Itokawa");
   });
-  test("test Snap Shot", () => {
+  test("take snapshot", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });

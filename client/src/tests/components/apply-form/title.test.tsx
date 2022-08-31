@@ -1,7 +1,7 @@
 import { composeStories } from "@storybook/testing-react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import * as stories from "../../../stories/apply-form/title.stories";
+import * as stories from "~/stories/apply-form/title.stories";
 
 const { Default } = composeStories(stories);
 

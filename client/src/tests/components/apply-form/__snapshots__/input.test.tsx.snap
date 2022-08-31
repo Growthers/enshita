@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`(components) text input with using react-hook-form > test Snap Shot 1`] = `
+exports[`(components) text input with using react-hook-form > take snapshot 1`] = `
 <div>
   <form>
     <section

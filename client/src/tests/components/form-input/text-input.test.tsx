@@ -24,11 +24,11 @@ describe("(components) text input", () => {
     const { getByLabelText } = render(<Error />);
     expect(getByLabelText("error message")).toBeInTheDocument();
   });
-  test("(normal) test Snap Shot", () => {
+  test("(normal) take snapshot", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });
-  test("(error) test Snap Shot", () => {
+  test("(error) take snapshot", () => {
     const { container } = render(<Error />);
     expect(container).toMatchSnapshot();
   });

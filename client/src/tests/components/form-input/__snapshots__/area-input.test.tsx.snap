@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`(components) text area input > (error) test Snap Shot 1`] = `
+exports[`(components) text area input > (error) take snapshot 1`] = `
 <div>
   <textarea
     aria-label="test"
@@ -15,7 +15,7 @@ exports[`(components) text area input > (error) test Snap Shot 1`] = `
 </div>
 `;
 
-exports[`(components) text area input > (normal) test Snap Shot 1`] = `
+exports[`(components) text area input > (normal) take snapshot 1`] = `
 <div>
   <textarea
     aria-label="test"
