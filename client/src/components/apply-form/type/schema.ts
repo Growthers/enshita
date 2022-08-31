@@ -15,6 +15,6 @@ export const schema = z.object({
     .min(1, { message: "タイトルは必須項目です" })
     .max(100, { message: "100字以内で入力してください" }),
   paragraph: z.nullable(
-    z.string().max(3000, { message: "1000字以内で入力してください" }),
+    z.string().max(3000, { message: "3000字以内で入力してください" }),
   ),
 });
