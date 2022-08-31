@@ -2,16 +2,16 @@ import type { ComponentStoryObj, ComponentMeta } from "@storybook/react";
 import { AreaControl } from "~/components/apply-form/area-control";
 import { useDefaultForm } from "~/hooks/useDefaultForm";
 import { FormProvider } from "react-hook-form";
-import { z } from "zod"
+import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { within, userEvent } from "@storybook/testing-library";
 
 type Form = {
-  paragraph: string
-}
-type T = typeof AreaControl<Form>
-type Story = ComponentStoryObj<T>
+  paragraph: string;
+};
+type T = typeof AreaControl<Form>;
+type Story = ComponentStoryObj<T>;
 
 export default {
   args: {
@@ -25,13 +25,13 @@ export default {
       const schema = z.object({
         paragraph: z.nullable(
           z.string().max(10, { message: "10字以内で入力してください" }),
-        )
-      })
+        ),
+      });
       const methods = useDefaultForm<Form>({
-        defaultValues: { paragraph: ""},
+        defaultValues: { paragraph: "" },
         mode: "onBlur",
-        resolver: zodResolver(schema)
-      })
+        resolver: zodResolver(schema),
+      });
       const handleSubmit = methods.handleSubmit(data => {
         // eslint-disable-next-line no-console
         console.log(data);
@@ -43,23 +43,23 @@ export default {
           </form>
         </FormProvider>
       );
-    }
-  ]
-} as ComponentMeta<T>
+    },
+  ],
+} as ComponentMeta<T>;
 
-const type = async(step: 0 | 1 | 2, canvasElement: HTMLElement) => {
-  const canvas = within(canvasElement)
-  if(step === 0) return;
-  await userEvent.type(canvas.getByLabelText("paragraph"), "abcdefghij")
-  if(step===1) return;
-  await userEvent.type(canvas.getByLabelText("paragraph"), "k")
-}
+const type = async (step: 0 | 1 | 2, canvasElement: HTMLElement) => {
+  const canvas = within(canvasElement);
+  if (step === 0) return;
+  await userEvent.type(canvas.getByLabelText("paragraph"), "abcdefghij");
+  if (step === 1) return;
+  await userEvent.type(canvas.getByLabelText("paragraph"), "k");
+};
 
-const playFactory = async (step: 0|1|2, canvasElement: HTMLElement) => {
-  const canvas = within(canvasElement)
-  await type(step, canvasElement)
-  canvas.getByLabelText("paragraph").blur()
-}
+const playFactory = async (step: 0 | 1 | 2, canvasElement: HTMLElement) => {
+  const canvas = within(canvasElement);
+  await type(step, canvasElement);
+  canvas.getByLabelText("paragraph").blur();
+};
 
 export const Default: Story = {};
 
