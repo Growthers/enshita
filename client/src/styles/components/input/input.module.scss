@@ -1,0 +1,11 @@
+@use "../../variables" as var;
+$text-mb-12: calc(10vw / 3);
+$text-16: calc(5vw / 6);
+
+.enshita-input-error {
+  font-size: $text-16;
+  color: var.$global-red;
+  @media (max-width: 768px) {
+    font-size: $text-mb-12;
+  }
+}
