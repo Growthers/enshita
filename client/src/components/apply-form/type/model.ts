@@ -6,6 +6,7 @@ import type {
 import type { ComponentProps, ReactNode } from "react";
 import type { FieldByType } from "~/libs/rhf";
 import { TextInput } from "~/components/form-input/text-input";
+import { AreaInput } from "~/components/form-input/area-input";
 
 export type TitleProperties = {
   title: string;
@@ -22,5 +23,13 @@ export type InputControlProperties<T extends FieldValues> = Omit<
 > & {
   label: string;
   description?: string;
+  name: FieldByType<T, string>;
+};
+
+export type AreaControlProperties<T extends FieldValues> = Omit<
+  ComponentProps<typeof AreaInput>,
+  "error" | "inputStyles" | keyof ControllerRenderProps
+> & {
+  label: string;
   name: FieldByType<T, string>;
 };
