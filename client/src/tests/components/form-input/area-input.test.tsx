@@ -1,7 +1,7 @@
 import { composeStories } from "@storybook/testing-react";
-import "@testing-library/jest-dom"
+import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import * as stories from "~/stories/form-input/area-input.stories"
+import * as stories from "~/stories/form-input/area-input.stories";
 
 const { Default, Error, InputFieldFilled } = composeStories(stories);
 
@@ -28,4 +28,4 @@ describe("(components) text area input", () => {
     const { container } = render(<Error />);
     expect(container).toMatchSnapshot();
   });
-})
+});
