@@ -1,9 +1,11 @@
 name: auto generate design tokens from data.json
 
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_run:
+    workflows:
+      - Test codes
+    types:
+      - completed
 
 env:
   workdir: client
@@ -11,7 +13,7 @@ env:
 jobs:
   run-style-dictionary:
     runs-on: ubuntu-latest
-    if: contains(github.head_ref, 'auto/design-tokens')
+    if: contains(github.head_ref, 'auto/design-tokens') && github.event.workflow_run.conclusion == 'success'
     permissions:
       contents: 'write'
     defaults:

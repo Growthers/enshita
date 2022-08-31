@@ -1,9 +1,11 @@
 name: Prettier codes
 
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_run:
+    workflows:
+      - Test codes
+    types:
+      - completed
 
 env:
   workdir: client
@@ -29,7 +31,7 @@ jobs:
   run-formatter:
     runs-on: ubuntu-latest
     needs: front-filter
-    if: needs.front-filter.outputs.client == 'true'
+    if: needs.front-filter.outputs.client == 'true' &&  github.event.workflow_run.conclusion == 'success'
     permissions:
       contents: 'write'
     defaults:

@@ -4,6 +4,13 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - 'components/**/*.tsx'
+      - 'stories/**/*.stories.tsx'
+      - 'styles/**/*.scss'
+      - 'package.json'
+      - 'yarn.lock'
+      - '.storybook/*'
 
 env:
   workdir: client
