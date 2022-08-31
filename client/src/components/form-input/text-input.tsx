@@ -4,9 +4,9 @@ import type { TextInputProperties } from "./type/model";
 
 // eslint-disable-next-line react/display-name
 const TextInput = forwardRef<HTMLInputElement, TextInputProperties>(
-  ({ inputStyles, error, ...props }, ref) => (
+  ({ inputStyles, error, ...rest }, ref) => (
     <>
-      <input ref={ref} className={inputStyles} {...props} />
+      <input ref={ref} className={inputStyles} {...rest} />
       {error && (
         <p aria-label="error message" className={styles["enshita-input-error"]}>
           {error.message}
