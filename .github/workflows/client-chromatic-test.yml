@@ -12,6 +12,7 @@ on:
 env:
   workdir: client
   node-version: lts/*
+  TZ: Asia/Tokyo
 
 jobs:
   front-filter:
