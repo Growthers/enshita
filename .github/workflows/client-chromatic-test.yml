@@ -5,16 +5,14 @@ on:
     branches:
       - main
     paths:
-      - 'components/**/*.tsx'
-      - 'stories/**/*.stories.tsx'
-      - 'styles/**/*.scss'
-      - 'package.json'
-      - 'yarn.lock'
-      - '.storybook/*'
+      - 'client/src/components/**'
+      - 'client/src/stories/**'
+      - 'client/src/styles/**'
 
 env:
   workdir: client
   node-version: lts/*
+  TZ: Asia/Tokyo
 
 jobs:
   front-filter:
