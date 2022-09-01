@@ -3,36 +3,26 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import * as stories from "~/stories/button/tweet-button.stories";
 
-const { Default } = composeStories(stories);
+const { Default, URL, Hashtags, Full } = composeStories(stories);
 
 describe("(component) TweetButton", () => {
   test("Snap Shot - Only Text", () => {
-    const { container } = render(<Default text="Test Tweet Content" />);
+    const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });
 
   test("Snap Shot - Contain URL", () => {
-    const { container } = render(
-      <Default text="Test Tweet Content" url="https://growthers.dev" />,
-    );
+    const { container } = render(<URL />);
     expect(container).toMatchSnapshot();
   });
 
   test("Snap Shot - Contain Hashtags", () => {
-    const { container } = render(
-      <Default text="Test Tweet Content" hashtags={["共同開発鯖"]} />,
-    );
+    const { container } = render(<Hashtags />);
     expect(container).toMatchSnapshot();
   });
 
   test("Snap Shot - Contain Hashtags and URL", () => {
-    const { container } = render(
-      <Default
-        text="Test Tweet Content"
-        url="https://growthers.dev"
-        hashtags={["共同開発鯖", "#共同開発鯖LT"]}
-      />,
-    );
+    const { container } = render(<Full />);
     expect(container).toMatchSnapshot();
   });
 });

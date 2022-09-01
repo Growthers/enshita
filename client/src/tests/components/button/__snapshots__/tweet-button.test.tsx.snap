@@ -4,7 +4,7 @@ exports[`(component) TweetButton > Snap Shot - Contain Hashtags 1`] = `
 <div>
   <a
     class="_enshita-button-box_8w723_17 _enshita-event-tweet-box_1hg6k_5"
-    href="https://twitter.com/intent/tweet?text=Test%20Tweet%20Content&url=&hashtags=共同開発鯖"
+    href="https://twitter.com/intent/tweet?text=Tweet%20Content&url=&hashtags=共同開発鯖,共同開発鯖LT"
     rel="noopener noreferrer"
     role="button"
     target="_blank"
@@ -27,7 +27,7 @@ exports[`(component) TweetButton > Snap Shot - Contain Hashtags and URL 1`] = `
 <div>
   <a
     class="_enshita-button-box_8w723_17 _enshita-event-tweet-box_1hg6k_5"
-    href="https://twitter.com/intent/tweet?text=Test%20Tweet%20Content&url=https://growthers.dev&hashtags=共同開発鯖,共同開発鯖LT"
+    href="https://twitter.com/intent/tweet?text=Tweet%20Content&url=https://growthers.dev&hashtags=共同開発鯖,共同開発鯖LT"
     rel="noopener noreferrer"
     role="button"
     target="_blank"
@@ -50,7 +50,7 @@ exports[`(component) TweetButton > Snap Shot - Contain URL 1`] = `
 <div>
   <a
     class="_enshita-button-box_8w723_17 _enshita-event-tweet-box_1hg6k_5"
-    href="https://twitter.com/intent/tweet?text=Test%20Tweet%20Content&url=https://growthers.dev&hashtags="
+    href="https://twitter.com/intent/tweet?text=Tweet%20Content&url=https://growthers.dev&hashtags="
     rel="noopener noreferrer"
     role="button"
     target="_blank"
@@ -73,7 +73,7 @@ exports[`(component) TweetButton > Snap Shot - Only Text 1`] = `
 <div>
   <a
     class="_enshita-button-box_8w723_17 _enshita-event-tweet-box_1hg6k_5"
-    href="https://twitter.com/intent/tweet?text=Test%20Tweet%20Content&url=&hashtags="
+    href="https://twitter.com/intent/tweet?text=Tweet%20Content&url=&hashtags="
     rel="noopener noreferrer"
     role="button"
     target="_blank"
