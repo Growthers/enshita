@@ -82,3 +82,44 @@ export const Venue: Story = {
     venue: "Discord",
   },
 };
+
+export const Preparing: Story = {
+  args: {
+    status: "preparing",
+  },
+};
+
+export const Open: Story = {
+  args: {
+    status: "open",
+    venue: "Discord",
+  },
+};
+
+export const Close: Story = {
+  args: {
+    status: "close",
+    venue: "Discord",
+  },
+};
+
+export const SuddenOpen: Story = {
+  args: {
+    status: "suddenOpen",
+    venue: "Discord",
+  },
+};
+
+export const SuddenClose: Story = {
+  args: {
+    status: "suddenClose",
+    venue: "Discord",
+  },
+};
+
+export const Finish: Story = {
+  args: {
+    status: "finish",
+    venue: "Discord",
+  },
+};

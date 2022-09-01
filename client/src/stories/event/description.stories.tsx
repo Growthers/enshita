@@ -6,8 +6,7 @@ type T = typeof EventDescription;
 type Story = ComponentStoryObj<T>;
 
 const data = {
-  description:
-    "イベントの説明です\n\nhttps://twitter.com\nこのようにURLがあるときはリンクに変換されます",
+  description: "イベントの説明\n\nURL↓\nhttps://growthers.dev",
 };
 
 export default {
@@ -24,3 +23,15 @@ export default {
 } as ComponentMeta<T>;
 
 export const Default: Story = {};
+
+export const SimpleText: Story = {
+  args: {
+    description: "イベントの説明",
+  },
+};
+
+export const URL: Story = {
+  args: {
+    description: "URL: https://growthers.dev",
+  },
+};

@@ -3,25 +3,21 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import * as stories from "~/stories/event/description.stories";
 
-const { Default } = composeStories(stories);
+const { Default, SimpleText, URL } = composeStories(stories);
 
 describe("(component) EventDescription", () => {
   test("Snap Shot - Simple Text", () => {
-    const { container } = render(<Default description="イベントの説明" />);
+    const { container } = render(<SimpleText />);
     expect(container).toMatchSnapshot();
   });
 
   test("Snap Shot - Contain URL", () => {
-    const { container } = render(
-      <Default description="URL: https://growthers.dev" />,
-    );
+    const { container } = render(<URL />);
     expect(container).toMatchSnapshot();
   });
 
   test("Snap Shot - Contain New Line and URL", () => {
-    const { container } = render(
-      <Default description="イベントの説明\n\nURL↓\nhttps://growthers.dev" />,
-    );
+    const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });
 });
