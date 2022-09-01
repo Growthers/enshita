@@ -5,16 +5,14 @@ on:
     branches:
       - main
     paths:
-      - 'client/components/**'
-      - 'client/stories/**'
-      - 'client/styles/**'
-      - 'client/package.json'
-      - 'client/yarn.lock'
-      - 'client/.storybook/**'
+      - 'client/src/components/**'
+      - 'client/src/stories/**'
+      - 'client/src/styles/**'
 
 env:
   workdir: client
   node-version: lts/*
+  TZ: Asia/Tokyo
 
 jobs:
   front-filter:
