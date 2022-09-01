@@ -6,6 +6,11 @@ import * as stories from "~/stories/button/tweet-button.stories";
 const { Default, URL, Hashtags, Full } = composeStories(stories);
 
 describe("(component) TweetButton", () => {
+  test("role = button", () => {
+    const { getByRole } = render(<Default />);
+    expect(getByRole("button", { name: "Tweet" })).toBeInTheDocument();
+  });
+
   test("Snap Shot - Only Text", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
