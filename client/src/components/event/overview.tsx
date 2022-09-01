@@ -20,19 +20,18 @@ type Props = {
     | "finish";
   deadline: string;
   speakerQuotaTypeList: SpeakerQuotaType[];
-  venue?: string;
+  venue: string | undefined;
 };
 
-const EventOverview: React.FC<Props> = props => {
-  const {
-    eventId,
-    startDate,
-    endDate,
-    status,
-    deadline,
-    speakerQuotaTypeList,
-    venue,
-  } = props;
+const EventOverview: React.FC<Props> = ({
+  eventId,
+  startDate,
+  endDate,
+  status,
+  deadline,
+  speakerQuotaTypeList,
+  venue = "",
+}) => {
   const deadlineDate = str2Date(deadline);
   const deadlineInfo = deadlineDate ? getDateInfo(deadlineDate) : null;
   const [buttonText, setButtonText] = useState("");
@@ -115,10 +114,6 @@ const EventOverview: React.FC<Props> = props => {
       </div>
     </div>
   );
-};
-
-EventOverview.defaultProps = {
-  venue: "",
 };
 
 export default EventOverview;

@@ -4,12 +4,11 @@ import styles from "~/styles/components/button/tweet-button.module.scss";
 
 type Props = {
   text: string;
-  url?: string;
-  hashtags?: string[];
+  url: string | undefined;
+  hashtags: string[] | undefined;
 };
 
-const TweetButton: React.FC<Props> = props => {
-  const { text, url, hashtags } = props;
+const TweetButton: React.FC<Props> = ({ text, url = "", hashtags = [] }) => {
   // URL, hashtagsがないときはパラメータの値がなにもないが、問題なく指定した項目のみでTweet可能
   const tweetLink = `https://twitter.com/intent/tweet?text=${text.replace(
     / /g,
@@ -30,11 +29,6 @@ const TweetButton: React.FC<Props> = props => {
       Tweet
     </AnchorButton>
   );
-};
-
-TweetButton.defaultProps = {
-  url: "",
-  hashtags: [],
 };
 
 export default TweetButton;
