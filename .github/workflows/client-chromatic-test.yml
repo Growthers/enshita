@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'components/**/*.tsx'
-      - 'stories/**/*.stories.tsx'
-      - 'styles/**/*.scss'
-      - 'package.json'
-      - 'yarn.lock'
-      - '.storybook/*'
+      - 'client/components/**'
+      - 'client/stories/**'
+      - 'client/styles/**'
+      - 'client/package.json'
+      - 'client/yarn.lock'
+      - 'client/.storybook/**'
 
 env:
   workdir: client
