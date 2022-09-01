@@ -53,7 +53,7 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
   run-chromatic-deployment-check:
     if: ${{ ! failure() }}
-    needs: chromatic-deployment
+    needs: run-chromatic-deployment
     runs-on: ubuntu-latest
     steps:
       - run: echo "Publish Storybook is successfully executed. "
