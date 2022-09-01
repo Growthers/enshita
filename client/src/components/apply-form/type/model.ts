@@ -2,6 +2,7 @@ import type {
   ControllerRenderProps,
   DeepPartial,
   FieldValues,
+  SubmitHandler,
 } from "react-hook-form";
 import type { ComponentProps, ReactNode } from "react";
 import type { FieldByType } from "~/libs/rhf";
@@ -15,6 +16,7 @@ export type TitleProperties = {
 export type WrapperProperties<T extends FieldValues = never> = {
   defaultValues: (DeepPartial<T> | undefined) & T;
   children: ReactNode;
+  onSubmit: SubmitHandler<T>;
 };
 
 export type InputControlProperties<T extends FieldValues> = Omit<

@@ -8,13 +8,18 @@ import { schema } from "./type/schema";
 const Wrapper = <T extends FieldValues = never>({
   defaultValues,
   children,
+  onSubmit,
 }: WrapperProperties<T>): JSX.Element => {
   const methods = useDefaultForm<T>({
     defaultValues,
     resolver: zodResolver(schema),
     mode: "onBlur",
   });
-  return <FormProvider {...methods}>{children}</FormProvider>;
+  return (
+    <FormProvider {...methods}>
+      <form onSubmit={methods.handleSubmit(onSubmit)}>{children}</form>
+    </FormProvider>
+  );
 };
 
 export { Wrapper };
