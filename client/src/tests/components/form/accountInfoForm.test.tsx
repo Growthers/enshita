@@ -7,9 +7,7 @@ const { Default } = composeStories(stories);
 
 describe("(component) account information form", () => {
   test("Snap Shot", () => {
-    const { container } = render(
-      <Default/>,
-    );
+    const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });
 });

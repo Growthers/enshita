@@ -30,11 +30,7 @@ const ReadOnly = <T extends string>({
       <div className={styles["enshita-textarea-error"]}>
         {itsError && (
           <p>
-            <small>{`${
-              itsError.ref?.value === ""
-                ? "this field is required"
-                : itsError.message
-            }`}</small>
+            <small>{itsError.message}</small>
           </p>
         )}
       </div>
