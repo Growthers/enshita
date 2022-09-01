@@ -1,11 +1,16 @@
-name: Prettier codes
+name: Chromatic test
 
 on:
-  workflow_run:
-    workflows:
-      - Test codes
-    types:
-      - completed
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'components/**/*.tsx'
+      - 'stories/**/*.stories.tsx'
+      - 'styles/**/*.scss'
+      - 'package.json'
+      - 'yarn.lock'
+      - '.storybook/*'
 
 env:
   workdir: client
@@ -28,12 +33,10 @@ jobs:
         with:
           token: ${{ github.token }}
           filters: .github/filters.yml
-  run-formatter:
+  run-chromatic-test:
     runs-on: ubuntu-latest
     needs: front-filter
-    if: needs.front-filter.outputs.client == 'true' &&  github.event.workflow_run.conclusion == 'success'
-    permissions:
-      contents: 'write'
+    if: needs.front-filter.outputs.client == 'true'
     defaults:
       run:
         working-directory: ${{ env.workdir }}
@@ -46,22 +49,13 @@ jobs:
           node-version: ${{ env.node-version }}
       - name: Install Dependencies
         run: yarn install --immutable
-      - name: Format style codes
-        run: yarn run lint:style-fix
-      - name: Format the code
-        run: yarn run fmt
-      - name: Auto commit
-        run: |
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          if (git diff --shortstat | grep '[0-9]'); then \
-            git add .; \
-            git commit -m "fix(front): auto-fixable format by github-actions"; \
-            git push origin HEAD:${GITHUB_REF}; \
-          fi
-  run-formatter-check:
+      - name: Build Storybook
+        run: yarn run build-storybook
+      - name: Run test
+        run: yarn run test
+  run-chromatic-test-check:
     if: ${{ ! failure() }}
-    needs: run-formatter
+    needs: run-chromatic-test
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Formatter is successfully executed. "
+      - run: echo "Chromatic test is successfully executed. "
