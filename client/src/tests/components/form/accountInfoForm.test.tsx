@@ -8,7 +8,7 @@ const { Default } = composeStories(stories);
 describe("(component) account information form", () => {
   test("Snap Shot", () => {
     const { container } = render(
-      <Default mail="abc@example.com" userName="hoge" />,
+      <Default/>,
     );
     expect(container).toMatchSnapshot();
   });
