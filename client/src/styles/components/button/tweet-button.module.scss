@@ -1,12 +1,12 @@
 .enshita-event-tweet-icon {
   svg {
-    color: #ffffff;
+    color: #fff;
   }
 }
 
 .enshita-event-tweet-box {
-  background-color: #00acee;
   padding: 0.8rem 1rem;
+  background-color: #00acee;
 
   &:hover {
     background-color: #00acee;
@@ -14,6 +14,6 @@
 }
 
 .enshita-event-tweet-text {
-  color: #ffffff;
   margin-left: 0.5rem;
+  color: #fff;
 }
