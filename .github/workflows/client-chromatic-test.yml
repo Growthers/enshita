@@ -8,9 +8,6 @@ on:
       - 'client/components/**'
       - 'client/stories/**'
       - 'client/styles/**'
-      - 'client/package.json'
-      - 'client/yarn.lock'
-      - 'client/.storybook/**'
 
 env:
   workdir: client
