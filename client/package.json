@@ -80,7 +80,7 @@
     "prettier": "2.7.1",
     "react-test-renderer": "18.1.0",
     "rollup": "2.79.0",
-    "sass": "1.54.7",
+    "sass": "1.54.8",
     "style-dictionary": "3.7.1",
     "stylelint": "14.11.0",
     "stylelint-config-prettier": "9.0.3",
