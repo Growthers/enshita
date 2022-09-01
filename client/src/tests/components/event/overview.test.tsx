@@ -36,4 +36,40 @@ describe("(component) EventOverview", () => {
     const { container } = render(<Finish />);
     expect(container).toMatchSnapshot();
   });
+
+  test("Button is Disabled - preparing", () => {
+    const { getByRole } = render(<Preparing />);
+    expect(getByRole("button", { name: "申し込み開始前" })).toBeDisabled();
+  });
+
+  test("Button is Enabled - open", () => {
+    const { getByRole } = render(<Open />);
+    expect(getByRole("button", { name: "申し込む" })).toBeEnabled();
+  });
+
+  test("Button is Disabled - close", () => {
+    const { getByRole } = render(<Close />);
+    expect(
+      getByRole("button", { name: "申し込みは終了しました" }),
+    ).toBeDisabled();
+  });
+
+  test("Button is Enabled - suddenOpen", () => {
+    const { getByRole } = render(<SuddenOpen />);
+    expect(getByRole("button", { name: "飛び入りで申し込む" })).toBeEnabled();
+  });
+
+  test("Button is Disabled - suddenClose", () => {
+    const { getByRole } = render(<SuddenClose />);
+    expect(
+      getByRole("button", { name: "申し込みは終了しました" }),
+    ).toBeDisabled();
+  });
+
+  test("Button is Disabled - finish", () => {
+    const { getByRole } = render(<Finish />);
+    expect(
+      getByRole("button", { name: "イベントは終了しました" }),
+    ).toBeDisabled();
+  });
 });
