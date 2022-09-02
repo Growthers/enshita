@@ -9,7 +9,7 @@ import {
   mailModel,
   passwordModel,
   userNameModel,
-} from "~/components/form/zodSchema/model";
+} from "~/components/form/schema/schema";
 import Password from "~/components/form/input/passwordArea";
 import { Button } from "../button/button";
 
