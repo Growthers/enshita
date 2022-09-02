@@ -76,7 +76,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <Normal<"mail">
           label="mail"
-          discription="mail Address"
+          discription="Email Address"
           icon="ci:mail"
           register={register("mail", { required: true })}
           itsError={errors.mail}
@@ -112,7 +112,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
 
         <Password<"currentPassword">
           label="currentPassword"
-          discription="current Password"
+          discription="Current Password"
           register={register("currentPassword", { required: true })}
           itsError={errors.currentPassword}
         />
