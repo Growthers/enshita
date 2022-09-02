@@ -3,18 +3,49 @@
 exports[`(components) header > take snapshot 1`] = `
 <div>
   <header
-    class="_enshita-header_1kfzr_1 _enshita-header-pc_1kfzr_14"
+    class="_enshita-header_1c9jq_1 _enshita-header-pc_1c9jq_13"
     role="banner"
   >
     <div
-      class="_enshita-header-logo_1kfzr_7"
+      class="_enshita-header-logo_1c9jq_7"
     >
-      enshita
+      <a
+        href="./"
+        rel="noopener noreferrer"
+      >
+        <svg
+          height="50"
+          viewBox="0 0 140 50"
+          width="140"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text
+            class="_enshita-header-svg_1c9jq_20"
+            font-size="40"
+            x="0"
+            y="40"
+          >
+            enshita
+          </text>
+        </svg>
+      </a>
     </div>
     <div
-      class="_enshita-header-hidden_1kfzr_22"
+      class="_enshita-header-hidden_1c9jq_30"
     >
-      button
+      <a
+        class="_enshita-button-box_8w723_17 _enshita-header-button_1c9jq_24"
+        href="./login"
+        rel="noopener noreferrer"
+        role="button"
+        target="_blank"
+      >
+        <p
+          class="_enshita-button-text_8w723_36 undefined"
+        >
+          login
+        </p>
+      </a>
     </div>
   </header>
 </div>
