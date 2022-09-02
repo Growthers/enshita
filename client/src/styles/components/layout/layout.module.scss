@@ -1,13 +1,8 @@
 @use "../../variables" as var;
 
 .enshita-layout-body {
-  width: 100vw;
-  min-height: 70vh;
+  box-sizing: border-box;
+  min-height: calc(100vh - 15rem);
+  padding: 3rem 0;
   background-color: var.$global-white;
-}
-
-@media screen and (max-width: 768px) {
-  .enshita-layout-body {
-    min-height: 75vh;
-  }
 }

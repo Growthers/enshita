@@ -4,10 +4,10 @@ import {
   Switch,
   useRouter,
   useLocation,
-  Router as WRouter,
+  Router as WRouter,Redirect,
   Link,
 } from "wouter";
-import { About, Home, AccountInfo } from "./pages";
+import { About, Home, AccountInfo, Event } from "./pages";
 
 const NestedRoutes = ({
   base,
@@ -33,6 +33,11 @@ const Router: React.FC = () => (
   <Switch>
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
+    {/* event idがないときはindexへ飛ばす */}
+    <Route path="/event">
+      <Redirect to="/" />
+    </Route>
+    <Route path="/event/:id">{params => <Event eventId={params.id} />}</Route>
     <NestedRoutes base="/account">
       <Link to="/info" />
       <Route path="/info" component={AccountInfo} />
