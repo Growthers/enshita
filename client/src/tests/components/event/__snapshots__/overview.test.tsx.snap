@@ -1,0 +1,537 @@
+// Vitest Snapshot v1
+
+exports[`(component) EventOverview > Snap Shot - close 1`] = `
+<div>
+  <div
+    class="_enshita-event-overview_11otg_1"
+  >
+    <div
+      class="_enshita-event-date_9xck7_1"
+    >
+      <time>
+        2022/08/27 (Sat)
+      </time>
+      <time>
+        <span>
+          19:30 ~ 23:00
+        </span>
+      </time>
+    </div>
+    <div
+      class="_enshita-event-venue_11otg_10"
+    >
+      <span />
+      <p>
+        Discord
+      </p>
+    </div>
+    <div
+      class="_enshita-event-apply_11otg_21"
+    >
+      <button
+        class="_enshita-button-box_1gcpx_17 _enshita-event-apply-box_11otg_26"
+        disabled=""
+        tabindex="0"
+      >
+        <p
+          class="_enshita-button-text_1gcpx_36 undefined"
+        >
+          申し込みは終了しました
+        </p>
+      </button>
+    </div>
+    <div
+      class="_enshita-event-deadline_11otg_32"
+    >
+      <time>
+        2022/08/27 (Sat) 00:00まで
+      </time>
+      <p>
+        ※申し込み締切時間は変更される可能性があります
+      </p>
+    </div>
+    <div
+      class="_enshita-event-speaker-quota-type-list_11otg_43"
+    >
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          3分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          2
+           / 
+          5
+        </p>
+      </div>
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          5分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          3
+           / 
+          5
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`(component) EventOverview > Snap Shot - finish 1`] = `
+<div>
+  <div
+    class="_enshita-event-overview_11otg_1"
+  >
+    <div
+      class="_enshita-event-date_9xck7_1"
+    >
+      <time>
+        2022/08/27 (Sat)
+      </time>
+      <time>
+        <span>
+          19:30 ~ 23:00
+        </span>
+      </time>
+    </div>
+    <div
+      class="_enshita-event-venue_11otg_10"
+    >
+      <span />
+      <p>
+        Discord
+      </p>
+    </div>
+    <div
+      class="_enshita-event-apply_11otg_21"
+    >
+      <button
+        class="_enshita-button-box_1gcpx_17 _enshita-event-apply-box_11otg_26"
+        disabled=""
+        tabindex="0"
+      >
+        <p
+          class="_enshita-button-text_1gcpx_36 undefined"
+        >
+          イベントは終了しました
+        </p>
+      </button>
+    </div>
+    <div
+      class="_enshita-event-deadline_11otg_32"
+    >
+      <time>
+        2022/08/27 (Sat) 00:00まで
+      </time>
+      <p>
+        ※申し込み締切時間は変更される可能性があります
+      </p>
+    </div>
+    <div
+      class="_enshita-event-speaker-quota-type-list_11otg_43"
+    >
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          3分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          2
+           / 
+          5
+        </p>
+      </div>
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          5分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          3
+           / 
+          5
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`(component) EventOverview > Snap Shot - open 1`] = `
+<div>
+  <div
+    class="_enshita-event-overview_11otg_1"
+  >
+    <div
+      class="_enshita-event-date_9xck7_1"
+    >
+      <time>
+        2022/08/27 (Sat)
+      </time>
+      <time>
+        <span>
+          19:30 ~ 23:00
+        </span>
+      </time>
+    </div>
+    <div
+      class="_enshita-event-venue_11otg_10"
+    >
+      <span />
+      <p>
+        Discord
+      </p>
+    </div>
+    <div
+      class="_enshita-event-apply_11otg_21"
+    >
+      <a
+        class="_enshita-button-box_8w723_17 _enshita-event-apply-box_11otg_26"
+        href="/apply/123456789"
+        rel="noopener noreferrer"
+        role="button"
+        target=""
+      >
+        <p
+          class="_enshita-button-text_8w723_36 undefined"
+        >
+          申し込む
+        </p>
+      </a>
+    </div>
+    <div
+      class="_enshita-event-deadline_11otg_32"
+    >
+      <time>
+        2022/08/27 (Sat) 00:00まで
+      </time>
+      <p>
+        ※申し込み締切時間は変更される可能性があります
+      </p>
+    </div>
+    <div
+      class="_enshita-event-speaker-quota-type-list_11otg_43"
+    >
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          3分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          2
+           / 
+          5
+        </p>
+      </div>
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          5分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          3
+           / 
+          5
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`(component) EventOverview > Snap Shot - preparing 1`] = `
+<div>
+  <div
+    class="_enshita-event-overview_11otg_1"
+  >
+    <div
+      class="_enshita-event-date_9xck7_1"
+    >
+      <time>
+        2022/08/27 (Sat)
+      </time>
+      <time>
+        <span>
+          19:30 ~ 23:00
+        </span>
+      </time>
+    </div>
+    <div
+      class="_enshita-event-apply_11otg_21"
+    >
+      <button
+        class="_enshita-button-box_1gcpx_17 _enshita-event-apply-box_11otg_26"
+        disabled=""
+        tabindex="0"
+      >
+        <p
+          class="_enshita-button-text_1gcpx_36 undefined"
+        >
+          申し込み開始前
+        </p>
+      </button>
+    </div>
+    <div
+      class="_enshita-event-deadline_11otg_32"
+    >
+      <time>
+        2022/08/27 (Sat) 00:00まで
+      </time>
+      <p>
+        ※申し込み締切時間は変更される可能性があります
+      </p>
+    </div>
+    <div
+      class="_enshita-event-speaker-quota-type-list_11otg_43"
+    >
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          3分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          2
+           / 
+          5
+        </p>
+      </div>
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          5分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          3
+           / 
+          5
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`(component) EventOverview > Snap Shot - suddenClose 1`] = `
+<div>
+  <div
+    class="_enshita-event-overview_11otg_1"
+  >
+    <div
+      class="_enshita-event-date_9xck7_1"
+    >
+      <time>
+        2022/08/27 (Sat)
+      </time>
+      <time>
+        <span>
+          19:30 ~ 23:00
+        </span>
+      </time>
+    </div>
+    <div
+      class="_enshita-event-venue_11otg_10"
+    >
+      <span />
+      <p>
+        Discord
+      </p>
+    </div>
+    <div
+      class="_enshita-event-apply_11otg_21"
+    >
+      <button
+        class="_enshita-button-box_1gcpx_17 _enshita-event-apply-box_11otg_26"
+        disabled=""
+        tabindex="0"
+      >
+        <p
+          class="_enshita-button-text_1gcpx_36 undefined"
+        >
+          申し込みは終了しました
+        </p>
+      </button>
+    </div>
+    <div
+      class="_enshita-event-deadline_11otg_32"
+    >
+      <time>
+        2022/08/27 (Sat) 00:00まで
+      </time>
+      <p>
+        ※申し込み締切時間は変更される可能性があります
+      </p>
+    </div>
+    <div
+      class="_enshita-event-speaker-quota-type-list_11otg_43"
+    >
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          3分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          2
+           / 
+          5
+        </p>
+      </div>
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          5分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          3
+           / 
+          5
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`(component) EventOverview > Snap Shot - suddenOpen 1`] = `
+<div>
+  <div
+    class="_enshita-event-overview_11otg_1"
+  >
+    <div
+      class="_enshita-event-date_9xck7_1"
+    >
+      <time>
+        2022/08/27 (Sat)
+      </time>
+      <time>
+        <span>
+          19:30 ~ 23:00
+        </span>
+      </time>
+    </div>
+    <div
+      class="_enshita-event-venue_11otg_10"
+    >
+      <span />
+      <p>
+        Discord
+      </p>
+    </div>
+    <div
+      class="_enshita-event-apply_11otg_21"
+    >
+      <a
+        class="_enshita-button-box_8w723_17 _enshita-event-apply-box_11otg_26"
+        href="/apply/123456789"
+        rel="noopener noreferrer"
+        role="button"
+        target=""
+      >
+        <p
+          class="_enshita-button-text_8w723_36 undefined"
+        >
+          飛び入りで申し込む
+        </p>
+      </a>
+    </div>
+    <div
+      class="_enshita-event-deadline_11otg_32"
+    >
+      <time>
+        2022/08/27 (Sat) 00:00まで
+      </time>
+      <p>
+        ※申し込み締切時間は変更される可能性があります
+      </p>
+    </div>
+    <div
+      class="_enshita-event-speaker-quota-type-list_11otg_43"
+    >
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          3分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          2
+           / 
+          5
+        </p>
+      </div>
+      <div
+        class="_enshita-event-speaker-quota-type_11otg_43"
+      >
+        <p
+          class="_enshita-event-speaker-quota-type-name_11otg_53"
+        >
+          5分枠
+        </p>
+        <p
+          class="_enshita-event-speaker-quota-type-currently_11otg_57"
+        >
+          3
+           / 
+          5
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

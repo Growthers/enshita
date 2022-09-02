@@ -1,0 +1,66 @@
+// Vitest Snapshot v1
+
+exports[`(component) EventDate > Snap Shot - 19:30 ~ 23:00 1`] = `
+<div>
+  <div
+    class="_enshita-event-date_9xck7_1"
+  >
+    <time>
+      2022/08/28 (Sun)
+    </time>
+    <time>
+      <span>
+        19:30 ~ 23:00
+      </span>
+    </time>
+  </div>
+</div>
+`;
+
+exports[`(component) EventDate > Snap Shot - 19:30 ~ Next Day 04:00  1`] = `
+<div>
+  <div
+    class="_enshita-event-date_9xck7_1"
+  >
+    <time>
+      2022/08/28 (Sun)
+    </time>
+    <time>
+      <span>
+        19:30 ~ 28:00
+      </span>
+    </time>
+  </div>
+</div>
+`;
+
+exports[`(component) EventDate > Snap Shot - 19:30 ~ Next Day 05:00 1`] = `
+<div>
+  <div
+    class="_enshita-event-date_9xck7_1"
+  >
+    <time>
+      <span>
+        2022/08/28 (Sun) 19:30 ~
+      </span>
+    </time>
+    <time>
+      <span>
+        2022/08/29 (Mon) 05:00
+      </span>
+    </time>
+  </div>
+</div>
+`;
+
+exports[`(component) EventDate > Snap Shot - No Date 1`] = `
+<div>
+  <div
+    class="_enshita-event-date_9xck7_1"
+  >
+    <p>
+      No Date
+    </p>
+  </div>
+</div>
+`;
