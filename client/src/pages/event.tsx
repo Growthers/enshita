@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Redirect } from "wouter";
 
-import type { SpeakerQuotaType } from "~/components/event/types/speaker-quota";
+import type { SpeakerQuotaType } from "~/types/global-models";
 import Layout from "~/components/layout/layout";
 import EventOverview from "~/components/event/overview";
 import EventDescription from "~/components/event/description";
