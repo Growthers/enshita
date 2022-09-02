@@ -10,6 +10,13 @@ export default {
   args: {
     code: 404,
     message: "page not found",
+    children: (
+      <p>
+        Oh... This URL is wrong.
+        <br />
+        please check again page URL.
+      </p>
+    ),
   },
 } as ComponentMeta<T>;
 
