@@ -4,10 +4,10 @@ exports[`(components) text area input with using react-hook-form > take snapshot
 <div>
   <form>
     <section
-      class="_enshita-apply-form-area-box_1szog_1"
+      class="_enshita-apply-form-area-box_1y2wv_1"
     >
       <label
-        class="_enshita-apply-form-area-label_1szog_17"
+        class="_enshita-apply-form-area-label_1y2wv_17"
         for="paragraph"
       >
         自由記載欄
@@ -15,7 +15,7 @@ exports[`(components) text area input with using react-hook-form > take snapshot
       <textarea
         aria-invalid="false"
         aria-label="paragraph"
-        class="_enshita-apply-form-area_1szog_1"
+        class="_enshita-apply-form-area_1y2wv_1"
         id="paragraph"
         name="paragraph"
       />
