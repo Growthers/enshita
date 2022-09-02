@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import styles from "~/styles/components/layout/statusMessage.module.scss";
 
 type StatusMessgeProps = {
