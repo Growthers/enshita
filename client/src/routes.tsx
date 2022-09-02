@@ -4,7 +4,8 @@ import {
   Switch,
   useRouter,
   useLocation,
-  Router as WRouter,Redirect,
+  Router as WRouter,
+  Redirect,
   Link,
 } from "wouter";
 import { About, Home, AccountInfo, Event } from "./pages";
