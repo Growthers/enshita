@@ -2,7 +2,7 @@
 @use "../../font-size" as font;
 
 .enshita-radio-input-label-box {
-  display: inline-flex;
+  display: flex;
   font-size: font.$text-16;
   white-space: pre-wrap;
   color: var.$global-black;
