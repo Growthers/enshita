@@ -1,15 +1,18 @@
-name: chromatic
+name: Chromatic test
 
 on:
-  workflow_run:
-    workflows:
-      - Chromatic test
-    types:
-      - completed
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'client/src/components/**'
+      - 'client/src/stories/**'
+      - 'client/src/styles/**'
 
 env:
   workdir: client
   node-version: lts/*
+  TZ: Asia/Tokyo
 
 jobs:
   front-filter:
@@ -22,44 +25,35 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.workflow_run.head_sha }}
       - name: Check for file changes
         uses: dorny/paths-filter@v2
         id: changes
         with:
           token: ${{ github.token }}
           filters: .github/filters.yml
-  run-chromatic-deployment:
-    name: Deploy Storybook to chromatic
+  run-chromatic-test:
     runs-on: ubuntu-latest
     needs: front-filter
-    if: needs.front-filter.outputs.client == 'true' &&  github.event.workflow_run.conclusion == 'success'
+    if: needs.front-filter.outputs.client == 'true'
     defaults:
       run:
         working-directory: ${{ env.workdir }}
-    timeout-minutes: 7
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: ${{ github.event.workflow_run.head_sha }}
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.node-version }}
       - name: Install Dependencies
         run: yarn install --immutable
-      - name: Publish to Chromatic
-        uses: chromaui/action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          workingDir: client
-  run-chromatic-deployment-check:
+      - name: Build Storybook
+        run: yarn run build-storybook
+      - name: Run test
+        run: yarn run test
+  run-chromatic-test-check:
     if: ${{ ! failure() }}
-    needs: run-chromatic-deployment
+    needs: run-chromatic-test
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Publish Storybook is successfully executed. "
+      - run: echo "Chromatic test is successfully executed. "
