@@ -1,0 +1,58 @@
+// Vitest Snapshot v1
+
+exports[`(component) EventDescription > Snap Shot - Contain New Line and URL 1`] = `
+<div>
+  <p
+    class="_enshita-event-description-content_dpaga_1"
+  >
+    <span>
+      イベントの説明
+
+URL↓
+
+      <a
+        class="_enshita-event-description-link_dpaga_10"
+        href="https://growthers.dev"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        https://growthers.dev
+      </a>
+    </span>
+    <span />
+  </p>
+</div>
+`;
+
+exports[`(component) EventDescription > Snap Shot - Contain URL 1`] = `
+<div>
+  <p
+    class="_enshita-event-description-content_dpaga_1"
+  >
+    <span>
+      URL: 
+      <a
+        class="_enshita-event-description-link_dpaga_10"
+        href="https://growthers.dev"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        https://growthers.dev
+      </a>
+    </span>
+    <span />
+  </p>
+</div>
+`;
+
+exports[`(component) EventDescription > Snap Shot - Simple Text 1`] = `
+<div>
+  <p
+    class="_enshita-event-description-content_dpaga_1"
+  >
+    <span>
+      イベントの説明
+    </span>
+  </p>
+</div>
+`;
