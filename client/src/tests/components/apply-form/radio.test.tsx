@@ -1,16 +1,16 @@
 import { composeStories } from "@storybook/testing-react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import * as stories from "~/stories/form-input/radio-input.stories";
+import * as stories from "~/stories/apply-form/radio.stories";
 
 const { Default } = composeStories(stories);
 
-describe("(components) radio button input", () => {
-  test("label should be test", () => {
+describe("(components) text input with using react-hook-form", () => {
+  test("label should be label for radio", () => {
     const { getByLabelText } = render(<Default />);
-    expect(getByLabelText("test")).toBeInTheDocument();
+    expect(getByLabelText("label for radio")).toBeInTheDocument();
   });
-  test("(normal) take snapshot", () => {
+  test("take snapshot", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });

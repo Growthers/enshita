@@ -32,6 +32,7 @@ const RadioControl = <T extends FieldValues>({
                   checked={item.id === value}
                   id={item.id}
                   value={item.id}
+                  aria-label={item.id}
                   {...omitField}
                   {...rest}
                 />

@@ -8,9 +8,6 @@ export default {
   args: {
     id: "test",
     value: "test",
-    name: "Test",
-    current: "2",
-    total: "5",
     "aria-label": "test",
   },
   component: RadioInput,
