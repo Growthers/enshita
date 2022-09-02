@@ -21,7 +21,7 @@ exports[`(component) account information form > Snap Shot 1`] = `
         >
           <p>
             <small>
-              mail Address
+              Email Address
             </small>
           </p>
           <div
@@ -158,7 +158,7 @@ exports[`(component) account information form > Snap Shot 1`] = `
         >
           <p>
             <small>
-              current Password
+              Current Password
             </small>
           </p>
           <div
