@@ -3,10 +3,10 @@
 exports[`(component) account information form > Snap Shot 1`] = `
 <div>
   <div
-    class="_enshita-accountinfoform-main_2hhsv_11"
+    class="_enshita-accountinfoform-main_pl3fj_11"
   >
     <div
-      class="_enshita-accountinfoform-head_2hhsv_1"
+      class="_enshita-accountinfoform-head_pl3fj_1"
     >
       <h1>
         Personal Info
@@ -72,7 +72,7 @@ exports[`(component) account information form > Snap Shot 1`] = `
         </label>
       </div>
       <div
-        class="_enshita-accountinfoform-dis_2hhsv_18"
+        class="_enshita-accountinfoform-dis_pl3fj_18"
       >
         <small>
           if you update your password, you must enter your current password.
@@ -187,15 +187,15 @@ exports[`(component) account information form > Snap Shot 1`] = `
         </label>
       </div>
       <div
-        class="_enshita-accountinfoform-error_2hhsv_46"
+        class="_enshita-accountinfoform-error_pl3fj_46"
       >
         <small />
       </div>
       <div
-        class="_enshita-accountinfoform-button_2hhsv_25"
+        class="_enshita-accountinfoform-button_pl3fj_25"
       >
         <button
-          class="_enshita-button-box_1gcpx_17 _enshita-button-update-box_2hhsv_34"
+          class="_enshita-button-box_1gcpx_17 _enshita-button-update-box_pl3fj_34"
           tabindex="0"
           type="submit"
         >
