@@ -1,0 +1,29 @@
+@use "../../variables" as var;
+
+.enshita-event-date {
+  color: var.$global-black;
+  text-align: center;
+
+  time,
+  p {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  span {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .enshita-event-date {
+    time,
+    p {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
