@@ -1,0 +1,17 @@
+@use "../../_variables" as var;
+
+.enshita-stream-oped {
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+
+  .enshita-stream-oped-massage {
+    padding: 20rem 0 6rem 0;
+    font-size: 6rem;
+  }
+
+  .enshita-stream-oped-subMassage {
+    font-size: 4rem;
+  }
+}
