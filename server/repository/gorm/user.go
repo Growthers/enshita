@@ -1,35 +1,39 @@
 package gorm
 
 import (
-	"encoding/base64"
 	"github.com/google/uuid"
-	"github.com/growthers/enshita/server/model/entity"
-	"github.com/growthers/enshita/server/repository"
-	"golang.org/x/crypto/argon2"
+	"github.com/growthers/enshita/server/model/domain"
+	"github.com/growthers/enshita/server/util"
 )
 
 // CreateUser ユーザーを作成
-func (repo *Repository) CreateUser(userID, email, userName, password string, role int) (*entity.User, error) {
-	user := &entity.User{
+func (repo *Repository) CreateUser(userID, email, userName, password string, role domain.UserRole) (*domain.User, error) {
+	user := &domain.User{
+		ID:       userID,
 		Email:    email,
 		Name:     userName,
 		Password: password,
 		Role:     role,
 	}
 
-	// パスワードは4文字以上である必要があります
-	if len(password) < 4 {
-		return nil, repository.RaiseError("PASSWORD_LENGTH", "password is too short")
+	//// ToDo: この部分を分離する
+	//// FIXME: Saltを安全に生成する
+	//salt := "AndjefkjDSn3Nd+w$siv"
+	//// ToDo: ここのパラメータの値のチューニング
+	//hashed := argon2.IDKey([]byte(password), []byte(salt), 1, 6710, 2, 32)
+	//
+	//// ハッシュされたパスワードをBase64でエンコードする
+	//encodedHashedPassword := make([]byte, base64.StdEncoding.EncodedLen(len(hashed)))
+	//base64.StdEncoding.Encode(encodedHashedPassword, hashed)
+	//user.Password = string(encodedHashedPassword)
+
+	encoder := util.NewArgon2PasswordEncoder()
+	encodedPassword, err := encoder.EncodePassword(password)
+	if err != nil {
+		return nil, err
 	}
 
-	salt := "AndjefkjDSn3Nd+w$siv"
-	// ToDo: ここのパラメータの値のチューニング
-	hashed := argon2.IDKey([]byte(password), []byte(salt), 1, 6710, 2, 32)
-
-	// ハッシュされたパスワードをBase64でエンコードする
-	encodedHashedPassword := make([]byte, base64.StdEncoding.EncodedLen(len(hashed)))
-	base64.StdEncoding.Encode(encodedHashedPassword, hashed)
-	user.Password = string(encodedHashedPassword)
+	user.Password = string(encodedPassword)
 
 	// ID生成
 	u, err := uuid.NewRandom()
