@@ -5,8 +5,7 @@ import { FormProvider } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import type { SpeakerQuotaType } from "~/types/global-models";
-// eslint-disable-next-line import/no-extraneous-dependencies
-import {userEvent, within} from "@storybook/testing-library";
+import { userEvent, within } from "@storybook/testing-library";
 
 type Form = {
   id: string;
@@ -63,7 +62,9 @@ export default {
         <FormProvider {...methods}>
           <form onSubmit={handleSubmit}>
             <Story />
-            <button aria-label="submit" type="submit">テスト用</button>
+            <button aria-label="submit" type="submit">
+              テスト用
+            </button>
           </form>
         </FormProvider>
       );
@@ -74,15 +75,15 @@ export default {
 const type = async (step: 0 | 1 | 2, canvasElement: HTMLElement) => {
   const canvas = within(canvasElement);
   if (step === 0) return;
-  await userEvent.click(canvas.getByLabelText("submit"))
-  if(step===1) return;
+  await userEvent.click(canvas.getByLabelText("submit"));
+  if (step === 1) return;
   await userEvent.click(canvas.getByLabelText("2"));
 };
 
 const playFactory = async (step: 0 | 1 | 2, canvasElement: HTMLElement) => {
   const canvas = within(canvasElement);
   await type(step, canvasElement);
-  await userEvent.click(canvas.getByLabelText("submit"))
+  await userEvent.click(canvas.getByLabelText("submit"));
 };
 
 export const Default: Story = {};

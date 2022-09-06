@@ -1,6 +1,5 @@
 import type { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import { AreaInput } from "~/components/form-input/area-input";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { userEvent, within } from "@storybook/testing-library";
 
 type T = typeof AreaInput;

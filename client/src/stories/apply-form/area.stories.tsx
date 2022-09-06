@@ -4,7 +4,6 @@ import { useDefaultForm } from "~/hooks/useDefaultForm";
 import { FormProvider } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { within, userEvent } from "@storybook/testing-library";
 
 type Form = {
