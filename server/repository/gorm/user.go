@@ -16,17 +16,6 @@ func (repo *Repository) CreateUser(userID, email, userName, password string, rol
 		Role:     role,
 	}
 
-	//// ToDo: この部分を分離する
-	//// FIXME: Saltを安全に生成する
-	//salt := "AndjefkjDSn3Nd+w$siv"
-	//// ToDo: ここのパラメータの値のチューニング
-	//hashed := argon2.IDKey([]byte(password), []byte(salt), 1, 6710, 2, 32)
-	//
-	//// ハッシュされたパスワードをBase64でエンコードする
-	//encodedHashedPassword := make([]byte, base64.StdEncoding.EncodedLen(len(hashed)))
-	//base64.StdEncoding.Encode(encodedHashedPassword, hashed)
-	//user.Password = string(encodedHashedPassword)
-
 	encoder := util.NewArgon2PasswordEncoder()
 	encodedPassword, err := encoder.EncodePassword(password)
 	if err != nil {

@@ -1,7 +1,6 @@
 package gorm
 
 import (
-	"github.com/growthers/enshita/server/repository"
 	"gorm.io/gorm"
 )
 
@@ -9,7 +8,7 @@ type Repository struct {
 	db *gorm.DB
 }
 
-func NewGormRepository(db *gorm.DB) repository.Repository {
+func NewGormRepository(db *gorm.DB) *Repository {
 	repo := &Repository{
 		db: db,
 	}
