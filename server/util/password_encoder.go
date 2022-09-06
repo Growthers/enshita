@@ -4,6 +4,7 @@ import (
 	"crypto/rand"
 	"crypto/subtle"
 	"encoding/base64"
+	"errors"
 	"fmt"
 	"golang.org/x/crypto/argon2"
 	"math/big"
@@ -19,45 +20,73 @@ import (
 
 type EncodedPassword string
 type PasswordEncoder interface {
-	EncodePassword(rawPassword string) EncodedPassword
+	EncodePassword(rawPassword string) (EncodedPassword, error)
 	IsMatchPassword(rawPassword string, encodedPassword EncodedPassword) bool
 }
 
 type Argon2PasswordEncoder struct{}
 
-func (e *Argon2PasswordEncoder) EncodePassword(rawPassword string) EncodedPassword {
+func NewArgon2PasswordEncoder() Argon2PasswordEncoder {
+	return Argon2PasswordEncoder{}
+}
+
+func (e *Argon2PasswordEncoder) EncodePassword(rawPassword string) (EncodedPassword, error) {
 	random, err := rand.Int(rand.Reader, big.NewInt(1000))
 	if err != nil {
-		return ""
+		return "", err
 	}
 
 	salt := fmt.Sprintf("%x[0]", random)
-	//salt := ... // saltをランダム生成
-	return EncodedPassword(argon2.IDKey([]byte(rawPassword), []byte(salt), 0, 20, 20, 20))
+	hashed := argon2.IDKey([]byte(rawPassword), []byte(salt), 2, 20, 20, 20)
+
+	// ハッシュ済みパスワードをエンコード
+	// NOTICE: Base64エンコーダに与えるスライスはエンコード後のスライスのサイズと揃える
+	encodedHashedPassword := make([]byte, base64.StdEncoding.EncodedLen(len(hashed)))
+	base64.StdEncoding.Encode(encodedHashedPassword, hashed)
+
+	// ハッシュ済みパスワードとソルトを結合
+	combinatedHashAndPassword := []byte(fmt.Sprintf("%s.%s", encodedHashedPassword, salt))
+	// エンコード
+	combinated := make([]byte, base64.StdEncoding.EncodedLen(len(combinatedHashAndPassword)))
+	base64.StdEncoding.Encode(combinated, combinatedHashAndPassword)
+
+	return EncodedPassword(combinated), nil
 }
 
 func (e *Argon2PasswordEncoder) IsMatchPassword(rawPassword string, encodedPassword EncodedPassword) bool {
-	_, salt, hash, err := decodeHash(encodedPassword) // base64 decodeとか
+	passwordPart, salt, _, err := decodeHash(encodedPassword) // base64 decodeとか
 	if err != nil {
 		return false
 	}
 
-	otherHash := argon2.IDKey([]byte(rawPassword), []byte(salt), 0, 20, 20, 10) // 比較対象のEncodedPasswordと同じ条件で入力されたパスワードをhashする
-	return subtle.ConstantTimeCompare([]byte(hash), otherHash) == 1             // timings attack防止
+	otherHash := argon2.IDKey([]byte(rawPassword), []byte(salt), 2, 20, 20, 20) // 比較対象のEncodedPasswordと同じ条件で入力されたパスワードをhashする
+
+	return subtle.ConstantTimeCompare([]byte(passwordPart), otherHash) == 1 // timings attack防止
 }
 
+// decodeHash ハッシュ済みパスワード部、ソルト、全体のデコード済みデータを返します Base64の文字列でないものを与えるとpanicします
 func decodeHash(encodedPassword EncodedPassword) (string, string, string, error) {
-	var decodedPassword, encodedPasswordPart, decodedPasswordPart, salt []byte
+	var salt []byte
+
 	// エンコードされたパスワード全体をデコード Base64{ Base64[<Password>].<Salt>} -> Base64{<Password>}.<Salt>
+	decodedPassword := make([]byte, base64.StdEncoding.DecodedLen(len(encodedPassword)))
 	_, err := base64.StdEncoding.Decode(decodedPassword, []byte(encodedPassword))
 	if err != nil {
 		return "", "", "", err
 	}
 
 	splited := strings.Split(string(decodedPassword), ".")
-	decodedPasswordPart, salt = []byte(splited[0]), []byte(splited[1])
+	if len(splited) != 2 {
+		return "", "", "", errors.New("input is invalid format")
+	}
+
+	encodedPasswordPart, salt := []byte(splited[0]), []byte(splited[1])[:len(splited[1])-1]
 
 	// エンコードされたパスワード部をデコード Base64{<Password>}.<Salt> -> <Password>
+	// デコードするときに1byteぶん不要なデータ(0x00,0x00)が含まれてしまうので-1する
+	decodedPasswordPart := make([]byte,
+		base64.StdEncoding.DecodedLen(len(encodedPasswordPart))-1,
+	)
 	_, err = base64.StdEncoding.Decode(decodedPasswordPart, encodedPasswordPart)
 	if err != nil {
 		return "", "", "", err
