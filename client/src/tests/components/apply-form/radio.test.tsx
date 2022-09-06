@@ -5,7 +5,7 @@ import * as stories from "~/stories/apply-form/radio.stories";
 
 const { Default } = composeStories(stories);
 
-describe("(components) text input with using react-hook-form", () => {
+describe("(components) radio input with using react-hook-form", () => {
   test("label should be label for radio", () => {
     const { getByLabelText } = render(<Default />);
     expect(getByLabelText("label for radio")).toBeInTheDocument();

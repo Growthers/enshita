@@ -1,19 +1,19 @@
 // Vitest Snapshot v1
 
-exports[`(components) text input with using react-hook-form > take snapshot 1`] = `
+exports[`(components) radio input with using react-hook-form > take snapshot 1`] = `
 <div>
   <form>
     <section
-      class="_enshita-apply-form-radio-box_s5bt7_1"
+      class="_enshita-apply-form-radio-box_jfo0w_1"
     >
       <h3
         aria-label="label for radio"
-        class="_enshita-apply-form-radio-label_s5bt7_17"
+        class="_enshita-apply-form-radio-label_jfo0w_17"
       >
         登壇枠
       </h3>
       <div
-        class="_enshita-apply-form-radio-input-box_s5bt7_30"
+        class="_enshita-apply-form-radio-input-box_jfo0w_30"
       >
         <input
           aria-label="1"
@@ -23,7 +23,7 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
           value="1"
         />
         <div
-          class="_enshita-apply-form-radio-input-label-box_s5bt7_33"
+          class="_enshita-apply-form-radio-input-label-box_jfo0w_34"
         >
           <label
             for="1"
@@ -31,7 +31,7 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
             5分枠
           </label>
           <p
-            class="_enshita-apply-form-radio-input-label-text_s5bt7_44"
+            class="_enshita-apply-form-radio-input-label-text_jfo0w_45"
           >
             2
           </p>
@@ -41,7 +41,7 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
         </div>
       </div>
       <div
-        class="_enshita-apply-form-radio-input-box_s5bt7_30"
+        class="_enshita-apply-form-radio-input-box_jfo0w_30"
       >
         <input
           aria-label="2"
@@ -51,7 +51,7 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
           value="2"
         />
         <div
-          class="_enshita-apply-form-radio-input-label-box_s5bt7_33"
+          class="_enshita-apply-form-radio-input-label-box_jfo0w_34"
         >
           <label
             for="2"
@@ -59,7 +59,7 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
             7分枠
           </label>
           <p
-            class="_enshita-apply-form-radio-input-label-text_s5bt7_44"
+            class="_enshita-apply-form-radio-input-label-text_jfo0w_45"
           >
             0
           </p>
@@ -69,7 +69,7 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
         </div>
       </div>
       <div
-        class="_enshita-apply-form-radio-input-box_s5bt7_30"
+        class="_enshita-apply-form-radio-input-box_jfo0w_30"
       >
         <input
           aria-label="3"
@@ -79,7 +79,7 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
           value="3"
         />
         <div
-          class="_enshita-apply-form-radio-input-label-box_s5bt7_33"
+          class="_enshita-apply-form-radio-input-label-box_jfo0w_34"
         >
           <label
             for="3"
@@ -87,7 +87,7 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
             10分枠
           </label>
           <p
-            class="_enshita-apply-form-radio-input-label-text_s5bt7_44"
+            class="_enshita-apply-form-radio-input-label-text_jfo0w_45"
           >
             3
           </p>
