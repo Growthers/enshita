@@ -11,7 +11,9 @@ const Router: React.FC = () => (
     <Route path="/event">
       <Redirect to="/" />
     </Route>
-    <Route path="/event/:id">{params => <EventPage eventId={params.id} />}</Route>
+    <Route path="/event/:id">
+      {params => <EventPage eventId={params.id} />}
+    </Route>
   </Switch>
 );
 

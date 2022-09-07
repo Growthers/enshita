@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { Redirect } from "wouter";
-import useSWR from "swr"
+import useSWR from "swr";
 import Layout from "~/components/layout/layout";
 import EventOverview from "~/components/event/overview";
 import EventDescription from "~/components/event/description";
@@ -8,11 +8,11 @@ import TweetButton from "~/components/button/tweet-button";
 import { fetcher } from "~/libs/axios";
 import styles from "~/styles/pages/event.module.scss";
 import type { Event } from "~/types/global-models";
-import type {EventPageProperties} from "./type/model";
+import type { EventPageProperties } from "./type/model";
 
 const EventPage: FC<EventPageProperties> = props => {
   const { eventId } = props;
-  const { data, error } = useSWR<Event>(`/events/${eventId}`, fetcher)
+  const { data, error } = useSWR<Event>(`/events/${eventId}`, fetcher);
   if (error) return <Redirect to="/" />;
   if (!data) return <p>Loading...</p>;
   return (

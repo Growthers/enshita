@@ -13,21 +13,21 @@ export type SpeakerQuotaType = {
  * イベントの型
  */
 export type Event = {
-    eventId: string;
-    title: string;
-    description: string;
-    startDate: string;
-    endDate: string;
-    venue?: string;
-    ogp: string;
-    status:
-  | "preparing"
-  | "open"
-  | "close"
-  | "suddenOpen"
-  | "suddenClose"
-  | "finish";
-hashTag?: string;
-deadline: string;
-speakerQuotaTypeList: Array<SpeakerQuotaType>;
+  eventId: string;
+  title: string;
+  description: string;
+  startDate: string;
+  endDate: string;
+  venue?: string;
+  ogp: string;
+  status:
+    | "preparing"
+    | "open"
+    | "close"
+    | "suddenOpen"
+    | "suddenClose"
+    | "finish";
+  hashTag?: string;
+  deadline: string;
+  speakerQuotaTypeList: Array<SpeakerQuotaType>;
 };
