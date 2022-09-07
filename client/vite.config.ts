@@ -1,6 +1,6 @@
 import react from "@vitejs/plugin-react";
 import * as path from "node:path";
-import { defineConfig } from "vite";
+import { defineConfig, splitVendorChunkPlugin } from "vite";
 
 const PRODUCTION = "production";
 const DEVELOPMENT = "development";
@@ -44,7 +44,7 @@ export default defineConfig({
         }
       : undefined,
   },
-  plugins: [react()],
+  plugins: [react(), splitVendorChunkPlugin()],
   resolve: {
     alias: {
       "~/": `${root}/`,
