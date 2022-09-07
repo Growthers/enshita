@@ -6,7 +6,7 @@ import Layout from "~/components/layout/layout";
 import EventOverview from "~/components/event/overview";
 import EventDescription from "~/components/event/description";
 import TweetButton from "~/components/button/tweet-button";
-import { client } from "~/libs/apiClient";
+import { client } from "~/libs/axios";
 import styles from "~/styles/pages/event.module.scss";
 
 type Data = {
