@@ -1,14 +1,14 @@
 import { useState } from "react";
 import styles from "~/styles/components/form/input/textArea.module.scss";
 import { Icon } from "@iconify/react";
-import { PasswordProps } from "~/components/form/input/type/model";
+import { PasswordProps } from "~/components/account-info-form/input/type/model";
 
-const Password = <T extends string>({
+const Password = ({
   label,
   discription,
   register,
   itsError,
-}: PasswordProps<T>): JSX.Element => {
+}: PasswordProps): JSX.Element => {
   const [isShow, setShow] = useState(true);
 
   return (

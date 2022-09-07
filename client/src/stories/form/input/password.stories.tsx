@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import Password from "~/components/form/input/passwordArea";
+import Password from "~/components/account-info-form/input/passwordArea";
 
 type T = typeof Password;
 type Story = ComponentStoryObj<T>;

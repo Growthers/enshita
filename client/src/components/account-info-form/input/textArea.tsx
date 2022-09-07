@@ -1,14 +1,14 @@
 import styles from "~/styles/components/form/input/textArea.module.scss";
 import { Icon } from "@iconify/react";
-import { NormalProps } from "~/components/form/input/type/model";
+import { NormalProps } from "~/components/account-info-form/input/type/model";
 
-const ReadOnly = <T extends string>({
+const Normal = ({
   label,
   discription,
   icon,
   register,
   itsError,
-}: NormalProps<T>): JSX.Element => (
+}: NormalProps): JSX.Element => (
   <div className={styles["enshita-textarea-form-body"]}>
     <label htmlFor={label}>
       <p>
@@ -19,13 +19,9 @@ const ReadOnly = <T extends string>({
           <Icon icon={icon} width="15" height="15" />
         </div>
         <input
-          className={styles["enshita-textarea-input-pasword"]}
+          className={styles["enshita-textarea-input-normal"]}
           {...register}
-          readOnly
         />
-        <div className={styles["enshita-textarea-icon"]}>
-          <Icon icon="carbon:edit-off" width="15" height="15" />
-        </div>
       </div>
       <div className={styles["enshita-textarea-error"]}>
         {itsError && (
@@ -38,4 +34,4 @@ const ReadOnly = <T extends string>({
   </div>
 );
 
-export default ReadOnly;
+export default Normal;

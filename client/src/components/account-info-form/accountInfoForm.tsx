@@ -4,13 +4,13 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { client } from "~/libs/apiClient";
-import Normal from "~/components/form/input/textArea";
+import Normal from "~/components/account-info-form/input/textArea";
 import {
   mailModel,
   passwordModel,
   userNameModel,
-} from "~/components/form/schema/schema";
-import Password from "~/components/form/input/passwordArea";
+} from "~/components/account-info-form/type/schema";
+import Password from "~/components/account-info-form/input/passwordArea";
 import { Button } from "../button/button";
 
 type FormDataProps = {
@@ -74,7 +74,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
         <h1>Personal Info</h1>
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Normal<"mail">
+        <Normal
           label="mail"
           discription="Email Address"
           icon="ci:mail"
@@ -82,7 +82,7 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
           itsError={errors.mail}
         />
 
-        <Normal<"userName">
+        <Normal
           label="name"
           discription="User name"
           icon="ant-design:user-outlined"
@@ -96,21 +96,21 @@ const AccountInfoForm: FC<Props> = ({ mail, userName }) => {
           </small>
         </div>
 
-        <Password<"newPassword">
+        <Password
           label="newPassword"
           discription="New Password"
           register={register("newPassword", { required: true })}
           itsError={errors.newPassword}
         />
 
-        <Password<"reNewPassword">
+        <Password
           label="NewPasswordReRe-enter"
           discription="New Password (Re-enter)"
           register={register("reNewPassword", { required: true })}
           itsError={errors.reNewPassword}
         />
 
-        <Password<"currentPassword">
+        <Password
           label="currentPassword"
           discription="Current Password"
           register={register("currentPassword", { required: true })}

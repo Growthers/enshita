@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import Readonly from "~/components/form/input/readonlyArea";
+import Readonly from "~/components/account-info-form/input/readonlyArea";
 
 type T = typeof Readonly;
 type Story = ComponentStoryObj<T>;

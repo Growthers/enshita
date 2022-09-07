@@ -1,5 +1,5 @@
 import { FC } from "react";
-import AccountInfoForm from "~/components/form/accountInfoForm";
+import AccountInfoForm from "~/components/account-info-form/accountInfoForm";
 import Layout from "~/components/layout/layout";
 import styles from "~/styles/pages/accountInfo.module.scss";
 
