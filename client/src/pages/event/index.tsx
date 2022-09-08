@@ -1,57 +1,20 @@
-import React, { useEffect, useState } from "react";
+import type { FC } from "react";
 import { Redirect } from "wouter";
-
-import type { SpeakerQuotaType } from "~/types/global-models";
+import useSWR from "swr";
 import Layout from "~/components/layout/layout";
 import EventOverview from "~/components/event/overview";
 import EventDescription from "~/components/event/description";
 import TweetButton from "~/components/button/tweet-button";
-import { client } from "~/libs/axios";
+import { fetcher } from "~/libs/axios";
 import styles from "~/styles/pages/event.module.scss";
+import type { Event } from "~/types/global-models";
+import type { EventPageProperties } from "./type/model";
 
-type Data = {
-  eventId: string;
-  title: string;
-  description: string;
-  startDate: string;
-  endDate: string;
-  venue?: string;
-  ogp: string;
-  status:
-    | "preparing"
-    | "open"
-    | "close"
-    | "suddenOpen"
-    | "suddenClose"
-    | "finish";
-  hashTag?: string;
-  deadline: string;
-  speakerQuotaTypeList: SpeakerQuotaType[];
-};
-
-type Props = {
-  eventId: string;
-};
-
-const Event: React.FC<Props> = props => {
+const EventPage: FC<EventPageProperties> = props => {
   const { eventId } = props;
-  const [data, setData] = useState<Data>();
-  const [err, setErr] = useState(false);
-
-  useEffect(() => {
-    client
-      .get<Data>(`/events/${eventId}`)
-      .then(r => {
-        setData(r.data);
-      })
-      .catch(() => {
-        setErr(true);
-      });
-  }, [eventId]);
-
-  if (err) return <Redirect to="/" />;
-  if (data === undefined) return <p>Loading...</p>;
-
+  const { data, error } = useSWR<Event>(`/events/${eventId}`, fetcher);
+  if (error) return <Redirect to="/" />;
+  if (!data) return <p>Loading...</p>;
   return (
     <Layout>
       <div className={styles["enshita-event"]}>
@@ -91,4 +54,4 @@ const Event: React.FC<Props> = props => {
   );
 };
 
-export { Event };
+export { EventPage };
