@@ -8,7 +8,7 @@ import {
   Redirect,
   Link,
 } from "wouter";
-import { About, Home, AccountInfo, Event } from "./pages";
+import { About, Home, AccountInfo, EventPage } from "./pages";
 
 const NestedRoutes = ({
   base,
@@ -38,7 +38,9 @@ const Router: React.FC = () => (
     <Route path="/event">
       <Redirect to="/" />
     </Route>
-    <Route path="/event/:id">{params => <Event eventId={params.id} />}</Route>
+    <Route path="/event/:id">
+      {params => <EventPage eventId={params.id} />}
+    </Route>
     <NestedRoutes base="/account">
       <Link to="/info" />
       <Route path="/info" component={AccountInfo} />

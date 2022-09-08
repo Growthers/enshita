@@ -3,7 +3,7 @@ import styles from "~/styles/components/form/accountInfoForm.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { client } from "~/libs/apiClient";
+import { client } from "~/libs/axios";
 import Normal from "~/components/account-info-form/input/textArea";
 import {
   mailModel,
