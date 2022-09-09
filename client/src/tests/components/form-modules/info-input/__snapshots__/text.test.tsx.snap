@@ -1,0 +1,21 @@
+// Vitest Snapshot v1
+
+exports[`(component) text input module test > Snap Shot 1`] = `
+<div>
+  <div
+    class="_enshita-input-textarea_7x1ku_1 undefined"
+  >
+    <div
+      class="_enshita-input-icon_7x1ku_15"
+    >
+      <span />
+    </div>
+    <input
+      class="_enshita-input-normal_7x1ku_23"
+    />
+  </div>
+  <p
+    class="_enshita-input-error_7x1ku_37"
+  />
+</div>
+`;

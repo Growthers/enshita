@@ -1,0 +1,35 @@
+// Vitest Snapshot v1
+
+exports[`(component) text control module test > Snap Shot 1`] = `
+<div>
+  <form>
+    <section
+      class="_enshita-control-body_mclyn_1"
+    >
+      <label
+        for="mail"
+      >
+        email Address
+      </label>
+      <div
+        class="_enshita-input-textarea_7x1ku_1 undefined"
+      >
+        <div
+          class="_enshita-input-icon_7x1ku_15"
+        >
+          <span />
+        </div>
+        <input
+          class="_enshita-input-normal_7x1ku_23"
+          id="mail"
+          name="mail"
+          value="fuga@hoge.com"
+        />
+      </div>
+      <p
+        class="_enshita-input-error_7x1ku_37"
+      />
+    </section>
+  </form>
+</div>
+`;

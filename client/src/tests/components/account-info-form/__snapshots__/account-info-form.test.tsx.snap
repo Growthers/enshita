@@ -1,0 +1,202 @@
+// Vitest Snapshot v1
+
+exports[`(component) account information update form test > Snap Shot 1`] = `
+<div>
+  <div
+    class="_enshita-form-main_uoaol_1"
+  >
+    <div
+      class="_enshita-form-head_uoaol_8"
+    >
+      <h1>
+        Personal Info
+      </h1>
+    </div>
+    <form>
+      <section
+        class="_enshita-control-body_mclyn_1"
+      >
+        <label
+          for="mail"
+        >
+          email Address
+        </label>
+        <div
+          class="_enshita-input-textarea_7x1ku_1 undefined"
+        >
+          <div
+            class="_enshita-input-icon_7x1ku_15"
+          >
+            <span />
+          </div>
+          <input
+            class="_enshita-input-normal_7x1ku_23"
+            id="mail"
+            name="mail"
+            value="abc@example.com"
+          />
+        </div>
+        <p
+          class="_enshita-input-error_7x1ku_37"
+        />
+      </section>
+      <section
+        class="_enshita-control-body_mclyn_1"
+      >
+        <label
+          for="userName"
+        >
+          User name
+        </label>
+        <div
+          class="_enshita-input-textarea_7x1ku_1 undefined"
+        >
+          <div
+            class="_enshita-input-icon_7x1ku_15"
+          >
+            <span />
+          </div>
+          <input
+            class="_enshita-input-normal_7x1ku_23"
+            id="userName"
+            name="userName"
+            value="hoge"
+          />
+        </div>
+        <p
+          class="_enshita-input-error_7x1ku_37"
+        />
+      </section>
+      <div
+        class="_enshita-form-dis_uoaol_18"
+      >
+        <small>
+          if you update your password, you must enter your current password.
+        </small>
+      </div>
+      <section
+        class="_enshita-control-body_mclyn_1"
+      >
+        <label
+          for="newPassword"
+        >
+          New Password
+        </label>
+        <div
+          class="_enshita-input-textarea_7x1ku_1 undefined"
+        >
+          <div
+            class="_enshita-input-icon_7x1ku_15"
+          >
+            <span />
+          </div>
+          <input
+            class="_enshita-input-password_7x1ku_30"
+            id="newPassword"
+            name="newPassword"
+            type="password"
+            value=""
+          />
+          <button
+            class="_enshita-input-icon_7x1ku_15"
+            type="button"
+          >
+            <span />
+          </button>
+        </div>
+        <p
+          class="_enshita-input-error_7x1ku_37"
+        />
+      </section>
+      <section
+        class="_enshita-control-body_mclyn_1"
+      >
+        <label
+          for="reNewPassword"
+        >
+          New Password (Re-enter)
+        </label>
+        <div
+          class="_enshita-input-textarea_7x1ku_1 undefined"
+        >
+          <div
+            class="_enshita-input-icon_7x1ku_15"
+          >
+            <span />
+          </div>
+          <input
+            class="_enshita-input-password_7x1ku_30"
+            id="reNewPassword"
+            name="reNewPassword"
+            type="password"
+            value=""
+          />
+          <button
+            class="_enshita-input-icon_7x1ku_15"
+            type="button"
+          >
+            <span />
+          </button>
+        </div>
+        <p
+          class="_enshita-input-error_7x1ku_37"
+        />
+      </section>
+      <section
+        class="_enshita-control-body_mclyn_1"
+      >
+        <label
+          for="currentPassword"
+        >
+          Current Password
+        </label>
+        <div
+          class="_enshita-input-textarea_7x1ku_1 undefined"
+        >
+          <div
+            class="_enshita-input-icon_7x1ku_15"
+          >
+            <span />
+          </div>
+          <input
+            class="_enshita-input-password_7x1ku_30"
+            id="currentPassword"
+            name="currentPassword"
+            type="password"
+            value=""
+          />
+          <button
+            class="_enshita-input-icon_7x1ku_15"
+            type="button"
+          >
+            <span />
+          </button>
+        </div>
+        <p
+          class="_enshita-input-error_7x1ku_37"
+        />
+      </section>
+      <div
+        class="_enshita-form-error_uoaol_46"
+      >
+        <small />
+      </div>
+      <div
+        class="_enshita-form-button_uoaol_25"
+      >
+        <button
+          class="_enshita-button-box_1gcpx_17 _enshita-button-update-box_uoaol_34"
+          tabindex="0"
+          type="submit"
+        >
+          <p
+            class="_enshita-button-text_1gcpx_36 undefined"
+          >
+            update
+          </p>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
