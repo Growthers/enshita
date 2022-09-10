@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import styles from "~/styles/components/event/description.module.scss";
-import type { DescriptionProperties} from "./type/model";
+import type { DescriptionProperties } from "./type/model";
 
 const EventDescription: FC<DescriptionProperties> = props => {
   const { description } = props;

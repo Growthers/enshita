@@ -37,4 +37,4 @@ export type TwitterButtonProperties = {
   text: string;
   url: string | undefined;
   hashtags: string[] | undefined;
-}
+};

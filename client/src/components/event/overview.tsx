@@ -6,7 +6,7 @@ import Button from "~/components/button/button";
 import AnchorButton from "~/components/button/anchor-button";
 import { str2Date, getDateInfo } from "~/utils/date";
 import styles from "~/styles/components/event/overview.module.scss";
-import type { FC } from "react"
+import type { FC } from "react";
 
 const EventOverview: FC<Omit<Event, "title" | "description" | "ogp">> = ({
   eventId,

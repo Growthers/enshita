@@ -1,4 +1,4 @@
-import type{ ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import type { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import EventDescription from "~/components/event/description";
 
 type T = typeof EventDescription;
