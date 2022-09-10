@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { Redirect } from "wouter";
 import useSWR from "swr";
-import Layout from "~/components/layout/layout";
+import Layout from "~/components/layout";
 import EventOverview from "~/components/event/overview";
 import EventDescription from "~/components/event/description";
 import TweetButton from "~/components/button/tweet-button";
