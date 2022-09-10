@@ -4,7 +4,6 @@ exports[`(components) header > test Snap Shot 1`] = `
 <div>
   <header
     class="_enshita-header_1c9jq_1 _enshita-header-pc_1c9jq_13"
-    role="banner"
   >
     <div
       class="_enshita-header-logo_1c9jq_7"
@@ -49,8 +48,7 @@ exports[`(components) header > test Snap Shot 1`] = `
     </div>
   </header>
   <main
-    class="_enshita-layout-body_1hr2h_1"
-    role="main"
+    class="_enshita-layout-body_148jb_1"
   >
     <div>
       hogehoge

@@ -4,7 +4,6 @@ exports[`(components) header > test Snap Shot 1`] = `
 <div>
   <header
     class="_enshita-header_1c9jq_1 _enshita-header-pc_1c9jq_13"
-    role="banner"
   >
     <div
       class="_enshita-header-logo_1c9jq_7"
