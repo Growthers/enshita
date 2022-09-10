@@ -1,9 +1,9 @@
 import type { FC } from "react";
-import styles from "~/styles/components/layout/statusMessage.module.scss";
-import type { StatusMessgeProps } from "~/components/layout/type/model";
+import styles from "~/styles/components/status-message/status-message.module.scss";
+import type { StatusMessageProps } from "./type/model";
 import Layout from "~/components/layout/layout";
 
-const StatusMessge: FC<StatusMessgeProps> = ({ code, message, children }) => (
+const StatusMessage: FC<StatusMessageProps> = ({ code, message, children }) => (
   <Layout>
     <div className={styles["enshita-status-body"]}>
       <div className={styles["enshita-status-content"]}>
@@ -21,4 +21,4 @@ const StatusMessge: FC<StatusMessgeProps> = ({ code, message, children }) => (
   </Layout>
 );
 
-export default StatusMessge;
+export default StatusMessage;
