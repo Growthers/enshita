@@ -1,14 +1,10 @@
-import React from "react";
-import { AnchorButton } from "~/components/button/anchor-button";
+import type { FC } from "react";
+import AnchorButton from "~/components/button/anchor-button";
 import styles from "~/styles/components/button/tweet-button.module.scss";
+import type {TwitterButtonProperties} from "./type/model";
 
-type Props = {
-  text: string;
-  url: string | undefined;
-  hashtags: string[] | undefined;
-};
 
-const TweetButton: React.FC<Props> = ({ text, url = "", hashtags = [] }) => {
+const TweetButton: FC<TwitterButtonProperties> = ({ text, url = "", hashtags = [] }) => {
   // URL, hashtagsがないときはパラメータの値がなにもないが、問題なく指定した項目のみでTweet可能
   const tweetLink = `https://twitter.com/intent/tweet?text=${text.replace(
     / /g,

@@ -1,14 +1,9 @@
-import React from "react";
-
+import type { FC } from "react";
 import { str2Date, getDateInfo, getDateDiff, fillzero } from "~/utils/date";
 import styles from "~/styles/components/event/date.module.scss";
+import type { DateProperties} from "./type/model"
 
-type Props = {
-  startStrDate: string;
-  endStrDate: string;
-};
-
-const EventDate: React.FC<Props> = props => {
+const EventDate: FC<DateProperties> = props => {
   const { startStrDate, endStrDate } = props;
   const startDate = str2Date(startStrDate);
   const endDate = str2Date(endStrDate);

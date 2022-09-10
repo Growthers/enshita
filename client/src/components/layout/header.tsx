@@ -1,11 +1,10 @@
-import React from "react";
+import type { FC } from "react";
 import styles from "~/styles/components/layout/header.module.scss";
-import { AnchorButton } from "../button/anchor-button";
+import AnchorButton from "../button/anchor-button";
 
-const Header: React.FC = () => (
+const Header: FC = () => (
   <header
     className={`${styles["enshita-header"]} ${styles["enshita-header-pc"]}`}
-    role="banner"
   >
     <div className={styles["enshita-header-logo"]}>
       <a href="./" rel="noopener noreferrer">

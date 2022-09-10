@@ -1,7 +1,7 @@
-import React from "react";
+import type { FC } from "react";
 import styles from "~/styles/components/layout/footer.module.scss";
 
-const Footer: React.FC = () => (
+const Footer: FC = () => (
   <footer>
     <div className={styles["enshita-footer"]}>
       <div className={styles["enshita-footer-content"]}>

@@ -1,20 +1,19 @@
-import React from "react";
+import type { FC } from "react";
 import Header from "~/components/layout/header";
 import Footer from "~/components/layout/footer";
 import style from "~/styles/components/layout/layout.module.scss";
+import {Fragment} from "react";
+import {LayoutProperties} from "./type/model";
 
-type Props = {
-  children: React.ReactNode;
-};
 
-const Layout: React.FC<Props> = ({ children }) => (
-  <React.Fragment key="layout">
+const Layout: FC<LayoutProperties> = ({ children }) => (
+  <Fragment key="layout">
     <Header />
-    <main role="main" className={style["enshita-layout-body"]}>
+    <main className={style["enshita-layout-body"]}>
       {children}
     </main>
     <Footer />
-  </React.Fragment>
+  </Fragment>
 );
 
 export default Layout;

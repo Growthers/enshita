@@ -1,12 +1,8 @@
-import React from "react";
-
+import type { FC } from "react";
 import styles from "~/styles/components/event/description.module.scss";
+import type { DescriptionProperties} from "./type/model";
 
-type Props = {
-  description: string;
-};
-
-const EventDescription: React.FC<Props> = props => {
+const EventDescription: FC<DescriptionProperties> = props => {
   const { description } = props;
   // descriptionの中からURLを抽出して配列に
   const urlPattern = /https?:\/\/[\w!?/+\-_~;.,*&@#$%=']+/gim;

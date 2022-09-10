@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import type { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import StatusMessage from "~/components/status-message";
 
 type T = typeof StatusMessage;

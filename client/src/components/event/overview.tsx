@@ -1,30 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
-
-import type { SpeakerQuotaType } from "~/types/global-models";
+import type { Event } from "~/types/global-models";
 import EventDate from "~/components/event/date";
-import { Button } from "~/components/button/button";
-import { AnchorButton } from "~/components/button/anchor-button";
+import Button from "~/components/button/button";
+import AnchorButton from "~/components/button/anchor-button";
 import { str2Date, getDateInfo } from "~/utils/date";
 import styles from "~/styles/components/event/overview.module.scss";
+import type { FC } from "react"
 
-type Props = {
-  eventId: string;
-  startDate: string;
-  endDate: string;
-  status:
-    | "preparing"
-    | "open"
-    | "close"
-    | "suddenOpen"
-    | "suddenClose"
-    | "finish";
-  deadline: string;
-  speakerQuotaTypeList: SpeakerQuotaType[];
-  venue: string | undefined;
-};
-
-const EventOverview: React.FC<Props> = ({
+const EventOverview: FC<Event> = ({
   eventId,
   startDate,
   endDate,
