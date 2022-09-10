@@ -8,7 +8,7 @@ import { str2Date, getDateInfo } from "~/utils/date";
 import styles from "~/styles/components/event/overview.module.scss";
 import type { FC } from "react"
 
-const EventOverview: FC<Event> = ({
+const EventOverview: FC<Omit<Event, "title" | "description" | "ogp">> = ({
   eventId,
   startDate,
   endDate,
