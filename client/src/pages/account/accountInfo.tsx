@@ -1,6 +1,6 @@
 import { FC } from "react";
 import AccountInfoForm from "~/components/account-info-form/account-info-form";
-import Layout from "~/components/layout/layout";
+import Layout from "~/components/layout/index";
 import styles from "~/styles/pages/accountInfo.module.scss";
 
 const AccountInfo: FC = () => (

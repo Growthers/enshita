@@ -10,7 +10,7 @@ import { accountInfoFormSchema } from "~/components/account-info-form/type/schem
 import styles from "~/styles/components/account-info/accountinfo.module.scss";
 import { TextControl } from "~/components/form-modules/info-control/text-control";
 import { PasswordControl } from "~/components/form-modules/info-control/password-control";
-import { Button } from "~/components/button/button";
+import Button from "~/components/button/button";
 
 const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
   const method = useForm<AccountInfoFormDataProps>({
