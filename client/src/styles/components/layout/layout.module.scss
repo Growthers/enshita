@@ -3,6 +3,12 @@
 .enshita-layout-body {
   box-sizing: border-box;
   min-height: calc(100vh - 15rem);
-  padding: 3rem 0;
-  background-color: var.$global-white;
+  padding: 5.625rem 0 11.875rem;
+  @media (max-width: 768px) {
+    padding: 2.625rem 0 3.75rem;
+  }
+}
+
+.enshita-layout-disable {
+  display: none;
 }

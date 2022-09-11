@@ -32,3 +32,9 @@ export type AnchorButtonProperties = ComponentPropsWithoutRef<"a"> &
     textStyles?: string;
     isSameOrigin?: boolean;
   };
+
+export type TwitterButtonProperties = {
+  text: string;
+  url: string | undefined;
+  hashtags: string[] | undefined;
+};

@@ -4,7 +4,7 @@ import {
   Switch,
   useRouter,
   useLocation,
-  Router as WRouter,
+  Router as Wouter,
   Redirect,
   Link,
 } from "wouter";
@@ -24,9 +24,9 @@ const NestedRoutes = ({
   if (!parentLocation.startsWith(nestedBase)) return null;
 
   return (
-    <WRouter base={nestedBase} key={nestedBase}>
+    <Wouter base={nestedBase} key={nestedBase}>
       {children}
-    </WRouter>
+    </Wouter>
   );
 };
 
@@ -45,6 +45,9 @@ const Router: React.FC = () => (
       <Link to="/info" />
       <Route path="/info" component={AccountInfo} />
     </NestedRoutes>
+    <Wouter base="/stream">
+      <Route path="/" component={Home} />
+    </Wouter>
   </Switch>
 );
 
