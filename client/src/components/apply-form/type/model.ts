@@ -19,6 +19,7 @@ export type WrapperProperties<T extends FieldValues = never> = {
   defaultValues: (DeepPartial<T> | undefined) & T;
   children: ReactNode;
   onSubmit: SubmitHandler<T>;
+  wrapperStyle?: string;
 };
 
 export type InputControlProperties<T extends FieldValues> = Omit<
