@@ -9,7 +9,9 @@ export const schema = z.object({
     .string()
     .min(1, { message: "メールアドレスは必須入力です。" })
     .email({ message: "無効なメールアドレスです。" }),
-  speakerQuotaTypeId: z.string().uuid({ message: "登壇枠を選んでください。" }),
+  speakerQuotaTypeId: z
+    .string()
+    .min(1, { message: "登壇枠を選んでください。" }),
   title: z
     .string()
     .min(1, { message: "タイトルは必須入力です。" })
