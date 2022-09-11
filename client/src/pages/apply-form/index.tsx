@@ -11,7 +11,7 @@ import useSWR from "swr";
 import { Redirect, useLocation } from "wouter";
 import type { Event } from "~/types/global-models";
 import type { SubmitHandler } from "react-hook-form";
-import { Button } from "~/components/button/button";
+import Button from "~/components/button/button";
 import type { ApplyFormPageProperties, ApplyForm } from "./type/model";
 
 const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
