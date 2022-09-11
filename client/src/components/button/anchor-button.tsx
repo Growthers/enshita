@@ -44,4 +44,4 @@ const AnchorButton: FC<AnchorButtonProperties> = ({
   </a>
 );
 
-export { AnchorButton };
+export default AnchorButton;

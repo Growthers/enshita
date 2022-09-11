@@ -42,4 +42,4 @@ const Button: FC<ButtonProperties> = ({
 );
 /* eslint-enable react/button-has-type */
 
-export { Button };
+export default Button;

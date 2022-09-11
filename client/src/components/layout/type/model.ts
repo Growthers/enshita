@@ -1,7 +1,13 @@
 import type { ReactNode } from "react";
 
-export type StatusMessgeProps = {
-  code: number;
-  message: string;
+export type LayoutProperties = {
   children: ReactNode;
+};
+
+export type HeaderProperties = {
+  disableStyle: string;
+};
+
+export type FooterProperties = {
+  disableStyle: string;
 };
