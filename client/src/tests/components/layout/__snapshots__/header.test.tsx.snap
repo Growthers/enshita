@@ -3,11 +3,10 @@
 exports[`(components) header > test Snap Shot 1`] = `
 <div>
   <header
-    class="_enshita-header_1c9jq_1 _enshita-header-pc_1c9jq_13"
-    role="banner"
+    class="_enshita-header_cjr7n_1 undefined"
   >
     <div
-      class="_enshita-header-logo_1c9jq_7"
+      class="_enshita-header-logo_cjr7n_16"
     >
       <a
         href="./"
@@ -20,7 +19,7 @@ exports[`(components) header > test Snap Shot 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <text
-            class="_enshita-header-svg_1c9jq_20"
+            class="_enshita-header-svg_cjr7n_22"
             font-size="40"
             x="0"
             y="40"
@@ -31,10 +30,10 @@ exports[`(components) header > test Snap Shot 1`] = `
       </a>
     </div>
     <div
-      class="_enshita-header-hidden_1c9jq_30"
+      class="_enshita-header-hidden_cjr7n_32"
     >
       <a
-        class="_enshita-button-box_8w723_17 _enshita-header-button_1c9jq_24"
+        class="_enshita-button-box_8w723_17 _enshita-header-button_cjr7n_26"
         href="./login"
         rel="noopener noreferrer"
         role="button"
