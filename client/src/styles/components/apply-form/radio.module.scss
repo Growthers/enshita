@@ -1,0 +1,57 @@
+@use "../../variables" as var;
+@use "../../font-size" as font;
+
+.enshita-apply-form-radio-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  background-color: var.$global-white;
+  border: 1px solid var.$global-black;
+  border-radius: 1rem;
+
+  & > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+  }
+  @media (max-width: 768px) {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+
+  .enshita-apply-form-radio-label {
+    font-size: font.$text-20;
+    color: var.$global-black;
+
+    &::after {
+      color: var.$global-red;
+      content: " *";
+    }
+    @media (max-width: 768px) {
+      font-size: font.$text-mb-16;
+    }
+  }
+
+  .enshita-apply-form-radio-input-box {
+    display: flex;
+    gap: 0.5rem;
+
+    .enshita-apply-form-radio-input-label-box {
+      display: flex;
+      font-size: font.$text-16;
+      color: var.$global-black;
+      white-space: pre-wrap;
+      @media (max-width: 768px) {
+        font-size: font.$text-mb-12;
+      }
+
+      .enshita-apply-form-radio-input-label-text {
+        &::before {
+          content: "    ";
+        }
+
+        &::after {
+          content: " / ";
+        }
+      }
+    }
+  }
+}

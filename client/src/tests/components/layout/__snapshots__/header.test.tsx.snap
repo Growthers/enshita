@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`(components) header > test Snap Shot 1`] = `
+exports[`(components) header > take snapshot 1`] = `
 <div>
   <header
     class="_enshita-header_cjr7n_1 undefined"

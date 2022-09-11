@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`(components) footer > test Snap Shot 1`] = `
+exports[`(components) footer > take snapshot 1`] = `
 <div>
   <footer
     class="_enshita-footer_1kcfu_1 undefined"

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`(components) button > (disable) test Snap Shot 1`] = `
+exports[`(components) button > (disable) take snapshot 1`] = `
 <div>
   <button
     class="_enshita-button-box_1gcpx_17 undefined"
@@ -17,7 +17,7 @@ exports[`(components) button > (disable) test Snap Shot 1`] = `
 </div>
 `;
 
-exports[`(components) button > (icon) test Snap Shot 1`] = `
+exports[`(components) button > (icon) take snapshot 1`] = `
 <div>
   <button
     class="_enshita-button-box_1gcpx_17 undefined"
@@ -38,7 +38,7 @@ exports[`(components) button > (icon) test Snap Shot 1`] = `
 </div>
 `;
 
-exports[`(components) button > (normal) test Snap Shot 1`] = `
+exports[`(components) button > (normal) take snapshot 1`] = `
 <div>
   <button
     class="_enshita-button-box_1gcpx_17 undefined"
