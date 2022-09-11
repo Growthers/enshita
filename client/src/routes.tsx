@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Route,
-  Switch,
-  Router as Wouter,
-  Redirect,
-} from "wouter";
+import { Route, Switch, Router as Wouter, Redirect } from "wouter";
 import { About, Home, AccountInfo, EventPage } from "./pages";
 
 const Router: React.FC = () => (
