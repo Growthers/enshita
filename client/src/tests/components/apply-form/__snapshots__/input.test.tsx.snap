@@ -4,23 +4,23 @@ exports[`(components) text input with using react-hook-form > take snapshot 1`] 
 <div>
   <form>
     <section
-      class="_enshita-apply-form-input-box_1piaz_1"
+      class="_enshita-apply-form-input-box_c2dee_1"
     >
       <label
-        class="_enshita-apply-form-input-label_1piaz_17"
+        class="_enshita-apply-form-input-label_c2dee_18"
         for="name"
       >
         名前
       </label>
       <p
-        class="_enshita-apply-form-description_1piaz_30"
+        class="_enshita-apply-form-description_c2dee_31"
       >
         名前を入力してください
       </p>
       <input
         aria-invalid="false"
         aria-label="name"
-        class="_enshita-apply-form-input_1piaz_1"
+        class="_enshita-apply-form-input_c2dee_1"
         id="name"
         name="name"
         placeholder="名前"

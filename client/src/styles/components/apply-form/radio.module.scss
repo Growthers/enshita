@@ -6,6 +6,7 @@
   flex-direction: column;
   padding: 1.25rem;
   background-color: var.$global-white;
+  border: 1px solid var.$global-black;
   border-radius: 1rem;
 
   & > :not([hidden]) ~ :not([hidden]) {
