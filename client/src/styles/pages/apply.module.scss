@@ -1,0 +1,38 @@
+@use "../variables" as var;
+@use "../font-size" as font;
+
+.enshita-apply-form {
+  & > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 5.9375rem;
+  }
+
+  padding: 0 calc(1625vw / 48);
+  @media (max-width: 768px) {
+    padding: 0 calc(25vw / 3);
+  }
+
+  .enshita-apply-form-wrapper {
+    & > :not([hidden]) ~ :not([hidden]) {
+      margin-top: 3.75rem;
+    }
+    @media (max-width: 768px) {
+      & > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .enshita-apply-form-button-box {
+    display: flex;
+    justify-content: flex-end;
+
+    .enshita-apply-form-button {
+      padding: 0.5rem 1.875rem;
+      background-color: var.$global-primary-deep;
+    }
+
+    .enshita-apply-form-button-text {
+      color: var.$global-white;
+    }
+  }
+}

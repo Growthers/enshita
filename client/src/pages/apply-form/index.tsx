@@ -12,6 +12,7 @@ import { Redirect, useLocation } from "wouter";
 import type { Event } from "~/types/global-models";
 import type { SubmitHandler } from "react-hook-form";
 import Button from "~/components/button/button";
+import styles from "~/styles/pages/apply.module.scss";
 import type { ApplyFormPageProperties, ApplyForm } from "./type/model";
 
 const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
@@ -19,7 +20,7 @@ const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
   const [, setLocation] = useLocation();
   if (!data) return <p>Loading...</p>;
   if (error || data.status !== "open") return <Redirect to="/" />;
-  const onSubmit: SubmitHandler<ApplyForm> = async result => {
+  const onSubmit: SubmitHandler<ApplyForm> = result => {
     const url =
       data.status === "suddenOpen"
         ? `/events/${eventId}/form/insert`
@@ -39,7 +40,7 @@ const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
       });
   };
   return (
-    <section>
+    <section className={styles["enshita-apply-form"]}>
       <Title title={data.title} />
       <Wrapper<ApplyForm>
         defaultValues={{
@@ -50,6 +51,7 @@ const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
           paragraph: "",
         }}
         onSubmit={onSubmit}
+        wrapperStyle={styles["enshita-apply-form-wrapper"]}
       >
         <InputControl<ApplyForm>
           label="名前"
@@ -80,8 +82,14 @@ const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
           name="paragraph"
           id="paragraph"
         />
-        <div>
-          <Button variant="normal" type="submit">
+        <div className={styles["enshita-apply-form-button-box"]}>
+          <Button
+            variant="normal"
+            aria-label="submit"
+            type="submit"
+            boxStyles={styles["enshita-apply-form-button"]}
+            textStyles={styles["enshita-apply-form-button-text"]}
+          >
             submit
           </Button>
         </div>
