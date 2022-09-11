@@ -1,13 +1,13 @@
-import { Controller, useFormContext } from "react-hook-form";
+import { Controller, FieldValues, useFormContext } from "react-hook-form";
 import styles from "~/styles/components/form-modules/info-control/text.module.scss";
 import { PasswordInput } from "~/components/form-modules/info-input/password-input";
 import { PasswordControlProps } from "./type/model";
 
-const PasswordControl = ({
+const PasswordControl = <T extends FieldValues>({
   name,
   label,
   ...rest
-}: PasswordControlProps): JSX.Element => {
+}: PasswordControlProps<T>): JSX.Element => {
   const { control } = useFormContext();
   return (
     <section className={styles["enshita-control-body"]}>
