@@ -31,7 +31,7 @@
     "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
-    "@hookform/resolvers": "^2.9.7",
+    "@hookform/resolvers": "2.9.8",
     "@iconify/react": "^3.2.2",
     "axios": "0.27.2",
     "destyle.css": "3.0.2",
