@@ -15,15 +15,15 @@ describe("(components) button", () => {
     const { getByRole } = render(<Disabled />);
     expect(getByRole("button", options)).toBeDisabled();
   });
-  test("(normal) test Snap Shot", () => {
+  test("(normal) take snapshot", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });
-  test("(disable) test Snap Shot", () => {
+  test("(disable) take snapshot", () => {
     const { container } = render(<Disabled />);
     expect(container).toMatchSnapshot();
   });
-  test("(icon) test Snap Shot", () => {
+  test("(icon) take snapshot", () => {
     const { container } = render(<Icon />);
     expect(container).toMatchSnapshot();
   });

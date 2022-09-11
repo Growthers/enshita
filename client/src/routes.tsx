@@ -1,12 +1,11 @@
 import React from "react";
-import { Route, Switch, Router as Wouter, Redirect } from "wouter";
-import { About, Home, AccountInfo, EventPage } from "./pages";
+import { Route, Switch, Redirect, Router as Wouter } from "wouter";
+import { About, Home, EventPage, ApplyFormPage, AccountInfo } from "./pages";
 
 const Router: React.FC = () => (
   <Switch>
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
-    {/* event idがないときはindexへ飛ばす */}
     <Route path="/event">
       <Redirect to="/" />
     </Route>
@@ -16,6 +15,12 @@ const Router: React.FC = () => (
     <Wouter base="/account">
       <Route path="/info" component={AccountInfo} />
     </Wouter>
+    <Route path="/apply">
+      <Redirect to="/" />
+    </Route>
+    <Route path="/apply/:id">
+      {params => <ApplyFormPage eventId={params.id} />}
+    </Route>
     <Wouter base="/stream">
       <Route path="/" component={Home} />
     </Wouter>

@@ -8,8 +8,8 @@ const { Default } = composeStories(stories);
 const options = {
   name: "",
 };
-describe("(components) header", () => {
-  test("test Snap Shot", () => {
+describe("(components) layout", () => {
+  test("take snapshot", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });

@@ -1,0 +1,40 @@
+@use "../../variables" as var;
+@use "../../font-size" as font;
+
+.enshita-apply-form-title-box {
+  color: var.$global-black;
+  text-align: center;
+
+  .enshita-apply-form-title-wrapper {
+    display: flex;
+    justify-content: center;
+    white-space: pre-wrap;
+    @media (max-width: 768px) {
+      display: block;
+      white-space: normal;
+    }
+
+    .enshita-apply-form-title {
+      font-size: calc(100vw / 60);
+      @media (max-width: 768px) {
+        font-size: font.$text-mb-20;
+      }
+
+      &:last-child {
+        &::before {
+          content: " ";
+          @media (max-width: 768px) {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+
+  .enshita-apply-form-subtitle {
+    font-size: font.$text-16;
+    @media (max-width: 768px) {
+      font-size: font.$text-mb-12;
+    }
+  }
+}

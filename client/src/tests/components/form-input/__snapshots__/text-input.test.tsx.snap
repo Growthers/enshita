@@ -1,0 +1,29 @@
+// Vitest Snapshot v1
+
+exports[`(components) text input > (error) take snapshot 1`] = `
+<div>
+  <input
+    aria-label="test"
+    id="test"
+    placeholder="test"
+    type="text"
+  />
+  <p
+    aria-label="error message"
+    class="_enshita-input-error_k8dqh_1"
+  >
+    test error
+  </p>
+</div>
+`;
+
+exports[`(components) text input > (normal) take snapshot 1`] = `
+<div>
+  <input
+    aria-label="test"
+    id="test"
+    placeholder="test"
+    type="text"
+  />
+</div>
+`;

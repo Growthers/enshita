@@ -1,0 +1,25 @@
+// Vitest Snapshot v1
+
+exports[`(components) text area input with using react-hook-form > take snapshot 1`] = `
+<div>
+  <form>
+    <section
+      class="_enshita-apply-form-area-box_1gqwg_1"
+    >
+      <label
+        class="_enshita-apply-form-area-label_1gqwg_18"
+        for="paragraph"
+      >
+        自由記載欄
+      </label>
+      <textarea
+        aria-invalid="false"
+        aria-label="paragraph"
+        class="_enshita-apply-form-area_1gqwg_1"
+        id="paragraph"
+        name="paragraph"
+      />
+    </section>
+  </form>
+</div>
+`;
