@@ -1,9 +1,10 @@
-import { useForm, FormProvider, SubmitHandler } from "react-hook-form";
+import { FormProvider, SubmitHandler } from "react-hook-form";
 import { FC, useState } from "react";
 import type {
   AccountInfoFormProps,
   AccountInfoFormDataProps,
 } from "~/components/account-info-form/type/model";
+import { useDefaultForm } from "~/hooks/useDefaultForm";
 import { client } from "~/libs/axios";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { accountInfoFormSchema } from "~/components/account-info-form/type/schema";
@@ -13,12 +14,15 @@ import { PasswordControl } from "~/components/form-modules/info-control/password
 import Button from "~/components/button/button";
 
 const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
-  const method = useForm<AccountInfoFormDataProps>({
-    resolver: zodResolver(accountInfoFormSchema),
+  const method = useDefaultForm<AccountInfoFormDataProps>({
     defaultValues: {
       mail,
       userName,
+      newPassword: "",
+      reNewPassword: "",
+      currentPassword: "",
     },
+    resolver: zodResolver(accountInfoFormSchema),
     mode: "onBlur",
   });
 
