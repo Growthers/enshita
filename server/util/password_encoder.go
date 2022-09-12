@@ -14,8 +14,8 @@ import (
 /*
 	ハッシュされたパスワードの仕様
 
-	<ハッシュ済みパスワード(Base64)>.<ソルト(ランダム文字列)>
-	↑全体をもう一度Base64エンコードする
+	<ハッシュアルゴリズム>.<ハッシュ済みパスワード(Base64)>.<ソルト(ランダム文字列)>
+
 */
 
 type EncodedPassword string
@@ -29,6 +29,10 @@ type Argon2PasswordEncoder struct{}
 func NewArgon2PasswordEncoder() Argon2PasswordEncoder {
 	return Argon2PasswordEncoder{}
 }
+
+const (
+	HashArgorithm = "Argon2"
+)
 
 func (e *Argon2PasswordEncoder) EncodePassword(rawPassword string) (EncodedPassword, error) {
 	random, err := rand.Int(rand.Reader, big.NewInt(1000))
@@ -45,12 +49,9 @@ func (e *Argon2PasswordEncoder) EncodePassword(rawPassword string) (EncodedPassw
 	base64.StdEncoding.Encode(encodedHashedPassword, hashed)
 
 	// ハッシュ済みパスワードとソルトを結合
-	combinatedHashAndPassword := []byte(fmt.Sprintf("%s.%s", encodedHashedPassword, salt))
-	// エンコード
-	combinated := make([]byte, base64.StdEncoding.EncodedLen(len(combinatedHashAndPassword)))
-	base64.StdEncoding.Encode(combinated, combinatedHashAndPassword)
+	combinatedHashAndPassword := []byte(fmt.Sprintf("%s.%s.%s", HashArgorithm, encodedHashedPassword, salt))
 
-	return EncodedPassword(combinated), nil
+	return EncodedPassword(combinatedHashAndPassword), nil
 }
 
 func (e *Argon2PasswordEncoder) IsMatchPassword(rawPassword string, encodedPassword EncodedPassword) bool {
