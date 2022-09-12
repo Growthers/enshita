@@ -2,7 +2,7 @@ package repository
 
 import "errors"
 
-var (
+const (
 	// ArgIDNilErr 引数に与えられたIDがnil
 	ArgIDNilErr = errors.New("id is nil")
 	// NotFoundErr 見つかりませんでした
