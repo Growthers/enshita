@@ -8,7 +8,11 @@ const Header: FC<HeaderProperties> = ({ disableStyle }) => (
   <header className={`${styles["enshita-header"]} ${disableStyle}`}>
     <div>
       <Link to="/">
-        <img src="/statics/lyrics-dark.svg" alt="enshita logo" className={styles["enshita-header-logo-img"]} />
+        <img
+          src="/statics/lyrics-dark.svg"
+          alt="enshita logo"
+          className={styles["enshita-header-logo-img"]}
+        />
       </Link>
     </div>
     <div className={styles["enshita-header-hidden"]}>
