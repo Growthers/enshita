@@ -10,3 +10,8 @@ type User struct {
 
 // userRole ユーザーのロール
 type UserRole int
+
+const (
+	Admin    UserRole = 0
+	Operator UserRole = 1
+)
