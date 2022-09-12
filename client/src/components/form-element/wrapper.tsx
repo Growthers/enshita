@@ -3,12 +3,12 @@ import { FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useDefaultForm } from "~/hooks/useDefaultForm";
 import type { WrapperProperties } from "./type/model";
-import { schema } from "./type/schema";
 
 const Wrapper = <T extends FieldValues = never>({
   defaultValues,
   children,
   onSubmit,
+  schema,
   wrapperStyle,
 }: WrapperProperties<T>): JSX.Element => {
   const methods = useDefaultForm<T>({

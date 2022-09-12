@@ -1,5 +1,5 @@
 import type { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import { RadioInput } from "~/components/form-input/radio-input";
+import { RadioInput } from "~/components/form-element/radio-input";
 
 type T = typeof RadioInput;
 type Story = ComponentStoryObj<T>;
