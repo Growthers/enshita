@@ -1,0 +1,10 @@
+@use "../../variables" as var;
+@use "../../font-size" as font;
+
+.enshita-input-error {
+  font-size: font.$text-16;
+  color: var.$global-red;
+  @media (max-width: 768px) {
+    font-size: font.$text-mb-12;
+  }
+}

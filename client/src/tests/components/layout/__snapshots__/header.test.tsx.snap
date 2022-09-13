@@ -1,47 +1,30 @@
 // Vitest Snapshot v1
 
-exports[`(components) header > test Snap Shot 1`] = `
+exports[`(components) header > take snapshot 1`] = `
 <div>
   <header
-    class="_enshita-header_1c9jq_1 _enshita-header-pc_1c9jq_13"
-    role="banner"
+    class="_enshita-header_41584d undefined"
   >
-    <div
-      class="_enshita-header-logo_1c9jq_7"
-    >
-      <a
-        href="./"
-        rel="noopener noreferrer"
-      >
-        <svg
-          height="50"
-          viewBox="0 0 140 50"
-          width="140"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <text
-            class="_enshita-header-svg_1c9jq_20"
-            font-size="40"
-            x="0"
-            y="40"
-          >
-            enshita
-          </text>
-        </svg>
-      </a>
+    <div>
+      <img
+        alt="enshita logo"
+        class="_enshita-header-logo-img_41584d"
+        href="/"
+        src="/statics/lyrics-dark.svg"
+      />
     </div>
     <div
-      class="_enshita-header-hidden_1c9jq_30"
+      class="_enshita-header-hidden_41584d"
     >
       <a
-        class="_enshita-button-box_8w723_17 _enshita-header-button_1c9jq_24"
+        class="_enshita-button-box_fd3da4 _enshita-header-button_41584d"
         href="./login"
         rel="noopener noreferrer"
         role="button"
         target="_blank"
       >
         <p
-          class="_enshita-button-text_8w723_36 undefined"
+          class="_enshita-button-text_fd3da4 undefined"
         >
           login
         </p>

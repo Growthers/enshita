@@ -1,0 +1,22 @@
+@use "../../variables" as var;
+@use "../../font-size" as font;
+
+.enshita-radio-input-label-box {
+  display: flex;
+  font-size: font.$text-16;
+  color: var.$global-black;
+  white-space: pre-wrap;
+  @media (max-width: 768px) {
+    font-size: font.$text-mb-12;
+  }
+
+  .enshita-radio-input-label-text {
+    &::before {
+      content: " ";
+    }
+
+    &::after {
+      content: " / ";
+    }
+  }
+}

@@ -13,7 +13,7 @@ const linkOption = {
 };
 
 describe("(components) footer", () => {
-  test("test Snap Shot", () => {
+  test("take snapshot", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });

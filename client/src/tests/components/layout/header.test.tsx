@@ -9,7 +9,7 @@ const options = {
   name: "",
 };
 describe("(components) header", () => {
-  test("test Snap Shot", () => {
+  test("take snapshot", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });

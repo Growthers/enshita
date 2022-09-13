@@ -1,17 +1,51 @@
 // Vitest Snapshot v1
 
-exports[`(components) header > test Snap Shot 1`] = `
+exports[`(components) layout > take snapshot 1`] = `
 <div>
   <header
-    class="_enshita-header_1c9jq_1 _enshita-header-pc_1c9jq_13"
-    role="banner"
+    class="_enshita-header_41584d "
   >
+    <div>
+      <img
+        alt="enshita logo"
+        class="_enshita-header-logo-img_41584d"
+        href="/"
+        src="/statics/lyrics-dark.svg"
+      />
+    </div>
     <div
-      class="_enshita-header-logo_1c9jq_7"
+      class="_enshita-header-hidden_41584d"
     >
       <a
-        href="./"
+        class="_enshita-button-box_fd3da4 _enshita-header-button_41584d"
+        href="./login"
         rel="noopener noreferrer"
+        role="button"
+        target="_blank"
+      >
+        <p
+          class="_enshita-button-text_fd3da4 undefined"
+        >
+          login
+        </p>
+      </a>
+    </div>
+  </header>
+  <main
+    class="_enshita-layout-body_acbc67"
+  >
+    <div>
+      hogehoge
+    </div>
+  </main>
+  <footer
+    class="_enshita-footer_1843f9 "
+  >
+    <div
+      class="_enshita-footer-content_1843f9"
+    >
+      <div
+        class="_enshita-footer-logo_1843f9 _enshita-footer-hidden_1843f9"
       >
         <svg
           height="50"
@@ -20,7 +54,7 @@ exports[`(components) header > test Snap Shot 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <text
-            class="_enshita-header-svg_1c9jq_20"
+            class="_enshita-footer-svg_1843f9"
             font-size="40"
             x="0"
             y="40"
@@ -28,119 +62,65 @@ exports[`(components) header > test Snap Shot 1`] = `
             enshita
           </text>
         </svg>
-      </a>
-    </div>
-    <div
-      class="_enshita-header-hidden_1c9jq_30"
-    >
-      <a
-        class="_enshita-button-box_8w723_17 _enshita-header-button_1c9jq_24"
-        href="./login"
-        rel="noopener noreferrer"
-        role="button"
-        target="_blank"
+      </div>
+      <div
+        class="_enshita-footer-menu_1843f9"
       >
         <p
-          class="_enshita-button-text_8w723_36 undefined"
+          class="_enshita-footer-about_1843f9"
         >
-          login
+          About Growthers
         </p>
-      </a>
-    </div>
-  </header>
-  <main
-    class="_enshita-layout-body_1hr2h_1"
-    role="main"
-  >
-    <div>
-      hogehoge
-    </div>
-  </main>
-  <footer>
-    <div
-      class="_enshita-footer_1qyaz_1"
-    >
-      <div
-        class="_enshita-footer-content_1qyaz_26"
-      >
-        <div
-          class="_enshita-footer-logo_1qyaz_11 _enshita-footer-hidden_1qyaz_68"
+        <ul
+          class="_enshita-footer-list_1843f9"
+          role="navigation"
         >
-          <svg
-            height="50"
-            viewBox="0 0 140 50"
-            width="140"
-            xmlns="http://www.w3.org/2000/svg"
+          <li
+            class="_enshita-footer-homepage_1843f9"
           >
-            <text
-              class="_enshita-footer-svg_1qyaz_44"
-              font-size="40"
-              x="0"
-              y="40"
+            <a
+              class="_enshita-footer-link_1843f9"
+              href="https://growthers.dev/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              enshita
-            </text>
-          </svg>
-        </div>
-        <div
-          class="_enshita-footer-menu_1qyaz_33"
-        >
-          <p
-            class="_enshita-footer-about_1qyaz_48"
+              Home Page
+            </a>
+          </li>
+          <li
+            class="_enshita-footer-twitter_1843f9"
           >
-            About Growthers
-          </p>
-          <ul
-            class="_enshita-footer-list_1qyaz_56"
-            role="navigation"
+            <a
+              class="_enshita-footer-link_1843f9"
+              href="https://twitter.com/UdcGrowthers/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Twitter
+            </a>
+          </li>
+          <li
+            class="_enshita-footer-github_1843f9"
           >
-            <li
-              class="_enshita-footer-homepage_1qyaz_95"
+            <a
+              class="_enshita-footer-link_1843f9"
+              href="https://github.com/Growthers/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <a
-                class="_enshita-footer-link_1qyaz_62"
-                href="https://growthers.dev/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Home Page
-              </a>
-            </li>
-            <li
-              class="_enshita-footer-twitter_1qyaz_92"
-            >
-              <a
-                class="_enshita-footer-link_1qyaz_62"
-                href="https://twitter.com/UdcGrowthers/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Twitter
-              </a>
-            </li>
-            <li
-              class="_enshita-footer-github_1qyaz_98"
-            >
-              <a
-                class="_enshita-footer-link_1qyaz_62"
-                href="https://github.com/Growthers/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
-        </div>
+              GitHub
+            </a>
+          </li>
+        </ul>
       </div>
-      <p
-        class="_enshita-footer-copyright_1qyaz_19"
-      >
-        <small>
-          Copyright © 2022 Growthers
-        </small>
-      </p>
     </div>
+    <p
+      class="_enshita-footer-copyright_1843f9"
+    >
+      <small>
+        Copyright © 2022 Growthers
+      </small>
+    </p>
   </footer>
 </div>
 `;

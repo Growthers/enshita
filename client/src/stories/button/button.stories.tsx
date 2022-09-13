@@ -1,6 +1,5 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import { Button } from "~/components/button/button";
+import type { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import Button from "~/components/button/button";
 
 type T = typeof Button;
 type Story = ComponentStoryObj<T>;

@@ -11,11 +11,11 @@ describe("(components) anchor button", () => {
     const { getByRole } = render(<Default />);
     expect(getByRole("button", options)).toBeInTheDocument();
   });
-  test("(normal) test Snap Shot", () => {
+  test("(normal) take snapshot", () => {
     const { container } = render(<Default />);
     expect(container).toMatchSnapshot();
   });
-  test("(icon) test Snap Shot", () => {
+  test("(icon) take snapshot", () => {
     const { container } = render(<Icon />);
     expect(container).toMatchSnapshot();
   });

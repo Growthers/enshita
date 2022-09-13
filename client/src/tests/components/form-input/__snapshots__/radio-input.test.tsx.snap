@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`(components) radio button input > (normal) take snapshot 1`] = `
+<div>
+  <input
+    aria-label="test"
+    id="test"
+    name="test"
+    type="radio"
+    value="test"
+  />
+</div>
+`;
