@@ -13,14 +13,9 @@
   }
 }
 
-.enshita-header-logo {
-  padding-top: 0.5rem;
-  font-size: 2.5rem;
-  font-weight: 900;
-}
-
-.enshita-header-svg {
-  fill: var.$global-white;
+.enshita-header-logo-img {
+  flex-grow: 0;
+  width: 14rem;
 }
 
 .enshita-header-button {
