@@ -3,28 +3,28 @@
 exports[`(components) header > take snapshot 1`] = `
 <div>
   <header
-    class="_enshita-header_y5pqh_1 undefined"
+    class="_enshita-header_41584d undefined"
   >
     <div>
       <img
         alt="enshita logo"
-        class="_enshita-header-logo-img_y5pqh_16"
+        class="_enshita-header-logo-img_41584d"
         href="/"
         src="/statics/lyrics-dark.svg"
       />
     </div>
     <div
-      class="_enshita-header-hidden_y5pqh_27"
+      class="_enshita-header-hidden_41584d"
     >
       <a
-        class="_enshita-button-box_8w723_17 _enshita-header-button_y5pqh_21"
+        class="_enshita-button-box_fd3da4 _enshita-header-button_41584d"
         href="./login"
         rel="noopener noreferrer"
         role="button"
         target="_blank"
       >
         <p
-          class="_enshita-button-text_8w723_36 undefined"
+          class="_enshita-button-text_fd3da4 undefined"
         >
           login
         </p>
