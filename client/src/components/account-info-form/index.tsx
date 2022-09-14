@@ -1,15 +1,16 @@
 import { SubmitHandler } from "react-hook-form";
-import { FC, useState } from "react";
-import type {
-  AccountInfoFormProps,
-  AccountInfoFormFieldValues,
-} from "~/components/account-info-form/type/model";
+import { useState } from "react";
+import type { FC } from "react";
 import { client } from "~/libs/axios";
 import { accountInfoFormSchema } from "~/components/account-info-form/type/schema";
 import styles from "~/styles/components/account-info/accountinfo.module.scss";
 import { TextControl } from "~/components/account-info-form/icon-text-control";
 import { PasswordControl } from "~/components/account-info-form/password-control";
 import Button from "~/components/button/button";
+import type {
+  AccountInfoFormProps,
+  AccountInfoFormFieldValues,
+} from "./type/model";
 import { Wrapper } from "../form-element/wrapper";
 
 const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
@@ -28,7 +29,7 @@ const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
         newPassword: data.newPassword,
         currentPassword: data.currentPassword,
       })
-      .then(() => {})
+      .then(() => { })
       .catch(() => {
         setNotUpdate(true);
       });

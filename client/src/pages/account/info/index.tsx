@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import AccountInfoForm from "~/components/account-info-form";
 import styles from "~/styles/pages/accountInfo.module.scss";
 
