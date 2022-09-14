@@ -8,7 +8,7 @@ type User struct {
 	Role     UserRole `json:"role"`
 }
 
-// userRole ユーザーのロール
+// UserRole ユーザーのロール
 type UserRole int
 
 const (
