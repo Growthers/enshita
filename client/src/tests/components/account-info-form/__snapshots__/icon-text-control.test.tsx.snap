@@ -23,7 +23,7 @@ exports[`(component) text control module test > Snap Shot 1`] = `
           class="_enshita-input-normal_80a418"
           id="mail"
           name="mail"
-          value="fuga@hoge.com"
+          value=""
         />
       </div>
       <p
