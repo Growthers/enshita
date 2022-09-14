@@ -1,0 +1,25 @@
+// Vitest Snapshot v1
+
+exports[`(components) image container for landing page > take snapshot 1`] = `
+<div>
+  <div
+    class="_enshita-image-container_3533c2"
+  >
+    <div
+      class="_enshita-image-container-image-wrapper_3533c2"
+    >
+      <img
+        alt="post new LT"
+        class="_enshita-image-container-image_3533c2"
+        src="/statics/undraw_post_re_mtr4.svg"
+      />
+    </div>
+    <p
+      class="_enshita-image-container-content_3533c2"
+    >
+      簡単にLTを
+開催できる.
+    </p>
+  </div>
+</div>
+`;
