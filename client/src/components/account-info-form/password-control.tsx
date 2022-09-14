@@ -1,7 +1,7 @@
 import { Controller, FieldValues, useFormContext } from "react-hook-form";
 import styles from "~/styles/components/form-modules/info-control/text.module.scss";
-import { PasswordInput } from "~/components/form-modules/info-input/password-input";
-import { PasswordControlProps } from "./type/model";
+import { PasswordInput } from "~/components/form-element/password-input";
+import { PasswordControlProps } from "~/components/account-info-form/type/model";
 
 const PasswordControl = <T extends FieldValues>({
   name,

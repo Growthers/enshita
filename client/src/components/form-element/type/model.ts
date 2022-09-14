@@ -32,3 +32,11 @@ export type RadioInputProperties = Omit<
   id: string;
   value: string;
 };
+
+export type TextInputProps = ComponentProps<"input"> & {
+  error?: FieldError;
+  inputStyle?: string;
+  icon: string;
+};
+
+export type PasswordInputProps = Omit<TextInputProps, "icon">;

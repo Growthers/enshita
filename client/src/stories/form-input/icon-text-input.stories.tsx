@@ -1,12 +1,15 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import { PasswordInput } from "~/components/form-modules/info-input/password-input";
+import { TextInput } from "~/components/form-element/icon-text-input";
 
-type T = typeof PasswordInput;
+type T = typeof TextInput;
 type Story = ComponentStoryObj<T>;
 
 export default {
-  component: PasswordInput,
+  component: TextInput,
+  args: {
+    icon: "ci:mail",
+  },
 } as ComponentMeta<T>;
 
 export const Default: Story = {};

@@ -9,8 +9,8 @@ import { client } from "~/libs/axios";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { accountInfoFormSchema } from "~/components/account-info-form/type/schema";
 import styles from "~/styles/components/account-info/accountinfo.module.scss";
-import { TextControl } from "~/components/form-modules/info-control/text-control";
-import { PasswordControl } from "~/components/form-modules/info-control/password-control";
+import { TextControl } from "~/components/account-info-form/icon-text-control";
+import { PasswordControl } from "~/components/account-info-form/password-control";
 import Button from "~/components/button/button";
 
 const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
@@ -41,7 +41,7 @@ const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
         newPassword: data.newPassword,
         currentPassword: data.currentPassword,
       })
-      .then(() => {})
+      .then(() => { })
       .catch(() => {
         setNotUpdate(true);
       });

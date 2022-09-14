@@ -4,16 +4,15 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm } from "react-hook-form";
 import { AccountInfoFormDataProps } from "~/components/account-info-form/type/model";
 import { accountInfoFormSchema } from "~/components/account-info-form/type/schema";
-import { TextControl } from "~/components/form-modules/info-control/text-control";
+import { PasswordControl } from "~/components/account-info-form/password-control";
 
-type T = typeof TextControl;
+type T = typeof PasswordControl;
 type Story = ComponentStoryObj<T>;
 
 export default {
-  component: TextControl,
+  component: PasswordControl,
   args: {
     name: "mail",
-    icon: "ci:mail",
     label: "email Address",
   },
   decorators: [

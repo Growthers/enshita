@@ -1,7 +1,7 @@
 import { Controller, FieldValues, useFormContext } from "react-hook-form";
 import styles from "~/styles/components/form-modules/info-control/text.module.scss";
-import { TextInput } from "~/components/form-modules/info-input/text-input";
-import { TextControlProps } from "./type/model";
+import { TextInput } from "~/components/form-element/icon-text-input";
+import { TextControlProps } from "~/components/account-info-form/type/model";
 
 const TextControl = <T extends FieldValues>({
   name,
