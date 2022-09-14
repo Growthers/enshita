@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { forwardRef } from "react";
-import styles from "~/styles/components/form-modules/info-input/text.module.scss";
+import styles from "~/styles/components/form-input/info-input.module.scss";
 import type { TextInputProps } from "./type/model";
 
 // eslint-disable-next-line react/display-name

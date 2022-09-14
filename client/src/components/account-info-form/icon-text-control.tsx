@@ -1,5 +1,5 @@
 import { Controller, FieldValues, useFormContext } from "react-hook-form";
-import styles from "~/styles/components/form-modules/info-control/text.module.scss";
+import styles from "~/styles/components/account-info/info-control.module.scss";
 import { TextInput } from "~/components/form-element/icon-text-input";
 import type { TextControlProps } from "./type/model";
 

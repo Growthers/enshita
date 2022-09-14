@@ -1,5 +1,5 @@
 import { Controller, FieldValues, useFormContext } from "react-hook-form";
-import styles from "~/styles/components/form-modules/info-control/text.module.scss";
+import styles from "~/styles/components/account-info/info-control.module.scss";
 import { PasswordInput } from "~/components/form-element/password-input";
 import { PasswordControlProps } from "~/components/account-info-form/type/model";
 
