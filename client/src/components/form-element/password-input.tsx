@@ -5,11 +5,11 @@ import type { PasswordInputProps } from "./type/model";
 
 // eslint-disable-next-line react/display-name
 const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
-  ({ inputStyle, error, ...rest }, ref): JSX.Element => {
+  ({ inputStyles, error, ...rest }, ref): JSX.Element => {
     const [isShow, setShow] = useState(true);
     return (
       <>
-        <div className={`${styles["enshita-input-textarea"]} ${inputStyle}`}>
+        <div className={`${styles["enshita-input-textarea"]} ${inputStyles}`}>
           <div className={styles["enshita-input-icon"]}>
             <Icon icon="bxs:lock-alt" width="15" height="15" />
           </div>

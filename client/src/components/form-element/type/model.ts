@@ -33,10 +33,8 @@ export type RadioInputProperties = Omit<
   value: string;
 };
 
-export type TextInputProps = ComponentProps<"input"> & {
-  error?: FieldError;
-  inputStyle?: string;
+export type IconTextInputProperties = TextInputProperties & {
   icon: string;
 };
 
-export type PasswordInputProps = Omit<TextInputProps, "icon">;
+export type PasswordInputProps = Omit<IconTextInputProperties, "icon">;

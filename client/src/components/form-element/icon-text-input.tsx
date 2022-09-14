@@ -1,13 +1,13 @@
 import { Icon } from "@iconify/react";
 import { forwardRef } from "react";
 import styles from "~/styles/components/form-input/info-input.module.scss";
-import type { TextInputProps } from "./type/model";
+import type { IconTextInputProperties } from "./type/model";
 
 // eslint-disable-next-line react/display-name
-const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
-  ({ inputStyle, error, icon, ...rest }, ref): JSX.Element => (
+const TextInput = forwardRef<HTMLInputElement, IconTextInputProperties>(
+  ({ inputStyles, error, icon, ...rest }, ref): JSX.Element => (
     <>
-      <div className={`${styles["enshita-input-textarea"]} ${inputStyle}`}>
+      <div className={`${styles["enshita-input-textarea"]} ${inputStyles}`}>
         <div className={styles["enshita-input-icon"]}>
           <Icon icon={icon} width="15" height="15" />
         </div>
