@@ -1,5 +1,5 @@
 import type { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import { AreaInput } from "~/components/form-input/area-input";
+import { AreaInput } from "~/components/form-element/area-input";
 import { userEvent, within } from "@storybook/testing-library";
 
 type T = typeof AreaInput;

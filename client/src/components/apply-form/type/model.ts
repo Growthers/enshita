@@ -1,25 +1,13 @@
-import type {
-  ControllerRenderProps,
-  DeepPartial,
-  FieldValues,
-  SubmitHandler,
-} from "react-hook-form";
-import type { ComponentProps, ReactNode } from "react";
+import type { ControllerRenderProps, FieldValues } from "react-hook-form";
+import type { ComponentProps } from "react";
 import type { FieldByType } from "~/libs/rhf";
-import { TextInput } from "~/components/form-input/text-input";
-import { AreaInput } from "~/components/form-input/area-input";
-import { RadioInput } from "~/components/form-input/radio-input";
+import { TextInput } from "~/components/form-element/text-input";
+import { AreaInput } from "~/components/form-element/area-input";
+import { RadioInput } from "~/components/form-element/radio-input";
 import type { SpeakerQuotaType } from "~/types/global-models";
 
 export type TitleProperties = {
   title: string;
-};
-
-export type WrapperProperties<T extends FieldValues = never> = {
-  defaultValues: (DeepPartial<T> | undefined) & T;
-  children: ReactNode;
-  onSubmit: SubmitHandler<T>;
-  wrapperStyle?: string;
 };
 
 export type InputControlProperties<T extends FieldValues> = Omit<
