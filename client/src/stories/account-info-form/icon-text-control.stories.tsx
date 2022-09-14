@@ -2,7 +2,7 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm } from "react-hook-form";
-import { AccountInfoFormDataProps } from "~/components/account-info-form/type/model";
+import { AccountInfoFormFieldValues } from "~/components/account-info-form/type/model";
 import { accountInfoFormSchema } from "~/components/account-info-form/type/schema";
 import { TextControl } from "~/components/account-info-form/icon-text-control";
 
@@ -18,7 +18,7 @@ export default {
   },
   decorators: [
     Story => {
-      const methods = useForm<AccountInfoFormDataProps>({
+      const methods = useForm<AccountInfoFormFieldValues>({
         resolver: zodResolver(accountInfoFormSchema),
         defaultValues: {
           mail: "fuga@hoge.com",

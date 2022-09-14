@@ -2,7 +2,7 @@
 
 exports[`(component) account information update form test > Snap Shot 1`] = `
 <div>
-  <div
+  <section
     class="_enshita-form-main_zg89y_1"
   >
     <div
@@ -197,6 +197,6 @@ exports[`(component) account information update form test > Snap Shot 1`] = `
         </button>
       </div>
     </form>
-  </div>
+  </section>
 </div>
 `;

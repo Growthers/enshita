@@ -3,6 +3,8 @@ import { TextInput } from "~/components/form-element/icon-text-input";
 import { PasswordInput } from "~/components/form-element/password-input";
 import type { FieldByType } from "~/libs/rhf";
 import type { FieldValues } from "react-hook-form";
+import { z } from "zod";
+import { accountInfoFormSchema } from "./schema";
 
 export type TextControlProps<T extends FieldValues = never> = Omit<
   ComponentProps<typeof TextInput>,
@@ -25,10 +27,4 @@ export type AccountInfoFormProps = {
   userName: string;
 };
 
-export type AccountInfoFormDataProps = {
-  mail: string;
-  userName: string;
-  newPassword: string;
-  reNewPassword: string;
-  currentPassword: string;
-};
+export type AccountInfoFormFieldValues = z.infer<typeof accountInfoFormSchema>;
