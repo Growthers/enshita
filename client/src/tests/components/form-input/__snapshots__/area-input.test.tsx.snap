@@ -8,7 +8,7 @@ exports[`(components) text area input > (error) take snapshot 1`] = `
   />
   <p
     aria-label="error message"
-    class="_enshita-input-error_da6947"
+    class="_enshita-input-error_k8dqh_1"
   >
     1000字以内で入力してください
   </p>

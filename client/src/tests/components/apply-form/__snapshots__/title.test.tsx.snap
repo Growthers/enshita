@@ -3,24 +3,24 @@
 exports[`(components) apply-form title > take snap shot 1`] = `
 <div>
   <div
-    class="_enshita-apply-form-title-box_37ac0a"
+    class="_enshita-apply-form-title-box_rh213_1"
   >
     <div
-      class="_enshita-apply-form-title-wrapper_37ac0a"
+      class="_enshita-apply-form-title-wrapper_rh213_5"
     >
       <h1
-        class="_enshita-apply-form-title_37ac0a"
+        class="_enshita-apply-form-title_rh213_1"
       >
         共同開発鯖LT #4
       </h1>
       <h1
-        class="_enshita-apply-form-title_37ac0a"
+        class="_enshita-apply-form-title_rh213_1"
       >
         申し込みフォーム
       </h1>
     </div>
     <h2
-      class="_enshita-apply-form-subtitle_37ac0a"
+      class="_enshita-apply-form-subtitle_rh213_32"
     >
       気軽に申し込みしてください！
     </h2>

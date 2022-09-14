@@ -3,23 +3,23 @@
 exports[`(components) header > test Snap Shot 1`] = `
 <div>
   <div
-    class="_enshita-status-body_3a3ce3"
+    class="_enshita-status-body_1mm3x_1"
   >
     <div
-      class="_enshita-status-content_3a3ce3"
+      class="_enshita-status-content_1mm3x_9"
     >
       <div
-        class="_enshita-status-code_3a3ce3"
+        class="_enshita-status-code_1mm3x_17"
       >
         <p>
           404
         </p>
       </div>
       <div
-        class="_enshita-status-message_3a3ce3"
+        class="_enshita-status-message_1mm3x_29"
       >
         <div
-          class="_enshita-status-errormessage_3a3ce3"
+          class="_enshita-status-errormessage_1mm3x_35"
         >
           <p>
             page not found
