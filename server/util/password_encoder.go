@@ -48,9 +48,9 @@ func (e *Argon2PasswordEncoder) EncodePassword(rawPassword string) (EncodedPassw
 	// ハッシュアルゴリズムとハッシュ済みパスワードとソルトを結合
 	// ハッシュアルゴリズムを変更した場合に対応できるようにハッシュアルゴリズムを付けています。
 	//<hash algorithm>.<hashed Password as hex string>.<salt as hex string>
-	combinatedArgoAndHashAndPassword := fmt.Sprintf("%s.%s.%s", HashAlgorithm, encodedHexedPassword, salt)
+	combinatedAlgoAndHashAndPassword := fmt.Sprintf("%s.%s.%s", HashAlgorithm, encodedHexedPassword, salt)
 
-	return EncodedPassword(combinatedArgoAndHashAndPassword), nil
+	return EncodedPassword(combinatedAlgoAndHashAndPassword), nil
 }
 
 func (e *Argon2PasswordEncoder) IsMatchPassword(rawPassword string, encodedPassword EncodedPassword) bool {
