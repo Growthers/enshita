@@ -1,4 +1,4 @@
-import { TextInput } from "~/components/form-input/text-input";
+import { TextInput } from "~/components/form-element/text-input";
 import type { FieldValues } from "react-hook-form";
 import styles from "~/styles/components/apply-form/input.module.scss";
 import { Controller } from "react-hook-form";

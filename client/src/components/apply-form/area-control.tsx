@@ -1,4 +1,4 @@
-import { AreaInput } from "~/components/form-input/area-input";
+import { AreaInput } from "~/components/form-element/area-input";
 import type { FieldValues } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import styles from "~/styles/components/apply-form/area.module.scss";

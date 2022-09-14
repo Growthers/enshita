@@ -1,4 +1,4 @@
-import { RadioInput } from "~/components/form-input/radio-input";
+import { RadioInput } from "~/components/form-element/radio-input";
 import type { FieldValues } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import styles from "~/styles/components/apply-form/radio.module.scss";
