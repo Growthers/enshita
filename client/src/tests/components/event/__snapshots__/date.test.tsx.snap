@@ -3,7 +3,7 @@
 exports[`(component) EventDate > Snap Shot - 19:30 ~ 23:00 1`] = `
 <div>
   <div
-    class="_enshita-event-date_9xck7_1"
+    class="_enshita-event-date_06bc2d"
   >
     <time>
       2022/08/28 (Sun)
@@ -20,7 +20,7 @@ exports[`(component) EventDate > Snap Shot - 19:30 ~ 23:00 1`] = `
 exports[`(component) EventDate > Snap Shot - 19:30 ~ Next Day 04:00  1`] = `
 <div>
   <div
-    class="_enshita-event-date_9xck7_1"
+    class="_enshita-event-date_06bc2d"
   >
     <time>
       2022/08/28 (Sun)
@@ -37,7 +37,7 @@ exports[`(component) EventDate > Snap Shot - 19:30 ~ Next Day 04:00  1`] = `
 exports[`(component) EventDate > Snap Shot - 19:30 ~ Next Day 05:00 1`] = `
 <div>
   <div
-    class="_enshita-event-date_9xck7_1"
+    class="_enshita-event-date_06bc2d"
   >
     <time>
       <span>
@@ -56,7 +56,7 @@ exports[`(component) EventDate > Snap Shot - 19:30 ~ Next Day 05:00 1`] = `
 exports[`(component) EventDate > Snap Shot - No Date 1`] = `
 <div>
   <div
-    class="_enshita-event-date_9xck7_1"
+    class="_enshita-event-date_06bc2d"
   >
     <p>
       No Date
