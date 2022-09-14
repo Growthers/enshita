@@ -3,19 +3,19 @@
 exports[`(component) text input module test > Snap Shot 1`] = `
 <div>
   <div
-    class="_enshita-input-textarea_13loc_1 undefined"
+    class="_enshita-input-textarea_b32e13 undefined"
   >
     <div
-      class="_enshita-input-icon_13loc_15"
+      class="_enshita-input-icon_b32e13"
     >
       <span />
     </div>
     <input
-      class="_enshita-input-normal_13loc_23"
+      class="_enshita-input-normal_b32e13"
     />
   </div>
   <p
-    class="_enshita-input-error_13loc_35"
+    class="_enshita-input-error_b32e13"
   />
 </div>
 `;

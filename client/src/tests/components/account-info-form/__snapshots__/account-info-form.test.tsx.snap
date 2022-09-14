@@ -3,10 +3,10 @@
 exports[`(component) account information update form test > Snap Shot 1`] = `
 <div>
   <section
-    class="_enshita-form-main_zg89y_1"
+    class="_enshita-form-main_4218ef"
   >
     <div
-      class="_enshita-form-head_zg89y_7"
+      class="_enshita-form-head_4218ef"
     >
       <h1>
         Personal Info
@@ -14,7 +14,7 @@ exports[`(component) account information update form test > Snap Shot 1`] = `
     </div>
     <form>
       <section
-        class="_enshita-control-body_mclyn_1"
+        class="_enshita-control-body_ab0206"
       >
         <label
           for="mail"
@@ -22,26 +22,26 @@ exports[`(component) account information update form test > Snap Shot 1`] = `
           email Address
         </label>
         <div
-          class="_enshita-input-textarea_13loc_1 undefined"
+          class="_enshita-input-textarea_b32e13 undefined"
         >
           <div
-            class="_enshita-input-icon_13loc_15"
+            class="_enshita-input-icon_b32e13"
           >
             <span />
           </div>
           <input
-            class="_enshita-input-normal_13loc_23"
+            class="_enshita-input-normal_b32e13"
             id="mail"
             name="mail"
             value="abc@example.com"
           />
         </div>
         <p
-          class="_enshita-input-error_13loc_35"
+          class="_enshita-input-error_b32e13"
         />
       </section>
       <section
-        class="_enshita-control-body_mclyn_1"
+        class="_enshita-control-body_ab0206"
       >
         <label
           for="userName"
@@ -49,33 +49,33 @@ exports[`(component) account information update form test > Snap Shot 1`] = `
           User name
         </label>
         <div
-          class="_enshita-input-textarea_13loc_1 undefined"
+          class="_enshita-input-textarea_b32e13 undefined"
         >
           <div
-            class="_enshita-input-icon_13loc_15"
+            class="_enshita-input-icon_b32e13"
           >
             <span />
           </div>
           <input
-            class="_enshita-input-normal_13loc_23"
+            class="_enshita-input-normal_b32e13"
             id="userName"
             name="userName"
             value="hoge"
           />
         </div>
         <p
-          class="_enshita-input-error_13loc_35"
+          class="_enshita-input-error_b32e13"
         />
       </section>
       <div
-        class="_enshita-form-dis_zg89y_17"
+        class="_enshita-form-dis_4218ef"
       >
         <small>
           if you update your password, you must enter your current password.
         </small>
       </div>
       <section
-        class="_enshita-control-body_mclyn_1"
+        class="_enshita-control-body_ab0206"
       >
         <label
           for="newPassword"
@@ -83,33 +83,33 @@ exports[`(component) account information update form test > Snap Shot 1`] = `
           New Password
         </label>
         <div
-          class="_enshita-input-textarea_13loc_1 undefined"
+          class="_enshita-input-textarea_b32e13 undefined"
         >
           <div
-            class="_enshita-input-icon_13loc_15"
+            class="_enshita-input-icon_b32e13"
           >
             <span />
           </div>
           <input
-            class="_enshita-input-password_13loc_29"
+            class="_enshita-input-password_b32e13"
             id="newPassword"
             name="newPassword"
             type="password"
             value=""
           />
           <button
-            class="_enshita-input-icon_13loc_15"
+            class="_enshita-input-icon_b32e13"
             type="button"
           >
             <span />
           </button>
         </div>
         <p
-          class="_enshita-input-error_13loc_35"
+          class="_enshita-input-error_b32e13"
         />
       </section>
       <section
-        class="_enshita-control-body_mclyn_1"
+        class="_enshita-control-body_ab0206"
       >
         <label
           for="reNewPassword"
@@ -117,33 +117,33 @@ exports[`(component) account information update form test > Snap Shot 1`] = `
           New Password (Re-enter)
         </label>
         <div
-          class="_enshita-input-textarea_13loc_1 undefined"
+          class="_enshita-input-textarea_b32e13 undefined"
         >
           <div
-            class="_enshita-input-icon_13loc_15"
+            class="_enshita-input-icon_b32e13"
           >
             <span />
           </div>
           <input
-            class="_enshita-input-password_13loc_29"
+            class="_enshita-input-password_b32e13"
             id="reNewPassword"
             name="reNewPassword"
             type="password"
             value=""
           />
           <button
-            class="_enshita-input-icon_13loc_15"
+            class="_enshita-input-icon_b32e13"
             type="button"
           >
             <span />
           </button>
         </div>
         <p
-          class="_enshita-input-error_13loc_35"
+          class="_enshita-input-error_b32e13"
         />
       </section>
       <section
-        class="_enshita-control-body_mclyn_1"
+        class="_enshita-control-body_ab0206"
       >
         <label
           for="currentPassword"
@@ -151,46 +151,46 @@ exports[`(component) account information update form test > Snap Shot 1`] = `
           Current Password
         </label>
         <div
-          class="_enshita-input-textarea_13loc_1 undefined"
+          class="_enshita-input-textarea_b32e13 undefined"
         >
           <div
-            class="_enshita-input-icon_13loc_15"
+            class="_enshita-input-icon_b32e13"
           >
             <span />
           </div>
           <input
-            class="_enshita-input-password_13loc_29"
+            class="_enshita-input-password_b32e13"
             id="currentPassword"
             name="currentPassword"
             type="password"
             value=""
           />
           <button
-            class="_enshita-input-icon_13loc_15"
+            class="_enshita-input-icon_b32e13"
             type="button"
           >
             <span />
           </button>
         </div>
         <p
-          class="_enshita-input-error_13loc_35"
+          class="_enshita-input-error_b32e13"
         />
       </section>
       <div
-        class="_enshita-form-error_zg89y_45"
+        class="_enshita-form-error_4218ef"
       >
         <small />
       </div>
       <div
-        class="_enshita-form-button_zg89y_24"
+        class="_enshita-form-button_4218ef"
       >
         <button
-          class="_enshita-button-box_1gcpx_17 _enshita-button-update-box_zg89y_33"
+          class="_enshita-button-box_44d66e _enshita-button-update-box_4218ef"
           tabindex="0"
           type="submit"
         >
           <p
-            class="_enshita-button-text_1gcpx_36 undefined"
+            class="_enshita-button-text_44d66e _enshita-button-update-text_4218ef"
           >
             update
           </p>
