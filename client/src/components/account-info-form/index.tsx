@@ -15,11 +15,11 @@ import { Wrapper } from "../form-element/wrapper";
 
 const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
   const [isNotUpDate, setNotUpdate] = useState(false);
-  const [isMatch, setMatch] = useState(false);
+  const [isNotMatch, setNotMatch] = useState(false);
 
   const onSubmit: SubmitHandler<AccountInfoFormFieldValues> = data => {
     if (data.newPassword !== data.reNewPassword) {
-      setMatch(true);
+      setNotMatch(true);
       return;
     }
     client
@@ -29,7 +29,7 @@ const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
         newPassword: data.newPassword,
         currentPassword: data.currentPassword,
       })
-      .then(() => { })
+      .then(() => {})
       .catch(() => {
         setNotUpdate(true);
       });
@@ -69,7 +69,7 @@ const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
 
         <div className={styles["enshita-form-error"]}>
           <small>
-            {isMatch && <p>new password is not match</p>}
+            {isNotMatch && <p>new password is not match</p>}
             {isNotUpDate && <p>unable to update</p>}
           </small>
         </div>
@@ -83,7 +83,7 @@ const AccountInfoForm: FC<AccountInfoFormProps> = ({ mail, userName }) => {
             textStyles={styles["enshita-button-update-text"]}
             onClick={() => {
               setNotUpdate(false);
-              setMatch(false);
+              setNotMatch(false);
             }}
           >
             update
