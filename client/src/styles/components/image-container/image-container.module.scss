@@ -1,29 +1,33 @@
 @use "../../variables" as var;
 
 .enshita-image-container {
+  width: 14rem;
+  padding: 3rem 1.5rem 2rem;
+  font-size: 1.25rem;
+  color: var.$global-black;
   background-color: var.$global-light-gray;
   border-radius: 0.5rem;
   box-shadow: 0 3px 0 0 var.$global-primary-pale;
-  font-size: 1.25rem;
-  color: var.$global-black;
-  width: 14rem;
-  padding: 3rem 1.5rem 2rem;
+
   & > :not([hidden]) ~ :not([hidden]) {
     margin-top: 2rem;
   }
+
   .enshita-image-container-image-wrapper {
     display: flex;
-    justify-content: center;
     flex-grow: 0;
+    justify-content: center;
     height: 10rem;
     margin-bottom: 2rem;
+
     .enshita-image-container-image {
-      width: 100%;
       display: flex;
+      width: 100%;
     }
   }
+
   .enshita-image-container-content {
-    white-space: pre-wrap;
     text-align: center;
+    white-space: pre-wrap;
   }
 }
