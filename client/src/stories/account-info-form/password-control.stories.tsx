@@ -2,8 +2,8 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm } from "react-hook-form";
-import { AccountInfoFormFieldValues } from "~/components/account-info-form/type/model";
-import { accountInfoFormSchema } from "~/components/account-info-form/type/schema";
+import { AccountInfoFormFieldValues } from "~/pages/account/info/type/model";
+import { accountInfoFormSchema } from "~/pages/account/info/type/schema";
 import { PasswordControl } from "~/components/account-info-form/password-control";
 
 type T = typeof PasswordControl;
