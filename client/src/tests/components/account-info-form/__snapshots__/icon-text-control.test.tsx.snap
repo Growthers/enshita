@@ -4,7 +4,7 @@ exports[`(component) text control module test > Snap Shot 1`] = `
 <div>
   <form>
     <section
-      class="_enshita-control-body_ab0206"
+      class="_enshita-control-body_dba8a0"
     >
       <label
         for="mail"
@@ -12,22 +12,22 @@ exports[`(component) text control module test > Snap Shot 1`] = `
         email Address
       </label>
       <div
-        class="_enshita-input-textarea_b32e13 undefined"
+        class="_enshita-input-textarea_80a418 undefined"
       >
         <div
-          class="_enshita-input-icon_b32e13"
+          class="_enshita-input-icon_80a418"
         >
           <span />
         </div>
         <input
-          class="_enshita-input-normal_b32e13"
+          class="_enshita-input-normal_80a418"
           id="mail"
           name="mail"
           value="fuga@hoge.com"
         />
       </div>
       <p
-        class="_enshita-input-error_b32e13"
+        class="_enshita-input-error_80a418"
       />
     </section>
   </form>
