@@ -1,4 +1,4 @@
-package util
+package password
 
 import (
 	"crypto/rand"
@@ -6,7 +6,6 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"golang.org/x/crypto/argon2"
 	"math/big"
 	"strings"
 )
@@ -18,7 +17,7 @@ import (
 */
 
 type EncodedPassword string
-type PasswordEncoder interface {
+type Encoder interface {
 	EncodePassword(rawPassword string) (EncodedPassword, error)
 	IsMatchPassword(rawPassword string, encodedPassword EncodedPassword) bool
 }
@@ -28,10 +27,6 @@ type Argon2PasswordEncoder struct{}
 func NewArgon2PasswordEncoder() Argon2PasswordEncoder {
 	return Argon2PasswordEncoder{}
 }
-
-const (
-	HashAlgorithm = "Argon2"
-)
 
 func (e *Argon2PasswordEncoder) EncodePassword(rawPassword string) (EncodedPassword, error) {
 	random, err := rand.Int(rand.Reader, big.NewInt(1000))
@@ -46,7 +41,7 @@ func (e *Argon2PasswordEncoder) EncodePassword(rawPassword string) (EncodedPassw
 	// ハッシュアルゴリズムとハッシュ済みパスワードとソルトを結合
 	// ハッシュアルゴリズムを変更した場合に対応できるようにハッシュアルゴリズムを付けています。
 	//<hash algorithm>.<hashed Password as hex string>.<salt as hex string>
-	combinatedAlgoAndHashAndPassword := fmt.Sprintf("%s.%s.%s", HashAlgorithm, encodedHexedPassword, salt)
+	combinatedAlgoAndHashAndPassword := fmt.Sprintf("%s.%s.%s", hashAlgorithm, encodedHexedPassword, salt)
 
 	return EncodedPassword(combinatedAlgoAndHashAndPassword), nil
 }
@@ -64,20 +59,15 @@ func (e *Argon2PasswordEncoder) IsMatchPassword(rawPassword string, encodedPassw
 
 // decodeHash ハッシュ済みパスワード部、ソルトを返します
 func decodeHash(encodedPassword EncodedPassword) (string, string, error) {
-	splited := strings.Split(string(encodedPassword), ".")
-	if len(splited) != 3 {
+	split := strings.Split(string(encodedPassword), ".")
+	if len(split) != 3 {
 		return "", "", errors.New("input is invalid format")
 	}
-	encodedPasswordPart, salt := splited[1], splited[2]
+	encodedPasswordPart, salt := split[1], split[2]
 	decodedPasswordPart, err := hex.DecodeString(encodedPasswordPart)
 	if err != nil {
 		return "", "", err
 	}
 
 	return string(decodedPasswordPart), salt, nil
-}
-
-// createHashedPassword ハッシュ済みパスワードを返します
-func createHashedPassword(rawPassword string, salt string) []byte {
-	return argon2.IDKey([]byte(rawPassword), []byte(salt), 2, 20, 20, 20)
 }
