@@ -52,12 +52,12 @@ func (repo *Repository) CreateAdmin(userID, email, userName, password string) (*
 
 // CreateOperator 運営アカウント(Operator)を作成
 func (repo *Repository) CreateOperator(userID, email, userName, password string) (*domain.User, error) {
-	user := &domain.User{
+	user := &entity.User{
 		ID:       userID,
 		Email:    email,
 		Name:     userName,
 		Password: password,
-		Role:     domain.Operator,
+		Role:     int(domain.Admin),
 	}
 
 	encodedPassword, err := repo.passwordEncoder.EncodePassword(password)
