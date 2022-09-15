@@ -40,8 +40,7 @@ func (e *Argon2PasswordEncoder) EncodePassword(rawPassword string) (EncodedPassw
 	}
 
 	salt := fmt.Sprintf("%x[0]", random)
-	hashedPassword := argon2.IDKey([]byte(rawPassword), []byte(salt), 2, 20, 20, 20)
-
+	hashedPassword := createHashedPassword(rawPassword, salt)
 	// ハッシュ済みパスワードをhexにエンコード
 	encodedHexedPassword := hex.EncodeToString(hashedPassword)
 	// ハッシュアルゴリズムとハッシュ済みパスワードとソルトを結合
@@ -58,7 +57,7 @@ func (e *Argon2PasswordEncoder) IsMatchPassword(rawPassword string, encodedPassw
 		return false
 	}
 
-	otherHash := argon2.IDKey([]byte(rawPassword), []byte(salt), 2, 20, 20, 20) // 比較対象のEncodedPasswordと同じ条件で入力されたパスワードをhashする
+	otherHash := createHashedPassword(rawPassword, salt) // 比較対象のEncodedPasswordと同じ条件で入力されたパスワードをhashする
 
 	return subtle.ConstantTimeCompare([]byte(passwordPart), otherHash) == 1 // timings attack防止
 }
@@ -76,4 +75,9 @@ func decodeHash(encodedPassword EncodedPassword) (string, string, error) {
 	}
 
 	return string(decodedPasswordPart), salt, nil
+}
+
+// createHashedPassword ハッシュ済みパスワードを返します
+func createHashedPassword(rawPassword string, salt string) []byte {
+	return argon2.IDKey([]byte(rawPassword), []byte(salt), 2, 20, 20, 20)
 }
