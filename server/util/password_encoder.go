@@ -14,8 +14,7 @@ import (
 /*
 	ハッシュされたパスワードの仕様
 
-	<ハッシュアルゴリズム>.<ハッシュ済みパスワード(Base64)>.<ソルト(ランダム文字列)>
-
+	<hash algorithm>.<hashed Password as hex string>.<salt as hex string>
 */
 
 type EncodedPassword string
