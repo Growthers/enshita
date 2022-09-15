@@ -40,11 +40,10 @@ func (repo *Repository) CreateAdmin(userID, email, userName, password string) (*
 	}
 
 	newUser := &domain.User{
-		ID:       user.ID,
-		Email:    user.Email,
-		Name:     user.Name,
-		Password: user.Password,
-		Role:     domain.UserRole(user.Role),
+		ID:    user.ID,
+		Email: user.Email,
+		Name:  user.Name,
+		Role:  domain.UserRole(user.Role),
 	}
 
 	return newUser, nil
@@ -57,7 +56,7 @@ func (repo *Repository) CreateOperator(userID, email, userName, password string)
 		Email:    email,
 		Name:     userName,
 		Password: password,
-		Role:     int(domain.Admin),
+		Role:     int(domain.Operator),
 	}
 
 	encodedPassword, err := repo.passwordEncoder.EncodePassword(password)
@@ -83,11 +82,10 @@ func (repo *Repository) CreateOperator(userID, email, userName, password string)
 	}
 
 	newUser := &domain.User{
-		ID:       user.ID,
-		Email:    user.Email,
-		Name:     user.Name,
-		Password: user.Password,
-		Role:     domain.UserRole(user.Role),
+		ID:    user.ID,
+		Email: user.Email,
+		Name:  user.Name,
+		Role:  domain.UserRole(user.Role),
 	}
 
 	return newUser, nil
