@@ -3,16 +3,18 @@ package gorm
 import (
 	"github.com/google/uuid"
 	"github.com/growthers/enshita/server/model/domain"
+	"github.com/growthers/enshita/server/model/entity"
 )
 
 // CreateAdmin 管理者(Admin)を作成
 func (repo *Repository) CreateAdmin(userID, email, userName, password string) (*domain.User, error) {
-	user := &domain.User{
+
+	user := &entity.User{
 		ID:       userID,
 		Email:    email,
 		Name:     userName,
 		Password: password,
-		Role:     domain.Admin,
+		Role:     int(domain.Admin),
 	}
 
 	encodedPassword, err := repo.passwordEncoder.EncodePassword(password)
@@ -37,7 +39,15 @@ func (repo *Repository) CreateAdmin(userID, email, userName, password string) (*
 		return nil, result.Error
 	}
 
-	return user, nil
+	newUser := &domain.User{
+		ID:       user.ID,
+		Email:    user.Email,
+		Name:     user.Name,
+		Password: user.Password,
+		Role:     domain.UserRole(user.Role),
+	}
+
+	return newUser, nil
 }
 
 // CreateOperator 運営アカウント(Operator)を作成
@@ -72,5 +82,13 @@ func (repo *Repository) CreateOperator(userID, email, userName, password string)
 		return nil, result.Error
 	}
 
-	return user, nil
+	newUser := &domain.User{
+		ID:       user.ID,
+		Email:    user.Email,
+		Name:     user.Name,
+		Password: user.Password,
+		Role:     domain.UserRole(user.Role),
+	}
+
+	return newUser, nil
 }
