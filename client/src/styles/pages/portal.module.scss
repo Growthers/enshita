@@ -1,0 +1,28 @@
+@use "../variables" as var;
+@use "../font-size" as font;
+
+.enshita-home-page {
+  padding: 0 calc(415vw / 48);
+
+  & > :not([hidden]) ~ :not([hidden]) {
+    margin-top: calc(155vw / 12);
+  }
+
+  .enshita-home-page-title {
+    font-size: font.$text-32;
+    text-align: center;
+    text-decoration: underline var.$global-primary;
+    @media (max-width: 768px) {
+      font-size: font.$text-mb-16;
+    }
+  }
+
+  .enshita-home-page-events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
