@@ -1,4 +1,4 @@
-export * from "./about";
+export * from "./landing";
 export * from "./home";
 export * from "./account/info";
 export * from "./event";

@@ -1,7 +1,16 @@
 package domain
 
 type User struct {
-	Email    string `json:"email"`
-	Name     string `json:"name"`
-	Password string `json:"password"`
+	ID    string   `json:"id"`
+	Email string   `json:"email"`
+	Name  string   `json:"name"`
+	Role  UserRole `json:"role"`
 }
+
+// UserRole ユーザーのロール
+type UserRole int
+
+const (
+	Admin    UserRole = 0
+	Operator UserRole = 1
+)
