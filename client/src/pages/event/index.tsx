@@ -12,7 +12,7 @@ import type { EventPageProperties } from "./type/model";
 const EventPage: FC<EventPageProperties> = props => {
   const { eventId } = props;
   const { data, error } = useSWR<Event>(`/events/${eventId}`, fetcher);
-  if (error) return <Redirect to="/" />;
+  if (error) return <Redirect to="/portal" />;
   if (!data) return <p>Loading...</p>;
   return (
     <section className={styles["enshita-event"]}>
