@@ -4,9 +4,9 @@
 .enshita-event-card {
   display: flex;
   padding: calc(55vw / 24);
+  cursor: pointer;
   background-color: var.$global-white;
   border: 1px solid var.$global-gray;
-  cursor: pointer;
 
   & > :not([hidden]) ~ :not([hidden]) {
     margin-left: calc(5vw / 3);
