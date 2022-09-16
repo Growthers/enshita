@@ -1,5 +1,5 @@
 package domain
 
-type SetLayoutConfigRequest struct {
+type SetLayoutRequest struct {
 	Images []Image `json:"images"`
 }
