@@ -1,6 +1,7 @@
 package gorm
 
 import (
+	"github.com/google/uuid"
 	"github.com/growthers/enshita/server/model/domain"
 	"github.com/growthers/enshita/server/model/entity"
 )
@@ -45,4 +46,35 @@ func (repo *Repository) FindLayouts(eventID string) ([]*domain.Layout, error) {
 	}
 
 	return dl, nil
+}
+
+// CreateLayout 配信レイアウトを作成
+func (repo *Repository) CreateLayout(imageType int, imageURL string, eventID string) (*domain.Layout, error) {
+
+	l := &entity.Layout{
+		ImageType: imageType,
+		ImageURL:  imageURL,
+		EventID:   eventID,
+	}
+
+	// ID生成
+	u, err := uuid.NewRandom()
+	if err != nil {
+		return nil, err
+	}
+
+	l.ID = u.String()
+
+	// レコード作成
+	err = repo.db.Create(&l).Error
+	if err != nil {
+		return nil, err
+	}
+
+	return &domain.Layout{
+		ID:        l.ID,
+		ImageType: l.ImageType,
+		ImageURL:  l.ImageURL,
+		EventID:   l.EventID,
+	}, nil
 }
