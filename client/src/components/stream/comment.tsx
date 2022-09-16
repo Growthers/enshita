@@ -12,11 +12,9 @@ const Comment: React.FC<Props> = ({
   comment: { platform, name, iconUrl, content },
 }) => (
   <div className={styles["enshita-stream-comment"]}>
-    <div className={styles["enshita-stream-comment-content"]}>
-      <div className={styles["enshita-stream-comment-content-text"]}>
-        {content.length > 50 ? `${content.slice(0, 50)}…` : content}
-      </div>
-    </div>
+    <p className={styles["enshita-stream-comment-content"]}>
+      {content.length > 50 ? `${content.slice(0, 50)}…` : content}
+    </p>
     <div className={styles["enshita-stream-comment-user"]}>
       <img
         className={styles["enshita-stream-comment-user-icon"]}
