@@ -1,17 +1,16 @@
 @use "../../_variables" as var;
 
 .enshita-stream-oped {
-  height: 100%;
   width: 100%;
-
+  height: 100%;
   text-align: center;
 
   .enshita-stream-oped-massage {
-    padding: 20rem 0 6rem 0;
+    padding: 20rem 0 6rem;
     font-size: 6rem;
   }
 
-  .enshita-stream-oped-subMassage {
+  .enshita-stream-oped-sub-massage {
     font-size: 4rem;
   }
 }

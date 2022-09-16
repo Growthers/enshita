@@ -2,26 +2,27 @@
 
 .enshita-stream {
   display: grid;
-  grid-template-columns: 100rem 20rem;
-  grid-template-rows: 56.25rem 11.25rem;
-  height: 67.5rem;
-  width: 120rem;
-  background-color: var.$global-gray;
+  grid-template-rows: 900px 180px;
+  grid-template-columns: 1600px 320px;
+  width: 1920px;
+  height: 1080px;
+  background-color: transparent;
 }
 
 .enshita-stream-display-comments {
   display: flex;
   flex-direction: column-reverse;
-  padding: 1rem;
-  gap: 1rem;
   grid-row: 1;
   grid-column: 2;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .enshita-stream-display-clock {
+  grid-column: 2;
   font-size: 5.4rem;
   text-align: center;
-  grid-column: 2;
+
   p {
     font-size: 2.5rem;
   }
