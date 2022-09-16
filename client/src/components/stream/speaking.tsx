@@ -8,12 +8,17 @@ const Speaking: React.FC<TalkInfoProperties> = ({
   order,
   speaker: { name, title },
 }) => (
-  <div>
-    <div className={styles["enshita-stream-"]} />
-    <div>
-      <div>#{order}</div>
-      <div>{title}</div>
-      <p>{name}</p>
+  <div className={styles["enshita-stream-speaking"]}>
+    <div className={styles["enshita-stream-speaking-info"]}>
+      <span className={styles["enshita-stream-speaking-info-large"]}>
+        #{order}
+      </span>
+      <span className={styles["enshita-stream-speaking-info-large"]}>
+        {title}
+      </span>
+      <span className={styles["enshita-stream-speaking-info-small"]}>
+        {name}
+      </span>
     </div>
   </div>
 );
