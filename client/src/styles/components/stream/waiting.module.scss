@@ -1,0 +1,23 @@
+@use "../../_variables" as var;
+
+.enshita-stream-waiting {
+  text-align: center;
+
+  .enshita-stream-waiting-title {
+    padding: 18.125rem 0 1rem;
+    font-size: 6rem;
+  }
+
+  .enshita-stream-waiting-subtitle {
+    font-size: 3rem;
+  }
+
+  .enshita-stream-waiting-clock {
+    padding: 4rem 0 1.875rem;
+    font-size: 6rem;
+  }
+
+  .enshita-stream-waiting-massage {
+    font-size: 4rem;
+  }
+}

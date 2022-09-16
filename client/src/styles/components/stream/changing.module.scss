@@ -1,0 +1,17 @@
+@use "../../_variables" as var;
+
+.enshita-stream-changing {
+  grid-row: 1/3;
+  padding: 6rem;
+}
+
+.enshita-stream-changing-next {
+  font-size: 4rem;
+}
+
+.enshita-stream-changing-talk-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 2rem;
+}
