@@ -7,7 +7,7 @@ const { Default } = composeStories(stories);
 
 describe("(components) event card", () => {
   test("take snapshot", () => {
-    const{ container } = render(<Default />)
-    expect(container).toMatchSnapshot()
-  })
-})
+    const { container } = render(<Default />);
+    expect(container).toMatchSnapshot();
+  });
+});
