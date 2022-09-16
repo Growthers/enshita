@@ -1,0 +1,70 @@
+// Vitest Snapshot v1
+
+exports[`(components) event card > take snapshot 1`] = `
+<div>
+  <div
+    class="_enshita-event-card_a8aaa5"
+    href="/event/test"
+  >
+    <div
+      class="_enshita-event-card-image-wrapper_a8aaa5"
+    >
+      <img
+        alt="This is test"
+        class="_enshita-event-card-image_a8aaa5"
+        src="https://ogp.re-taro.dev/api/ogp?title=This%20is%20test"
+      />
+    </div>
+    <div
+      class="_enshita-event-card-content-wrapper_a8aaa5"
+    >
+      <div
+        class="_enshita-event-card-content_a8aaa5"
+      >
+        <h1
+          class="_enshita-event-card-title_a8aaa5"
+        >
+          This is test
+        </h1>
+        <div
+          class="_enshita-event-card-sub-content_a8aaa5"
+        >
+          <time
+            class="_enshita-event-card-date_a8aaa5"
+          >
+            Aug 27
+          </time>
+          <p
+            class="_enshita-event-card-hash-tag_a8aaa5"
+          >
+            test
+          </p>
+        </div>
+      </div>
+      <div
+        class="_enshita-event-card-option_a8aaa5"
+      >
+        <p
+          class="_enshita-event-card-num-of-speaker_a8aaa5"
+        >
+          <span
+            class="_enshita-event-card-slash_a8aaa5"
+          >
+            5
+          </span>
+          10
+        </p>
+        <div
+          class="_enshita-event-card-chip_f96697 _enshita-event-card-status-green_f96697"
+        >
+          <p
+            class="_enshita-event-card-chip-content_f96697"
+          >
+            参加登録受付中
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -7,7 +7,7 @@ import type { HeaderProperties } from "./type/model";
 const Header: FC<HeaderProperties> = ({ disableStyle }) => (
   <header className={`${styles["enshita-header"]} ${disableStyle}`}>
     <div>
-      <Link to="/">
+      <Link to="/portal">
         <img
           src="/statics/lyrics-dark.svg"
           alt="enshita logo"

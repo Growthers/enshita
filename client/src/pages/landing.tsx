@@ -53,7 +53,7 @@ const LandingPage: FC = () => (
     </section>
     <section className={styles["enshita-landing-page-anchor"]}>
       <h1>enshitaからLTに参加してみよう</h1>
-      <Link to="/">
+      <Link to="/portal">
         <AnchorButton
           variant="normal"
           boxStyles={styles["enshita-landing-page-anchor-button"]}
