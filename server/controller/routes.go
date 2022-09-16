@@ -1,4 +1,4 @@
-package echo
+package controller
 
 func (c *Controller) Register() {
 	events := c.api.Group("/events")

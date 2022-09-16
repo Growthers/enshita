@@ -1,4 +1,4 @@
-package echo
+package controller
 
 import (
 	"net/http"

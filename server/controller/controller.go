@@ -1,4 +1,4 @@
-package echo
+package controller
 
 import (
 	"github.com/growthers/enshita/server/repository"
