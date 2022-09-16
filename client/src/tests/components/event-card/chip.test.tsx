@@ -3,7 +3,8 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import * as stories from "~/stories/event-card/chip.stories";
 
-const { Default, Open, Close, SuddenOpen, SuddenClose, Finish } = composeStories(stories)
+const { Default, Open, Close, SuddenOpen, SuddenClose, Finish } =
+  composeStories(stories);
 
 describe("(components) event card chip", () => {
   test("(normal) take snapshot", () => {
