@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Switch, Redirect, Router as Wouter } from "wouter";
-import { LandingPage, Home, EventPage, ApplyFormPage, AccountInfo } from "./pages";
+import { LandingPage, PortalPage, EventPage, ApplyFormPage, AccountInfo } from "./pages";
 
 const Router: React.FC = () => (
   <Switch>
-    <Route path="/" component={Home} />
-    <Route path="/about" component={LandingPage} />
+    <Route path="/" component={LandingPage} />
+    <Route path="/portal" component={PortalPage} />
     <Route path="/event">
-      <Redirect to="/" />
+      <Redirect to="/portal" />
     </Route>
     <Route path="/event/:id">
       {params => <EventPage eventId={params.id} />}
@@ -16,13 +16,13 @@ const Router: React.FC = () => (
       <Route path="/info" component={AccountInfo} />
     </Wouter>
     <Route path="/apply">
-      <Redirect to="/" />
+      <Redirect to="/portal" />
     </Route>
     <Route path="/apply/:id">
       {params => <ApplyFormPage eventId={params.id} />}
     </Route>
     <Wouter base="/stream">
-      <Route path="/" component={Home} />
+      <Route path="/portal" component={LandingPage} />
     </Wouter>
   </Switch>
 );

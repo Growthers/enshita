@@ -20,7 +20,7 @@ const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
   const { data, error } = useSWR<Event>(`/events/${eventId}`, fetcher);
   const [, setLocation] = useLocation();
   if (!data) return <p>Loading...</p>;
-  if (error || data.status !== "open") return <Redirect to="/" />;
+  if (error) return <Redirect to="/portal" />;
   const onSubmit: SubmitHandler<ApplyForm> = result => {
     const url =
       data.status === "suddenOpen"

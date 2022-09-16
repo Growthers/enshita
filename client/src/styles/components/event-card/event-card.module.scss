@@ -1,0 +1,122 @@
+@use "../../variables" as var;
+@use "../../font-size" as font;
+
+.enshita-event-card {
+  display: flex;
+  padding: calc(55vw / 24);
+  cursor: pointer;
+  background-color: var.$global-white;
+  border: 1px solid var.$global-gray;
+
+  & > :not([hidden]) ~ :not([hidden]) {
+    margin-left: calc(5vw / 3);
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+
+    & > :not([hidden]) ~ :not([hidden]) {
+      margin-top: 8vw;
+      margin-left: 0;
+    }
+  }
+
+  .enshita-event-card-image-wrapper {
+    position: relative;
+    width: 15vw;
+    padding-top: calc(21 / 40 * 15vw);
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-top: calc(21 / 40 * 100%);
+    }
+
+    .enshita-event-card-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .enshita-event-card-content-wrapper {
+    display: flex;
+
+    & > :not([hidden]) ~ :not([hidden]) {
+      margin-left: calc(55vw / 24);
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      & > :not([hidden]) ~ :not([hidden]) {
+        margin-top: calc(20vw / 3);
+        margin-left: 0;
+      }
+    }
+
+    .enshita-event-card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color: var.$global-black;
+
+      .enshita-event-card-title {
+        width: 8vw;
+        overflow: hidden;
+        font-size: font.$text-24;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @media (max-width: 768px) {
+          width: 20vw;
+          font-size: font.$text-mb-10;
+        }
+      }
+
+      .enshita-event-card-sub-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .enshita-event-card-date {
+          font-size: font.$text-16;
+          @media (max-width: 768px) {
+            font-size: font.$text-mb-10;
+          }
+        }
+
+        .enshita-event-card-hash-tag {
+          &::before {
+            content: "#";
+          }
+
+          font-size: font.$text-12;
+          @media (max-width: 768px) {
+            font-size: font.$text-mb-10;
+          }
+        }
+      }
+    }
+
+    .enshita-event-card-option {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .enshita-event-card-num-of-speaker {
+        font-size: font.$text-12;
+        color: var.$global-black;
+        @media (max-width: 768px) {
+          font-size: font.$text-mb-10;
+          text-align: center;
+        }
+
+        .enshita-event-card-slash::after {
+          content: "/";
+        }
+      }
+    }
+  }
+}
