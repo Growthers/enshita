@@ -3,7 +3,7 @@
 exports[`(component) EventDescription > Snap Shot - Contain New Line and URL 1`] = `
 <div>
   <p
-    class="_enshita-event-description-content_1gxm5_1"
+    class="_enshita-event-description-content_e5b8ea"
   >
     <span>
       イベントの説明
@@ -11,7 +11,7 @@ exports[`(component) EventDescription > Snap Shot - Contain New Line and URL 1`]
 URL↓
 
       <a
-        class="_enshita-event-description-link_1gxm5_9"
+        class="_enshita-event-description-link_e5b8ea"
         href="https://growthers.dev"
         rel="noopener noreferrer"
         target="_blank"
@@ -27,12 +27,12 @@ URL↓
 exports[`(component) EventDescription > Snap Shot - Contain URL 1`] = `
 <div>
   <p
-    class="_enshita-event-description-content_1gxm5_1"
+    class="_enshita-event-description-content_e5b8ea"
   >
     <span>
       URL: 
       <a
-        class="_enshita-event-description-link_1gxm5_9"
+        class="_enshita-event-description-link_e5b8ea"
         href="https://growthers.dev"
         rel="noopener noreferrer"
         target="_blank"
@@ -48,7 +48,7 @@ exports[`(component) EventDescription > Snap Shot - Contain URL 1`] = `
 exports[`(component) EventDescription > Snap Shot - Simple Text 1`] = `
 <div>
   <p
-    class="_enshita-event-description-content_1gxm5_1"
+    class="_enshita-event-description-content_e5b8ea"
   >
     <span>
       イベントの説明

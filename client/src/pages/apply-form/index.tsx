@@ -4,8 +4,8 @@ import {
   AreaControl,
   InputControl,
   RadioControl,
-  Wrapper,
 } from "~/components/apply-form";
+import { Wrapper } from "~/components/form-element/wrapper";
 import { client, fetcher } from "~/libs/axios";
 import useSWR from "swr";
 import { Redirect, useLocation } from "wouter";
@@ -14,6 +14,7 @@ import type { SubmitHandler } from "react-hook-form";
 import Button from "~/components/button/button";
 import styles from "~/styles/pages/apply.module.scss";
 import type { ApplyFormPageProperties, ApplyForm } from "./type/model";
+import { schema } from "./type/schema";
 
 const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
   const { data, error } = useSWR<Event>(`/events/${eventId}`, fetcher);
@@ -51,6 +52,7 @@ const ApplyFormPage: FC<ApplyFormPageProperties> = ({ eventId }) => {
           paragraph: "",
         }}
         onSubmit={onSubmit}
+        schema={schema}
         wrapperStyle={styles["enshita-apply-form-wrapper"]}
       >
         <InputControl<ApplyForm>

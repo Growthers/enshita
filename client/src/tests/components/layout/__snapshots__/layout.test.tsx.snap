@@ -3,44 +3,28 @@
 exports[`(components) layout > take snapshot 1`] = `
 <div>
   <header
-    class="_enshita-header_cjr7n_1 "
+    class="_enshita-header_41584d "
   >
-    <div
-      class="_enshita-header-logo_cjr7n_16"
-    >
-      <a
-        href="./"
-        rel="noopener noreferrer"
-      >
-        <svg
-          height="50"
-          viewBox="0 0 140 50"
-          width="140"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <text
-            class="_enshita-header-svg_cjr7n_22"
-            font-size="40"
-            x="0"
-            y="40"
-          >
-            enshita
-          </text>
-        </svg>
-      </a>
+    <div>
+      <img
+        alt="enshita logo"
+        class="_enshita-header-logo-img_41584d"
+        href="/"
+        src="/statics/lyrics-dark.svg"
+      />
     </div>
     <div
-      class="_enshita-header-hidden_cjr7n_32"
+      class="_enshita-header-hidden_41584d"
     >
       <a
-        class="_enshita-button-box_8w723_17 _enshita-header-button_cjr7n_26"
+        class="_enshita-button-box_fd3da4 _enshita-header-button_41584d"
         href="./login"
         rel="noopener noreferrer"
         role="button"
         target="_blank"
       >
         <p
-          class="_enshita-button-text_8w723_36 undefined"
+          class="_enshita-button-text_fd3da4 undefined"
         >
           login
         </p>
@@ -48,20 +32,20 @@ exports[`(components) layout > take snapshot 1`] = `
     </div>
   </header>
   <main
-    class="_enshita-layout-body_38cw9_1"
+    class="_enshita-layout-body_acbc67"
   >
     <div>
       hogehoge
     </div>
   </main>
   <footer
-    class="_enshita-footer_1kcfu_1 "
+    class="_enshita-footer_1843f9 "
   >
     <div
-      class="_enshita-footer-content_1kcfu_26"
+      class="_enshita-footer-content_1843f9"
     >
       <div
-        class="_enshita-footer-logo_1kcfu_11 _enshita-footer-hidden_1kcfu_99"
+        class="_enshita-footer-logo_1843f9 _enshita-footer-hidden_1843f9"
       >
         <svg
           height="50"
@@ -70,7 +54,7 @@ exports[`(components) layout > take snapshot 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <text
-            class="_enshita-footer-svg_1kcfu_55"
+            class="_enshita-footer-svg_1843f9"
             font-size="40"
             x="0"
             y="40"
@@ -80,22 +64,22 @@ exports[`(components) layout > take snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="_enshita-footer-menu_1kcfu_38"
+        class="_enshita-footer-menu_1843f9"
       >
         <p
-          class="_enshita-footer-about_1kcfu_59"
+          class="_enshita-footer-about_1843f9"
         >
           About Growthers
         </p>
         <ul
-          class="_enshita-footer-list_1kcfu_75"
+          class="_enshita-footer-list_1843f9"
           role="navigation"
         >
           <li
-            class="_enshita-footer-homepage_1kcfu_105"
+            class="_enshita-footer-homepage_1843f9"
           >
             <a
-              class="_enshita-footer-link_1kcfu_87"
+              class="_enshita-footer-link_1843f9"
               href="https://growthers.dev/"
               rel="noopener noreferrer"
               target="_blank"
@@ -104,10 +88,10 @@ exports[`(components) layout > take snapshot 1`] = `
             </a>
           </li>
           <li
-            class="_enshita-footer-twitter_1kcfu_102"
+            class="_enshita-footer-twitter_1843f9"
           >
             <a
-              class="_enshita-footer-link_1kcfu_87"
+              class="_enshita-footer-link_1843f9"
               href="https://twitter.com/UdcGrowthers/"
               rel="noopener noreferrer"
               target="_blank"
@@ -116,10 +100,10 @@ exports[`(components) layout > take snapshot 1`] = `
             </a>
           </li>
           <li
-            class="_enshita-footer-github_1kcfu_108"
+            class="_enshita-footer-github_1843f9"
           >
             <a
-              class="_enshita-footer-link_1kcfu_87"
+              class="_enshita-footer-link_1843f9"
               href="https://github.com/Growthers/"
               rel="noopener noreferrer"
               target="_blank"
@@ -131,7 +115,7 @@ exports[`(components) layout > take snapshot 1`] = `
       </div>
     </div>
     <p
-      class="_enshita-footer-copyright_1kcfu_19"
+      class="_enshita-footer-copyright_1843f9"
     >
       <small>
         Copyright © 2022 Growthers

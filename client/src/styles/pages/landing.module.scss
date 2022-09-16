@@ -1,0 +1,98 @@
+@use "../variables" as var;
+
+.enshita-landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 calc(25vw / 16);
+  color: var.$global-black;
+
+  & > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 16rem;
+  }
+
+  .enshita-landing-page-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 15rem);
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: 20rem;
+    }
+
+    .enshita-landing-page-hero-title {
+      flex-grow: 1;
+      font-size: calc(55vw / 20);
+      line-height: calc(25vw / 6);
+      text-decoration: underline var.$global-primary;
+      white-space: pre-wrap;
+      @media (max-width: 768px) {
+        font-size: calc(325vw / 72);
+        line-height: calc(400vw / 19);
+      }
+    }
+
+    .enshita-landing-page-hero-logo {
+      flex-grow: 1;
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 80%;
+      }
+    }
+  }
+
+  .enshita-landing-page-contents-section {
+    display: flex;
+    flex-direction: column;
+
+    .enshita-landing-page-contents {
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+
+      & > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 4rem;
+        margin-left: 0;
+      }
+      @media (min-width: 1024px) {
+        flex-direction: row;
+
+        & > :not([hidden]) ~ :not([hidden]) {
+          margin-top: 0;
+          margin-left: 4rem;
+        }
+      }
+    }
+
+    .enshita-landing-page-contents-title {
+      font-size: calc(15vw / 8);
+      text-align: center;
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .enshita-landing-page-anchor {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: calc(15vw / 8);
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .enshita-landing-page-anchor-button {
+      display: block;
+      align-self: center;
+      margin-top: calc(12vw / 5);
+    }
+  }
+
+  .enshita-landing-page-enshita {
+    color: var.$global-primary;
+  }
+}
