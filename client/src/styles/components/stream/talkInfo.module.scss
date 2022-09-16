@@ -1,0 +1,31 @@
+@use "../../_variables" as var;
+
+.enshita-stream-talkInfo {
+  display: flex;
+  border-radius: 10px;
+  background-color: var.$global-white;
+  padding: 2rem 1rem;
+  width: fit-content;
+}
+
+.enshita-stream-talkInfo-order {
+  font-size: 4rem;
+}
+
+.enshita-stream-talkInfo-main {
+  padding: 0 2rem;
+  min-width: 36rem;
+}
+
+.enshita-stream-talkInfo-title {
+  font-size: 4rem;
+}
+
+.enshita-stream-talkInfo-speakerName {
+  font-size: 3rem;
+}
+
+.enshita-stream-talkInfo-comment {
+  font-size: 3rem;
+  margin: 0 1rem 5rem;
+}
