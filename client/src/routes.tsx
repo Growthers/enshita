@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect, Router as Wouter } from "wouter";
+import { Route, Switch, Redirect } from "wouter";
 import { About, Home, EventPage, ApplyFormPage, Stream } from "./pages";
 
 const Router: React.FC = () => (
@@ -20,9 +20,6 @@ const Router: React.FC = () => (
     <Route path="/apply/:id">
       {params => <ApplyFormPage eventId={params.id} />}
     </Route>
-    <Wouter base="/stream">
-      <Route path="/" component={Home} />
-    </Wouter>
     <Route path="/stream/:id">{params => <Stream eventId={params.id} />}</Route>
   </Switch>
 );
