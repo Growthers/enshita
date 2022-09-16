@@ -37,3 +37,33 @@ func (c *Controller) ShowLayout(ctx echo.Context) error {
 		Images: imgs,
 	})
 }
+
+// SetLayout 配信レイアウトの設定
+func (c *Controller) SetLayout(ctx echo.Context) error {
+	eventId := ctx.Param("id")
+
+	params := &domain.SetLayoutRequest{}
+	if err := ctx.Bind(params); err != nil {
+		return ctx.JSON(http.StatusInternalServerError, nil)
+	}
+
+	if err := ctx.Validate(params); err != nil {
+		return ctx.JSON(http.StatusBadRequest, err.Error())
+	}
+
+	for _, img := range params.Images {
+		t, err := strconv.Atoi(img.Type)
+		if err != nil {
+			return ctx.JSON(http.StatusBadRequest, err.Error())
+		}
+
+		l, err := c.layoutRepository.CreateLayout(t, img.URL, eventId)
+		if err != nil {
+			return err
+		} else if l == nil {
+			return ctx.JSON(http.StatusNotFound, nil)
+		}
+	}
+
+	return ctx.JSON(http.StatusOK, nil)
+}
