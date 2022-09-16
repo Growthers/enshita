@@ -11,14 +11,14 @@ export default {
 
 export const Opening: Story = {
   args: {
-    massage: "オープニングみたいなメッセージを設定可能",
-    subMassage: "ここにもメッセージ",
+    message: "オープニングみたいなメッセージを設定可能",
+    subMessage: "ここにもメッセージ",
   },
 };
 
 export const Ending: Story = {
   args: {
-    massage: "エンディングみたいなメッセージを設定可能",
-    subMassage: "ここにもメッセージ",
+    message: "エンディングみたいなメッセージを設定可能",
+    subMessage: "ここにもメッセージ",
   },
 };
