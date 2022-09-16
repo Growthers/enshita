@@ -6,6 +6,7 @@
   padding: calc(55vw / 24);
   background-color: var.$global-white;
   border: 1px solid var.$global-gray;
+  cursor: pointer;
 
   & > :not([hidden]) ~ :not([hidden]) {
     margin-left: calc(5vw / 3);
@@ -17,13 +18,14 @@
 
     & > :not([hidden]) ~ :not([hidden]) {
       margin-top: 8vw;
+      margin-left: 0;
     }
   }
 
   .enshita-event-card-image-wrapper {
     position: relative;
-    width: 25vw;
-    padding-top: calc(21 / 40 * 25vw);
+    width: 15vw;
+    padding-top: calc(21 / 40 * 15vw);
     @media (max-width: 768px) {
       width: 100%;
       padding-top: calc(21 / 40 * 100%);
@@ -51,6 +53,7 @@
 
       & > :not([hidden]) ~ :not([hidden]) {
         margin-top: calc(20vw / 3);
+        margin-left: 0;
       }
     }
 
@@ -61,14 +64,14 @@
       color: var.$global-black;
 
       .enshita-event-card-title {
-        width: 250px;
+        width: 8vw;
         overflow: hidden;
-        font-size: font.$text-32;
+        font-size: font.$text-24;
         text-overflow: ellipsis;
         white-space: nowrap;
         @media (max-width: 768px) {
-          width: 230px;
-          font-size: font.$text-mb-20;
+          width: 20vw;
+          font-size: font.$text-mb-10;
         }
       }
 
@@ -78,9 +81,9 @@
         justify-content: space-between;
 
         .enshita-event-card-date {
-          font-size: font.$text-24;
+          font-size: font.$text-16;
           @media (max-width: 768px) {
-            font-size: font.$text-mb-16;
+            font-size: font.$text-mb-10;
           }
         }
 
@@ -89,9 +92,9 @@
             content: "#";
           }
 
-          font-size: font.$text-20;
+          font-size: font.$text-12;
           @media (max-width: 768px) {
-            font-size: font.$text-mb-16;
+            font-size: font.$text-mb-10;
           }
         }
       }
@@ -103,10 +106,10 @@
       justify-content: space-around;
 
       .enshita-event-card-num-of-speaker {
-        font-size: font.$text-20;
+        font-size: font.$text-12;
         color: var.$global-black;
         @media (max-width: 768px) {
-          font-size: font.$text-mb-16;
+          font-size: font.$text-mb-10;
           text-align: center;
         }
 
