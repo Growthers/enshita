@@ -7,13 +7,12 @@ type Story = ComponentStoryObj<T>;
 
 export default {
   args: {
-    RemainingTime: {
+    startDate: {
       first: 2,
       second: 15,
     },
     title: "ここにタイトルが入ります",
     subtitle: "ここにメッセージを設定可能",
-    massage: "しばらくお待ちください",
   },
   component: Waiting,
 } as ComponentMeta<T>;
