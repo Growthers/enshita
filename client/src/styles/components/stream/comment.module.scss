@@ -1,0 +1,31 @@
+@use "../../variables" as ver;
+
+.enshita-stream-comment {
+  height: auto;
+  width: 18rem;
+  padding: 1rem;
+  background-color: ver.$global-secondary;
+  font-size: 1.25rem;
+}
+
+.enshita-stream-comment-content {
+  padding-bottom: 0.625rem;
+  border-bottom: solid 0.0625rem ver.$global-black;
+}
+
+.enshita-stream-comment-content-text {
+}
+
+.enshita-stream-comment-user {
+  padding-top: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.enshita-stream-comment-user-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.enshita-stream-comment-user-name {
+}
