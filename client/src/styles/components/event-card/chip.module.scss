@@ -1,4 +1,5 @@
 @use "../../variables" as var;
+@use "../../font-size" as font;
 
 .enshita-event-card-chip {
   display: flex;
@@ -7,8 +8,11 @@
   border-radius: 0.625rem;
 
   .enshita-event-card-chip-content {
-    font-size: 1rem;
+    font-size: font.$text-20;
     color: var.$global-black;
+    @media(max-width: 768px) {
+      font-size: font.$text-mb-16;
+    }
   }
 }
 
