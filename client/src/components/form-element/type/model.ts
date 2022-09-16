@@ -1,3 +1,4 @@
+import { IconifyIcon } from "@iconify/react";
 import type { ComponentProps, ReactNode } from "react";
 import type {
   FieldError,
@@ -34,7 +35,7 @@ export type RadioInputProperties = Omit<
 };
 
 export type IconTextInputProperties = TextInputProperties & {
-  icon: string;
+  icon: string | IconifyIcon;
 };
 
 export type PasswordInputProps = Omit<IconTextInputProperties, "icon">;
