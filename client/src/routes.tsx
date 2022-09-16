@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect, Router as Wouter } from "wouter";
+import { Route, Switch, Redirect } from "wouter";
 import { LandingPage, Home, EventPage, ApplyFormPage, Stream } from "./pages";
 
 const Router: React.FC = () => (
