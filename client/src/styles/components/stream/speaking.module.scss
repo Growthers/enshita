@@ -1,0 +1,24 @@
+@use "../../variables" as var;
+
+.enshita-stream-speaking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var.$global-white;
+}
+
+.enshita-stream-speaking-info {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-end;
+  margin: auto;
+  font-size: 56px;
+}
+
+.enshita-stream-speaking-info-large {
+  font-size: 56px;
+}
+
+.enshita-stream-speaking-info-small {
+  font-size: 40px;
+}

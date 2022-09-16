@@ -16,14 +16,18 @@
   grid-column: 2;
   gap: 1rem;
   padding: 1rem;
+  background-color: var.$global-white;
 }
 
 .enshita-stream-display-clock {
   grid-column: 2;
   font-size: 5.4rem;
   text-align: center;
+  background-color: var.$global-white;
 
   p {
     font-size: 2.5rem;
+    color: var.$global-light-gray-2;
+    text-shadow: 1px 1px var.$global-deep-deep-gray-2;
   }
 }

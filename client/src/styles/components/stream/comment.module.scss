@@ -1,25 +1,35 @@
-@use "../../variables" as ver;
+@use "../../variables" as var;
 
 .enshita-stream-comment {
   width: 18rem;
   height: auto;
   padding: 1rem;
   font-size: 1.25rem;
-  background-color: ver.$global-secondary;
+  background-color: var.$global-primary-pale;
+  border: 0.1px solid var.$global-primary;
+  box-shadow: 5px 5px 10px var.$global-primary;
 }
 
 .enshita-stream-comment-content {
   padding-bottom: 0.625rem;
-  border-bottom: solid 1px ver.$global-black;
+  border-bottom: solid 1px var.$global-black;
 }
 
 .enshita-stream-comment-user {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1.5rem auto 1.5rem;
   padding-top: 0.625rem;
+}
+
+.enshita-stream-comment-user-name {
+  margin-left: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .enshita-stream-comment-user-icon {
   width: 1.5rem;
   height: 1.5rem;
+  border-radius: 999px;
 }

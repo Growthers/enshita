@@ -1,5 +1,7 @@
-@use "../../variables" as ver;
+@use "../../variables" as var;
 
 .enshita-stream-clock {
   font-size: 1em;
+  color: var.$global-light-gray-2;
+  text-shadow: 1px 2px var.$global-deep-gray-2;
 }
