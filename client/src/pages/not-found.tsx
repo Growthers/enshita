@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import AnchorButton from "~/components/button/anchor-button";
 import StatusMessage from "~/components/status-message";
-import styles from "~/styles/pages/not-found.module.scss"
+import styles from "~/styles/pages/not-found.module.scss";
 
 const NotFound: FC = () => (
   <StatusMessage code={404} message="Page Not Found">

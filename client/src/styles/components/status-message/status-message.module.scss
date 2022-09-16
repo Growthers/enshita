@@ -48,3 +48,33 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .enshita-status-body {
+    height: calc(100vh - 21.375rem);
+  }
+
+  .enshita-status-content {
+    flex-direction: column;
+    height: 17.5rem;
+  }
+
+  .enshita-status-code {
+    justify-content: center;
+    height: 5rem;
+    border: none;
+
+    p {
+      font-size: 5rem;
+    }
+  }
+
+  .enshita-status-message {
+    height: 10rem;
+    border: none;
+
+    .enshita-status-errormessage {
+      font-size: 1.5rem;
+    }
+  }
+}
