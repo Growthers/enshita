@@ -21,14 +21,13 @@ const Comment: React.FC<Props> = ({
         src={iconUrl}
         alt="icon"
       />
-      <div className={styles["enshita-stream-comment-user-name"]}>{name}</div>
+      <span className={styles["enshita-stream-comment-user-name"]}>{name}</span>
       <InlineIcon
         icon={
           platform === "twitter"
             ? "akar-icons:twitter-fill"
             : "akar-icons:discord-fill"
         }
-        className={styles["enshita-stream-comment-user-platform"]}
       />
     </div>
   </div>
