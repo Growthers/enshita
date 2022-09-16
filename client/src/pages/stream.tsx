@@ -33,6 +33,12 @@ const Stream: React.FC<Props> = ({ eventId }) => {
   if (eventData !== undefined && speakersData !== undefined)
     return (
       <div className={styles["enshita-stream"]}>
+        <div />
+        <div className={styles["enshita-stream-display-comments"]}>
+          {commentsList.reverse().map(value => (
+            <Comment key={`${value.name}${value.content}`} comment={value} />
+          ))}
+        </div>
         <LeftSide
           scene={scene}
           currentTime={currentTime}
@@ -40,13 +46,6 @@ const Stream: React.FC<Props> = ({ eventId }) => {
           eventData={eventData}
           speakersData={speakersData}
         />
-
-        <div className={styles["enshita-stream-display-comments"]}>
-          {commentsList.reverse().map(value => (
-            <Comment key={`${value.name}${value.content}`} comment={value} />
-          ))}
-        </div>
-
         <div className={styles["enshita-stream-display-clock"]}>
           <Clock
             time={{
@@ -54,7 +53,7 @@ const Stream: React.FC<Props> = ({ eventId }) => {
               second: currentTime.minute(),
             }}
           />
-          <p>#{eventData.title}</p>
+          {eventData.hashTag && <p>{eventData.hashTag}</p>}
         </div>
       </div>
     );
