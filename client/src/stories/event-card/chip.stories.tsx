@@ -11,7 +11,7 @@ export default {
   component: Chip,
 } as ComponentMeta<T>;
 
-export const Defalut: Story = {};
+export const Default: Story = {};
 export const Open: Story = {
   args: {
     status: "open",
