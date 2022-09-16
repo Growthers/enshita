@@ -28,6 +28,7 @@ const LeftSide: React.FC<Props> = ({
   speakersData,
 }) => {
   const nextSpeakerIndex = speakersData.findIndex(
+    // TODO: speakerQuotaTypeIdは一意ではないので修正必須
     element => element.id === speakerQuotaTypeId,
   );
 
@@ -50,7 +51,12 @@ const LeftSide: React.FC<Props> = ({
       return (
         <Speaking
           order={1}
-          speaker={{ id: "aaa", title: "aaa", name: "aaa", duration: "aaa" }}
+          speaker={{
+            id: speakersData[0].id,
+            title: speakersData[0].title,
+            name: speakersData[0].name,
+            duration: speakersData[0].duration,
+          }}
         />
       );
 
