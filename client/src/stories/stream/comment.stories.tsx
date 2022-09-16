@@ -12,9 +12,8 @@ export default {
       platform: "twitter",
       name: "a",
       iconUrl: "a",
-      content:
-        "a",
-    }
+      content: "a",
+    },
   },
 } as ComponentMeta<T>;
 
