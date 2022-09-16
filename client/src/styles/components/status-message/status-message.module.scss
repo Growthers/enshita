@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 15rem);
+  height: calc(100vh - 32.5rem);
 }
 
 .enshita-status-content {
@@ -36,7 +36,7 @@
   border-left: 2px solid;
 
   .enshita-status-errormessage {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   div {
@@ -46,5 +46,35 @@
     justify-content: center;
     height: 50%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .enshita-status-body {
+    height: calc(100vh - 21.375rem);
+  }
+
+  .enshita-status-content {
+    flex-direction: column;
+    height: 17.5rem;
+  }
+
+  .enshita-status-code {
+    justify-content: center;
+    height: 5rem;
+    border: none;
+
+    p {
+      font-size: 5rem;
+    }
+  }
+
+  .enshita-status-message {
+    height: 10rem;
+    border: none;
+
+    .enshita-status-errormessage {
+      font-size: 1.5rem;
+    }
   }
 }
