@@ -9,7 +9,7 @@ import (
 )
 
 // ShowLayout 配信レイアウトの表示
-func (c *Controller) ShowLayout(ctx echo.Context) error {
+func (c *Controller) showLayout(ctx echo.Context) error {
 	eventId := ctx.Param("id")
 
 	e, err := c.eventRepository.FindEvent(eventId)
@@ -39,7 +39,7 @@ func (c *Controller) ShowLayout(ctx echo.Context) error {
 }
 
 // SetLayout 配信レイアウトの設定
-func (c *Controller) SetLayout(ctx echo.Context) error {
+func (c *Controller) setLayout(ctx echo.Context) error {
 	eventId := ctx.Param("id")
 
 	params := &domain.SetLayoutRequest{}
