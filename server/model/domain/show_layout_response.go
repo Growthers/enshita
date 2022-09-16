@@ -1,6 +1,6 @@
 package domain
 
-type ShowDeliveryLayoutResponse struct {
+type ShowLayoutResponse struct {
 	Title  string  `json:"title"`
 	Images []Image `json:"images"`
 }
