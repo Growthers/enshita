@@ -1,0 +1,85 @@
+// Vitest Snapshot v1
+
+exports[`(components) event card chip > (close) take snapshot 1`] = `
+<div>
+  <div
+    class="_enshita-event-card-chip_f96697 _enshita-event-card-status-gray_f96697"
+  >
+    <p
+      class="_enshita-event-card-chip-content_f96697"
+    >
+      参加登録締切済み
+    </p>
+  </div>
+</div>
+`;
+
+exports[`(components) event card chip > (finish) take snapshot 1`] = `
+<div>
+  <div
+    class="_enshita-event-card-chip_f96697 _enshita-event-card-status-gray_f96697"
+  >
+    <p
+      class="_enshita-event-card-chip-content_f96697"
+    >
+      イベント終了
+    </p>
+  </div>
+</div>
+`;
+
+exports[`(components) event card chip > (normal) take snapshot 1`] = `
+<div>
+  <div
+    class="_enshita-event-card-chip_f96697 _enshita-event-card-status-gray_f96697"
+  >
+    <p
+      class="_enshita-event-card-chip-content_f96697"
+    >
+      参加登録受付前
+    </p>
+  </div>
+</div>
+`;
+
+exports[`(components) event card chip > (open) take snapshot 1`] = `
+<div>
+  <div
+    class="_enshita-event-card-chip_f96697 _enshita-event-card-status-green_f96697"
+  >
+    <p
+      class="_enshita-event-card-chip-content_f96697"
+    >
+      参加登録受付中
+    </p>
+  </div>
+</div>
+`;
+
+exports[`(components) event card chip > (sudden close) take snapshot 1`] = `
+<div>
+  <div
+    class="_enshita-event-card-chip_f96697 _enshita-event-card-status-gray_f96697"
+  >
+    <p
+      class="_enshita-event-card-chip-content_f96697"
+    >
+      飛び入り参加登録受付終了
+    </p>
+  </div>
+</div>
+`;
+
+exports[`(components) event card chip > (sudden open) take snapshot 1`] = `
+<div>
+  <div
+    class="_enshita-event-card-chip_f96697 _enshita-event-card-status-green_f96697"
+  >
+    <p
+      class="_enshita-event-card-chip-content_f96697"
+    >
+      飛び入り参加登録受付中
+    </p>
+  </div>
+</div>
+`;

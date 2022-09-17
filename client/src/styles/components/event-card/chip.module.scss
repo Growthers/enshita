@@ -1,0 +1,25 @@
+@use "../../variables" as var;
+@use "../../font-size" as font;
+
+.enshita-event-card-chip {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 1rem;
+  border-radius: 0.625rem;
+
+  .enshita-event-card-chip-content {
+    font-size: font.$text-16;
+    color: var.$global-black;
+    @media (max-width: 768px) {
+      font-size: font.$text-mb-10;
+    }
+  }
+}
+
+.enshita-event-card-status-gray {
+  background-color: var.$global-gray;
+}
+
+.enshita-event-card-status-green {
+  background-color: var.$global-green;
+}

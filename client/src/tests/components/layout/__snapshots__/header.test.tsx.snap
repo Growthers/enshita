@@ -9,7 +9,7 @@ exports[`(components) header > take snapshot 1`] = `
       <img
         alt="enshita logo"
         class="_enshita-header-logo-img_41584d"
-        href="/"
+        href="/portal"
         src="/statics/lyrics-dark.svg"
       />
     </div>
