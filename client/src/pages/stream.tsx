@@ -1,7 +1,7 @@
 import React from "react";
 import useSWR from "swr";
 
-import LeftSide from "~/components/stream/leftSide";
+import LeftSide from "~/components/stream/left-side";
 import Comment from "~/components/stream/comment";
 import Clock from "~/components/stream/clock";
 

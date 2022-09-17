@@ -1,7 +1,7 @@
 import React from "react";
 import { TalkInfoProperties } from "~/components/stream/type/model";
 
-import styles from "~/styles/components/stream/talkInfo.module.scss";
+import styles from "~/styles/components/stream/talk-info.module.scss";
 
 const TalkInfo: React.FC<TalkInfoProperties> = ({
   order,

@@ -1,6 +1,6 @@
 import React from "react";
 
-import TalkInfo from "~/components/stream/talkInfo";
+import TalkInfo from "~/components/stream/talk-info";
 import { SpeakerProperties } from "~/components/stream/type/model";
 
 import styles from "~/styles/components/stream/changing.module.scss";

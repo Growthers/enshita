@@ -1,7 +1,7 @@
 import React from "react";
 
 import { SpeakerProperties } from "~/components/stream/type/model";
-import TalkInfo from "~/components/stream/talkInfo";
+import TalkInfo from "~/components/stream/talk-info";
 
 import styles from "~/styles/components/stream/breaking.module.scss";
 
