@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch, Redirect, Router as Wouter } from "wouter";
-import { LandingPage, PortalPage, EventPage, ApplyFormPage, NotFound } from "./pages";
+import { LandingPage, PortalPage, EventPage, ApplyFormPage, NotFound, AccountInfo } from "./pages";
 
 const Router: React.FC = () => (
   <Switch>
@@ -12,6 +12,9 @@ const Router: React.FC = () => (
     <Route path="/event/:id">
       {params => <EventPage eventId={params.id} />}
     </Route>
+    <Wouter base="/account">
+      <Route path="/info" component={AccountInfo} />
+    </Wouter>
     <Route path="/apply">
       <Redirect to="/portal" />
     </Route>

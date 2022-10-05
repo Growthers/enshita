@@ -1,3 +1,5 @@
+@use "../../variables" as var;
+
 .enshita-layout-body {
   box-sizing: border-box;
   min-height: calc(100vh - 15rem);

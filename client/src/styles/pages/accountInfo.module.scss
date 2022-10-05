@@ -1,0 +1,65 @@
+@use "../variables" as var;
+
+.enshita-form-main {
+  box-sizing: border-box;
+  width: 36rem;
+  height: 32rem;
+  margin: auto;
+}
+
+.enshita-form-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+  font-size: x-large;
+}
+
+.enshita-form-dis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+}
+
+.enshita-form-button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  padding: 1rem 0 0;
+}
+
+.enshita-button-update-box {
+  height: 2rem;
+  background-color: var.$global-primary-deep;
+  border-radius: 0.75rem;
+
+  p {
+    color: var.$global-white;
+  }
+
+  &:hover {
+    p {
+      color: var.$global-black;
+    }
+  }
+}
+
+.enshita-form-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 0.25rem;
+  color: var.$global-red;
+}
+
+.enshita-form-loading {
+  margin: auto;
+  text-align: center;
+}
