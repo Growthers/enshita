@@ -10031,10 +10031,10 @@ react-element-to-jsx-string@^14.3.4:
     is-plain-object "5.0.0"
     react-is "17.0.2"
 
-react-hook-form@7.36.1:
-  version "7.36.1"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.36.1.tgz#82a311fe8cbe75e689fd4529f083b7c983da6520"
-  integrity sha512-EbYYkCG2p8ywe7ikOH2l02lAFMrrrslZi1I8fqd8ifDGNAkhomHZQzQsP6ksvzrWBKntRe8b5L5L7Zsd+Gm02Q==
+react-hook-form@7.90.0:
+  version "7.90.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.90.0.tgz#166fc35a3f6df7cd62bc880789aba6ea16e5d443"
+  integrity sha512-+NdG0FLzCPhFOp2NNxaUYLF9fyZhNjx9FTBBSYWF71/l6BBlmIc/j6xlp3DbaHWLJbIG7Zd8oznA19xJClU97w==
 
 react-inspector@^5.1.0:
   version "5.1.1"
